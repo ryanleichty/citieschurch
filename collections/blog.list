@@ -27,7 +27,7 @@
         <a href="{fullUrl}" class="u-url" rel="bookmark">{title}</a>
       {.end}
       </h1>
-      <div class="meta-below-title">
+      <div class="meta-below-title clearfix">
         {.section author}
         <div class="entry-byline">
           <span class="entry-author"><a href="{collection.fullUrl}?author={author.id}" class="p-author author entry-byline-link" rel="author">{displayName}</a></span>
@@ -53,7 +53,6 @@
         </div>
         {.end}
         <div class="p-summary">{excerpt}</div>
-        <p class="entry-more-link"><a href="{fullUrl}"></a></p>
       {.or}
         {.section body}
           <div class="e-content">{@}</div>
