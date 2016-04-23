@@ -57,13 +57,8 @@
         Source: <a href="{sourceUrl}" target="_blank">{sourceUrl}</a>
       </p>
       {.end}
-      {.section tags}
-      <p class="entry-tags">
-        Tagged: {.repeated section @}<a href="{collection.fullUrl}?tag={@|url-encode}" rel="tag">{@}</a>{.alternates with}, {.end}
-      </p>
-      {.end}
       <div class="entry-actions">
-        {@|like-button}{@|social-button-inline}
+        {@|like-button}
       </div>
     </footer>
 
