@@ -182,7 +182,7 @@
       {.end}
 
       {.section item}
-      <div class="meta-above-title">
+      <div class="meta-below-title {.section categories}{.or}no-categories{.end}">
         {.section author}
         <div class="entry-byline">
           <span class="entry-author"><a href="{collection.fullUrl}?author={author.id}" class="p-author author entry-byline-link" rel="author">{displayName}</a></span>
