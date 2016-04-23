@@ -2006,7 +2006,25 @@ html.touch {
 
 // Blog Meta
 
-.meta-priority-category:not(.hide-entry-author) .meta-below-title .entry-dateline:before {
+.blog-meta {
+  font-family: "bro";
+  font-size: 12px;
+  line-height: 1;
+  padding: 1em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.blog-meta a {
+  	border: 1px solid rgba(51,51,51,0.4);
+    padding: 3px 3px 3px 3px;
+    color: #1a1a1a;
+  	display: inline-block;
+  	float: left;
+  	margin-right: 1em;
+}
+
+.meta-priority-category:not(.hide-entry-author) .blog-meta .entry-dateline:before {
   content: "" !important;
   padding: 0 !important;
 }
