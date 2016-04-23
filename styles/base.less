@@ -2028,7 +2028,6 @@ html.touch {
   font-family: "bro";
   font-size: 12px;
   line-height: 1;
-  padding: 1em;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
@@ -2039,11 +2038,12 @@ html.touch {
     color: #1a1a1a;
   	display: inline-block;
   	float: left;
-  	margin-right: 1em;
-    margin-bottom: 1em;
+  	margin: 1em;
 }
 
-.meta-priority-category:not(.hide-entry-author) .blog-meta .entry-dateline:before {
+.meta-priority-category:not(.hide-entry-author) .blog-meta .entry-dateline:before,
+.meta-priority-none:not(.hide-entry-author) .entry-dateline:before,
+.meta-priority-none .entry-morefrom:before {
   content: "" !important;
   padding: 0 !important;
 }
