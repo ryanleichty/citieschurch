@@ -250,7 +250,7 @@
             <span>{pagination.prevItem.title}</span>
           </a>
           <div class="content-fill">
-            <img {pagination.prevItem.@|image-meta} />
+            <img {@|image-meta} />
           </div>
           {.end}
         </div>
