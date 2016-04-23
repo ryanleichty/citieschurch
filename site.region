@@ -249,6 +249,9 @@
           <a href="{pagination.prevItem.fullUrl}" rel="prev">
             <span>{pagination.prevItem.title}</span>
           </a>
+          <div class="content-fill">
+            <img {@|image-meta} />
+          </div>
           {.end}
         </div>
       </nav>
