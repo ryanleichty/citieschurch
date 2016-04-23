@@ -228,7 +228,6 @@
         {.end}
       </main>
 
-      {.if pagination}
       {.if pagination.prevItem}
 
       <nav class="pagination clear">
@@ -255,7 +254,9 @@
 
       </nav>
 
-      {.or .if pagination.prevPage}
+      {.end}
+
+      {.if pagination.prevPage}
 
       <nav class="pagination clear" data-paginate="scroll">
         <div class="newer">{.if pagination.prevPage}
@@ -272,8 +273,6 @@
           {.end}
         </div>
       </nav>
-
-      {.end}
 
       {.end}
 
