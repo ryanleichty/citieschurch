@@ -84,8 +84,8 @@
 
   {.if pagination}
   <nav class="pagination clear">
-    <div class="older">{.if pagination.nextItem}<span class="next-label">Previous</span><a href="{pagination.nextItem.fullUrl}" rel="next"><span>{pagination.nextItem.title}</span></a>{.end}</div><!-- comment the linebreak between these two elements because science
-  --><div class="newer">{.if pagination.prevItem}<span class="prev-label">Next</span><a href="{pagination.prevItem.fullUrl}" rel="prev"><span>{pagination.prevItem.title}</span></a>{.end}</div>
+    <div class="older">{.if pagination.nextItem}<span class="prev-label">Previous</span><a href="{pagination.nextItem.fullUrl}" rel="next"><span>{pagination.nextItem.title}</span></a>{.end}</div><!-- comment the linebreak between these two elements because science
+  --><div class="newer">{.if pagination.prevItem}<span class="next-label">Next</span><a href="{pagination.prevItem.fullUrl}" rel="prev"><span>{pagination.prevItem.title}</span></a>{.end}</div>
   </nav>
   {.end}
 
