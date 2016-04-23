@@ -232,28 +232,26 @@
 
       <nav class="pagination clear">
 
-        <div class="older">
-          {.if pagination.nextItem}
+        <div class="newer">
+          {.if pagination.prevItem}
           <span class="prev-label">Previous</span>
-          <a href="{pagination.nextItem.fullUrl}" rel="next">
-            <span>{pagination.nextItem.title}</span>
+          <a href="{pagination.prevItem.fullUrl}" rel="prev">
+            <span>{pagination.prevItem.title}</span>
           </a>
           {.end}
         </div>
 
         <!-- comment the linebreak between these two elements because science-->
 
-        <div class="newer">
-          {.if pagination.prevItem}
+        <div class="older">
+          {.if pagination.nextItem}
           <span class="next-label">Next</span>
-          <a href="{pagination.prevItem.fullUrl}" rel="prev">
-            <span>{pagination.prevItem.title}</span>
+          <a href="{pagination.nextItem.fullUrl}" rel="next">
+            <span>{pagination.nextItem.title}</span>
           </a>
-          <!--<div class="content-fill">
-            <img src="{pagination.prevItem.assetUrl}" {@|image-meta} />
-          </div>-->
           {.end}
         </div>
+
       </nav>
 
       {.end}
