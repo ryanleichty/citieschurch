@@ -181,6 +181,7 @@
       </p>
       {.end}
 
+      {.section item}
       <div class="meta-above-title">
         {.section author}
         <div class="entry-byline">
@@ -197,6 +198,7 @@
         </div>
         {.end}
       </div>
+      {.end}
 
       <main id="page" role="main">
         {.section collection}
