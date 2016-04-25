@@ -35,6 +35,13 @@
   .blog-list {
     display: flex;
     flex-wrap: wrap;
+
+    article {
+      width: 25%;
+      padding: 25px;
+      box-sizing: border-box;
+      text-align: center;
+    }
   }
 
   .filter-heading {
@@ -63,14 +70,17 @@
 
   .excerpt-thumb {
     display: block;
-    height: 12em;
     width: 100%;
     margin: 0 1em 2em 0;
-    float: left;
     overflow: hidden;
     a {
       display: block;
       height: 100%;
+      padding-bottom: 66.6667%;
+      position: relative;
+      img {
+        position: absolute;
+      }
     }
   }
 
