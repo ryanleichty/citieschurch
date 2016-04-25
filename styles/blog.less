@@ -10,7 +10,7 @@
 
   // Collection wide
 
-} 
+}
 
 
 // Blog Sidebar
@@ -26,7 +26,10 @@
 
 .view-list {
 
-  .blog-list { }
+  .blog-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
   .filter-heading {
     .border-box;
@@ -53,9 +56,9 @@
   }
 
   .excerpt-thumb {
-    display: none;
+    display: block;
     height: 12em;
-    width: 12em;
+    width: 100%;
     margin: 0 1em 2em 0;
     float: left;
     overflow: hidden;
@@ -654,6 +657,3 @@
 //     }
 //   }
 // }
-
-
-
