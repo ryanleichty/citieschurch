@@ -51,7 +51,7 @@
       </div>
     </header>
 
-    <div class="entry-content">
+    <!--<div class="entry-content">
       {.excerpt?}
         <div class="p-summary">{excerpt}</div>
       {.or}
@@ -59,7 +59,7 @@
           <div class="e-content">{@}</div>
         {.end}
       {.end}
-    </div>
+    </div>-->
 
     <footer class="entry-footer clear">
       {.section sourceUrl}
@@ -83,6 +83,6 @@
   </article>
   {.end}
 
-  
+
 
 </div>
