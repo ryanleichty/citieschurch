@@ -25,47 +25,6 @@
 // tweak: { "type" : "value", "title" : "Site Title Container Width", "min" : 50, "max" : 500, "step" : 5, "category" : "Site Header", "target" : "#siteTitle", "showOnlyWhenPresent" : "#siteTitle", "js": "true" }
 @siteTitleContainerWidth: 255px;
 
-
-/* Navigation */
-
-// tweak: { "type" : "font", "title" : "Nav Link Font", "category" : "Site Navigation", "target" : "body:not(.force-mobile-nav) #mainNavWrapper, #sidecarNav" }
-.nav-font {
-  font-family: "bro", Arial, sans-serif;
-  font-style: normal;
-  font-size: 18px;
-  text-transform: capitalize;
-  text-decoration: none;
-}
-
-// tweak: { "type" : "color", "title" : "Nav Link Color", "category" : "Site Navigation", "target" : "body:not(.force-mobile-nav) #mainNavWrapper, #sidecarNav" }
-@navColor: #666;
-
-// tweak: { "type" : "color", "title" : "Nav Link (Active)", "category" : "Site Navigation", "target" : "body:not(.force-mobile-nav) #mainNavWrapper, #sidecarNav" }
-@navActiveColor: #EEE;
-
-// tweak: { "type" : "checkbox", "title" : "Enable Nav Button", "active" : "false", "category" : "Site Navigation", "target" : "body:not(.force-mobile-nav) #mainNavWrapper, #sidecarNav" }
-
-// tweak: { "category": "Site Navigation", "title": "Nav Button Style", "type": "dropdown", "options": ["Solid", "Outline", "Raised"], "default": "Solid", "showOnlyWhenPresent": ".enable-nav-button", "target" : "body:not(.force-mobile-nav) #mainNavigation > div:not(.folder):last-child a, #mobileNavigation > div:not(.folder):last-child a" }
-
-// tweak: { "category": "Site Navigation", "title": "Nav Button Corner Style", "type": "dropdown", "options": ["Square", "Rounded", "Pill"], "default": "Square", "showOnlyWhenPresent": ".enable-nav-button", "target" : "body:not(.force-mobile-nav) #mainNavigation > div:not(.folder):last-child a, #mobileNavigation > div:not(.folder):last-child a"  }
-
-// tweak: { "category": "Site Navigation", "title": "Nav Button Color", "type": "color", "showOnlyWhenPresent": ".enable-nav-button", "target" : "body:not(.force-mobile-nav) #mainNavigation > div:not(.folder):last-child a, #mobileNavigation > div:not(.folder):last-child a" }
-@navButtonColor: #ededed;
-
-// tweak: { "category": "Site Navigation", "title": "Nav Button Text Color", "type": "color", "showOnlyWhenPresent": "body:not(.nav-button-style-outline).enable-nav-button", "target" : "body:not(.force-mobile-nav) #mainNavigation > div:not(.folder):last-child a, #mobileNavigation > div:not(.folder):last-child a" }
-@navButtonTextColor: #181818;
-
-// tweak: { "category": "Site Navigation", "title": "Nav Button Font", "type": "font", "showOnlyWhenPresent": ".enable-nav-button", "target" : "body:not(.force-mobile-nav) #mainNavigation > div:not(.folder):last-child a, #mobileNavigation > div:not(.folder):last-child a" }
-.nav-button-font {
-  font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-
-
 /* Banner */
 
 // tweak: { "type" : "color", "title" : "Banner Overlay Color", "category" : "Banner Section", "target" : ".banner-thumbnail-wrapper, .sqs-featured-posts-gallery, #promotedGalleryWrapper, .promoted-gallery-wrapper", "showOnlyWhenPresent" : ".banner-thumbnail-wrapper, .sqs-featured-posts-gallery, #promotedGalleryWrapper .sqs-gallery, .blog-item-wrapper, .promoted-gallery-wrapper .sqs-gallery"  }
