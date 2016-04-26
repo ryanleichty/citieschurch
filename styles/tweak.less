@@ -2,7 +2,7 @@
 /* Header */
 
 // tweak: { "type" : "color", "title" : "Header Background Color", "category" : "Site Header", "target" : "body:not(.has-banner-image) #header" }
-@headerBgColor: #1B1B1B;
+@headerBgColor: #1a1a1a;
 
 // tweak: { "type" : "checkbox", "title" : "Transparent Header", "label" : "Transparent on Banner Images", "active" : "true", "category" : "Site Header", "target" : "#header" }
 
@@ -38,12 +38,10 @@
 }
 
 // tweak: { "type" : "color", "title" : "Nav Link Color", "category" : "Site Navigation", "target" : "body:not(.force-mobile-nav) #mainNavWrapper, #sidecarNav" }
-@navColor: #666;
+@navColor: #fff;
 
 // tweak: { "type" : "color", "title" : "Nav Link (Active)", "category" : "Site Navigation", "target" : "body:not(.force-mobile-nav) #mainNavWrapper, #sidecarNav" }
-@navActiveColor: #EEE;
-
-// tweak: { "type" : "checkbox", "title" : "Enable Nav Button", "active" : "false", "category" : "Site Navigation", "target" : "body:not(.force-mobile-nav) #mainNavWrapper, #sidecarNav" }
+@navActiveColor: rgba(255,255,255,0.8);
 
 // tweak: { "category": "Site Navigation", "title": "Nav Button Style", "type": "dropdown", "options": ["Solid", "Outline", "Raised"], "default": "Solid", "showOnlyWhenPresent": ".enable-nav-button", "target" : "body:not(.force-mobile-nav) #mainNavigation > div:not(.folder):last-child a, #mobileNavigation > div:not(.folder):last-child a" }
 
@@ -303,10 +301,10 @@
 }
 
 // tweak: { "type" : "color", "title" : "Footer Nav Link Color", "category" : "Footer", "target" : "#footer, #secondaryNavigation", "showOnlyWhenPresent" : "#secondaryNavigation" }
-@footerNavLinkColor: #FFF;
+@footerNavLinkColor: #1a1a1a;
 
 // tweak: { "type" : "color", "title" : "Footer Nav Link (Active)", "category" : "Footer", "target" : "#footer, #secondaryNavigation", "showOnlyWhenPresent" : "#secondaryNavigation" }
-@footerNavActiveColor: #CCC;
+@footerNavActiveColor: #1a1a1a;
 
 // tweak: { "type" : "font", "title" : "Site Info Font", "category" : "Footer", "target" : "#footer, #siteInfo", "showOnlyWhenPresent" : "body:not(.hide-site-info) #siteInfo" }
 .site-info-font {
@@ -320,4 +318,8 @@
 }
 
 // tweak: { "type" : "color", "title" : "Site Info Color", "category" : "Footer", "target" : "#footer, #siteInfo", "showOnlyWhenPresent" : "body:not(.hide-site-info) #siteInfo" }
-@siteInfoColor: #FFF;
+@siteInfoColor: #1a1a1a;
+
+// tweak: { "type" : "checkbox", "title" : "Center Navigation / Info", "active" : "false", "category" : "Footer", "target" : "#footer, #secondaryNavigation", "showOnlyWhenPresent" : "#secondaryNavigation, #siteInfo" }
+
+// tweak: { "type" : "checkbox", "title" : "Hide Site Info", "active" : "false", "category" : "Footer", "target" : "#footer, #siteInfo", "showOnlyWhenPresent" : "#siteInfo" }
