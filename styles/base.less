@@ -2121,3 +2121,183 @@ html.touch {
   display: block;
   padding: .75em 0;
 }
+
+
+
+
+
+
+
+
+#header {
+  padding: 0 5.555%;
+}
+
+.header-inner {
+  padding: 30px 0;
+}
+
+#page {
+  margin: 0 5.555%;
+  max-width: none;
+  padding: 5.555% 0;
+}
+
+.footer-inner, .pre-footer-inner {
+    margin: 0 5.555%;
+    padding: 50px 0;
+    max-width: none;
+}
+
+#footerBlocks:not(.empty) {
+  margin-bottom: 1.5em;
+}
+
+// Typography
+
+@font-face {
+  font-family: 'bro';
+  src: url('//static1.squarespace.com/static/54716637e4b0631f31bb85fb/t/571a276a7da24ff4cdebcd2c/1461331819278/Bro-Reg.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'por';
+  src: url('//static1.squarespace.com/static/54716637e4b0631f31bb85fb/t/571a276d7da24ff4cdebcd2f/1461331822178/Por-Reg.woff') format('woff');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'por';
+  src: url('//static1.squarespace.com/static/54716637e4b0631f31bb85fb/t/571a2af940261d6de4b6809c/1461332729808/Por-RegIta.woff') format('woff');
+  font-style: italic;
+}
+
+// Text Rendering
+#siteWrapper, h1, h2, h3 {
+  text-rendering: geometricPrecision;
+}
+
+// Banner Text
+.desc-wrapper p,
+.desc-wrapper p>strong,
+.desc-wrapper p>em>strong,
+.desc-wrapper p:last-child>a,
+.sqs-featured-posts-gallery .title-desc-wrapper .post-title a,
+.sqs-featured-posts-gallery .title-desc-wrapper .post-date, .sqs-featured-posts-gallery .title-desc-wrapper .post-author, .sqs-featured-posts-gallery .title-desc-wrapper .post-category,
+.sqs-featured-posts-gallery .title-desc-wrapper .view-post:before,
+#headerNav nav a, #sidecarNav nav a, #headerNav nav a:visited, #sidecarNav nav a:visited, #headerNav nav label, #sidecarNav nav label,
+.has-promoted-gallery #promotedGalleryWrapper .sqs-gallery-block-slideshow .meta .meta-description p>strong, .has-promoted-gallery .promoted-gallery-wrapper .sqs-gallery-block-slideshow .meta .meta-description p>strong, .has-promoted-gallery #promotedGalleryWrapper .sqs-gallery-block-slideshow .meta .meta-description p>em>strong, .has-promoted-gallery .promoted-gallery-wrapper .sqs-gallery-block-slideshow .meta .meta-description p>em>strong,
+.has-promoted-gallery #promotedGalleryWrapper .sqs-gallery-block-slideshow .meta .meta-description p, .has-promoted-gallery .promoted-gallery-wrapper .sqs-gallery-block-slideshow .meta .meta-description p,
+.sqs-block-summary-v2 .summary-title, .sqs-block-summary-v2 .summary-heading,
+.sqs-block-summary-v2 .summary-metadata-item a, .sqs-block-summary-v2 .summary-metadata-item a:link, .sqs-block-summary-v2 .summary-metadata-item a:visited,
+.blog-item-wrapper .post-date, .blog-item-wrapper .post-author, .blog-item-wrapper .post-category,
+.blog-item-wrapper .post-title,
+.sqs-block-button .sqs-block-button-element--large,
+#footer h3,
+.entry-title
+{
+  font-family: "bro";
+}
+
+#siteWrapper, h1, h2 {
+  font-family: "por";
+}
+
+h1, h2, h3 {
+  margin: 2em 0 1em 0;
+}
+
+h2 {
+  text-align: center;
+}
+
+#footer {
+    font-family: "bro";
+    font-size: 16px;
+    line-height: 1.4em;
+    letter-spacing: 0px;
+    font-weight: 500;
+    font-style: normal;
+    color: #000;
+}
+
+#page p  {
+  	-webkit-margin-before: 0;
+  	-webkit-margin-after: 0;
+    text-indent: 2.5em;
+}
+
+// Correct Indentation
+
+#page {
+  p:first-of-type, h1 + p, h2 + p, h3 + p, blockquote + p, ol + p, ul + p {
+    text-indent: 0;
+  }
+}
+
+blockquote {
+    -webkit-margin-before: 1em;
+  	-webkit-margin-after: 1em;
+}
+
+ol, ul {
+    -webkit-padding-start: 2.5em;
+}
+
+ol li:not(:last-of-type) {
+  margin-bottom: 1em;
+}
+
+.field {
+  width: 100%;
+  margin: 0 0 24px;
+}
+
+.field-element {
+	width: 100%;
+	padding: 12px;
+    margin: 6px 0 4px;
+    border: 1px solid #ccc;
+    background: #fafafa;
+    font-family: sans-serif;
+    font-size: 12px;
+    line-height: normal;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+
+.login {
+  font-size: 16px;
+}
+
+#preFooter {
+  display: none;
+}
+
+// Fix Social Media Padding
+
+#footer .sqs-block:last-of-type {
+  padding-top: 0;
+}
+
+// Footer Link to I'm New
+
+#footer .html-block a,
+#footer .html-block a:visited {
+	border-bottom: none;
+	-webkit-transition: color .1s 0s ease-in-out;
+    -moz-transition: color .1s 0s ease-in-out;
+    -ms-transition: color .1s 0s ease-in-out;
+    -o-transition: color .1s 0s ease-in-out;
+    transition: color .1s 0s ease-in-out;
+}
+
+#footer .html-block a:hover {
+  color: #808080;
+}
+
+@media only screen and (max-width: 640px) {
+  #siteWrapper, h2 {
+    font-size: 21px;
+  }
+}
