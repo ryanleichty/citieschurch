@@ -6,7 +6,7 @@
     {.main-image?}
     <div class="excerpt-thumb">
       <a href="{fullUrl}" class="excerpt-image content-fill">
-        <span class="post-type">{collection.title}</div>
+        <span class="post-type">{collection.title}</span>
         <img {@|image-meta} />
       </a>
     </div>
