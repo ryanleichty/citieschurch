@@ -1,7 +1,7 @@
 <div class="blog-list">
 
   {.repeated section items}
-  <article class="entry h-entry clearfix {@|item-classes}" id="article-{id}" data-item-id="{id}">
+  <article class="entry h-entry clearfix {@|item-classes} {.if pagination.prevPage}{.else}blog-home{.end}" id="article-{id}" data-item-id="{id}">
 
     {.main-image?}
     <div class="excerpt-thumb">
