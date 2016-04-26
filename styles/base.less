@@ -186,13 +186,13 @@ h2 {
     color: #000;
 }
 
+/*// Indentation
+
 #page p  {
   	-webkit-margin-before: 0;
   	-webkit-margin-after: 0;
     text-indent: 2.5em;
 }
-
-// Correct Indentation
 
 #page {
   p:first-of-type, h1 + p, h2 + p, h3 + p, blockquote + p, ol + p, ul + p {
@@ -212,6 +212,8 @@ ol, ul {
 ol li:not(:last-of-type) {
   margin-bottom: 1em;
 }
+
+//*/
 
 #siteWrapper {
   .body-font;
@@ -1199,11 +1201,7 @@ body:not(.collection-type-gallery).banner-button-corner-style-pill {
   a,
   a:visited,
   label {
-    font-family: "bro", Arial, sans-serif;
-    font-style: normal;
-    font-size: 18px;
-    text-transform: capitalize;
-    text-decoration: none;
+    .nav-font;
     line-height: 1em;
     color: @navColor;
     &:hover {
@@ -2293,10 +2291,4 @@ html.touch {
 
 #footer .html-block a:hover {
   color: #808080;
-}
-
-@media only screen and (max-width: 640px) {
-  #siteWrapper, h2 {
-    font-size: 21px;
-  }
 }
