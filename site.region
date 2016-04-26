@@ -99,9 +99,9 @@
                               <div class="post{.main-image?}{.or} no-main-image{.end} content-fill" data-slide-id="{id}">
 
                                 <div class="title-desc-wrapper">
-                                  <time class="dt-published published post-date" datetime="{addedOn|date %F}" pubdate>{addedOn|date %B %e, %Y}</time>
+                                  <!--<time class="dt-published published post-date" datetime="{addedOn|date %F}" pubdate>{addedOn|date %B %e, %Y}</time>-->
                                   <div class="post-category">{.section categories}{.repeated section @}{@}{.alternates with}, {.end}{.end}</div>
-                                  <div class="post-author">{.section author}{displayName}{.end}</div>
+                                  <!--<div class="post-author">{.section author}{displayName}{.end}</div>-->
                                   {.section title}<div class="post-title"><a href="{fullUrl}">{@|truncate 48}</a></div>{.end}
                                   {.excerpt?}<div class="post-excerpt">{excerpt}</div>{.end}
                                   <a href="{fullUrl}" class="view-post"></a>
