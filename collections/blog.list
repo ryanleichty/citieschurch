@@ -28,10 +28,10 @@
         </div>
         {.end}
 
-        <!--<div class="entry-dateline">
+        <div class="entry-dateline">
           <time class="dt-published published entry-date" datetime="{addedOn|date %F}" pubdate><a href="{fullUrl}" class="entry-dateline-link">{addedOn|date %B %e, %Y}</a></time>
           {.if updatedOn}<time class="dt-updated updated" datetime="{updatedOn|date %F}"></time>{.end}
-        </div>-->
+        </div>
 
       </div>
 
