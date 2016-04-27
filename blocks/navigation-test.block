@@ -1,5 +1,5 @@
 {.section items}<div id="mainNavWrapper" class="nav-wrapper" data-content-field="navigation-mainNav">
-  <nav id="mainNavigation" data-content-field="navigation-mainNav">
+  <nav id="mainNavigation" data-content-field="navigation-testNav">
     {.repeated section @}
       {.collection?}
         {.index?}
