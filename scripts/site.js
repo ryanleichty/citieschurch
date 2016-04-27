@@ -1,3 +1,5 @@
+// Original
+
 Y.use('node', function (Y) {
 	window.Site = Singleton.create({
 
@@ -445,3 +447,28 @@ Y.use('node', function (Y) {
 
 	});
 });
+
+// Custom
+
+$(document).ready(function() {
+
+    function e() {
+        n.fadeIn("fast"), i.focus(), i.val("")
+    }
+
+    function t() {
+        n.fadeOut("fast"), i.blur()
+    }
+    var n = $(".search-form"),
+        i = $(".search-form-field");
+
+    $('a[href="' + n.attr("action") + '"]').click(function(t) {
+        t.preventDefault(), e()
+    }), n.click(function(e) {
+        $(e.target).is("input") || t()
+    }), i.keydown(function(e) {
+        27 == e.keyCode && e.preventDefault()
+    }), i.keyup(function(e) {
+        27 == e.keyCode && t()
+    })
+})
