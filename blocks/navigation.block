@@ -58,12 +58,6 @@
       {.end}
 
     {.end}
-
-    <div class="collection">
-      <a href="/search">
-      </a>
-    </div>
-
   </nav>
 </div>
 <!-- style below blocks out the mobile nav toggle only when nav is loaded -->
