@@ -18,7 +18,7 @@
     <input type="checkbox" name="mobile-nav-toggle" id="mobileNavToggle" class="mobile-nav-toggle-box hidden" /><a href="#" class="body-overlay"></a>
     <div class="sqs-announcement-bar-dropzone"></div>
     <div id="sidecarNav">
-      <squarespace:navigation-test navigationId="mainNav" template="mobile-navigation" />
+      <squarespace:navigation navigationId="mainNav" template="mobile-navigation" />
     </div>
     <div id="siteWrapper" class="clearfix">
 
@@ -34,7 +34,7 @@
             {.end}
           </div>{.end}<!-- comment the linebreak between these two elements because science
           --><label for="mobileNavToggle" class="mobile-nav-toggle-label"><div class="top-bar"></div><div class="middle-bar"></div><div class="bottom-bar"></div></label><label for="mobileNavToggle" class="mobile-nav-toggle-label fixed-nav-toggle-label"><div class="top-bar"></div><div class="middle-bar"></div><div class="bottom-bar"></div></label><!-- comment the linebreak between these two elements because science
-          --><div id="headerNav"><squarespace:navigation navigationId="mainNav" template="navigation" /></div>
+          --><div id="headerNav"><squarespace:navigation navigationId="testNav" template="navigation-test" /></div>
         </div>
       </header>
 
