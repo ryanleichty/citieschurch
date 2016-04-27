@@ -304,8 +304,8 @@
       </footer>
 
     </div>
-    
-    <form action="/search" method="get" class="search-form" style="display: block;">
+
+    <form action="/search" method="get" class="search-form">
       <fieldset class="search-form-fieldset container">
         <input type="search" name="q" class="search-form-field" autocomplete="off">
       </fieldset>
