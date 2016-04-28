@@ -608,9 +608,9 @@ body:not(.has-banner-image),
 #page {
   .border-box;
   width: auto;
-  margin: auto;
-  max-width: @pageWidth;
-  padding: (@sitePadding * 3) @sitePadding;
+  margin: 0 @siteMargin;
+  max-width: none;
+  padding: @siteMargin 0;
 
   .font-smoothing(@pageBgColor);
 }
@@ -2224,12 +2224,6 @@ html.touch {
 
 .header-inner {
   padding: 30px 0;
-}
-
-#page {
-  margin: 0 @siteMargin;
-  max-width: none;
-  padding: @siteMargin @gridPadding;
 }
 
 .footer-inner, .pre-footer-inner {
