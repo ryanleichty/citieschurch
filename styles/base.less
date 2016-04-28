@@ -2443,3 +2443,50 @@ html.touch {
     left: inherit;
     right: 15px;
 }
+
+.blog-list {
+
+
+
+}
+
+.page-list, .blog-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  article header h1 {
+    font-size: 24px;
+  }
+
+  article {
+    width: 25%;
+    padding: @gridPadding;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  .excerpt-thumb {
+    display: block;
+    width: 100%;
+    margin: 0 0 @gridPadding 0;
+    overflow: hidden;
+    a {
+      display: block;
+      height: 100%;
+      padding-bottom: 66.6667%;
+      position: relative;
+      img {
+        position: absolute;
+      }
+    }
+  }
+
+  .blog-home:nth-of-type(-n+4) {
+    width: 50%;
+  }
+
+  .entry-morefrom:after {
+    content: " ·";
+    margin: 0 .3em;
+  }
+}
