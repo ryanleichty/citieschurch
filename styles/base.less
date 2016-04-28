@@ -8,7 +8,11 @@
 @pageWidthNarrow: 700px;
 @galleryHeight: 600px;
 
-@sitePadding-2: 5.5556%;
+@sitePadding-2: 4.1667%;
+
+// Global Site Margin and Padding
+@siteMargin: 4.1667%;
+@gridPadding: 20px;
 
 
 // Mixins
@@ -2130,8 +2134,8 @@ html.touch {
 }
 
 .pagination {
-  margin: 0 5.555% !important;
-  padding: 5.555% 0 !important;
+  margin: 0 @siteMargin !important;
+  padding: @siteMargin @gridPadding !important;
   .older, .newer {
     width: 50%;
   }
@@ -2223,14 +2227,14 @@ html.touch {
 }
 
 #page {
-  margin: 0 5.555%;
+  margin: 0 @siteMargin;
   max-width: none;
-  padding: 5.555% 0;
+  padding: @siteMargin @gridPadding;
 }
 
 .footer-inner, .pre-footer-inner {
-    margin: 0 5.555%;
-    padding: 50px 0;
+    margin: 0 @siteMargin;
+    padding: 50px @gridPadding;
     max-width: none;
 }
 
@@ -2383,7 +2387,8 @@ html.touch {
 .sqs-search-page-more-wrapper {
     width: 100%;
     text-align: center;
-    margin-top: 5.5556%;
+    margin-top: @siteMargin;
+    padding: 0 @gridPadding;
 }
 
 .sqs-search-page-more-wrapper span {
