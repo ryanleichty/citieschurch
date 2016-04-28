@@ -2450,15 +2450,19 @@ html.touch {
   display: flex;
   flex-wrap: wrap;
 
-  article header h1 {
-    font-size: 24px;
-  }
-
   article {
     width: 25%;
     padding: @gridPadding;
     box-sizing: border-box;
     text-align: center;
+  }
+
+  article.article-home {
+    width: 50%;
+  }
+
+  article h1 {
+    font-size: 18px;
   }
 
   .excerpt-thumb {
@@ -2480,9 +2484,16 @@ html.touch {
   .blog-home:nth-of-type(-n+4) {
     width: 50%;
   }
+}
 
-  .entry-morefrom:after {
-    content: " ·";
-    margin: 0 .3em;
+.page-list, .blog-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  article {
+    width: 25%;
+    padding: @gridPadding;
+    box-sizing: border-box;
+    text-align: center;
   }
 }
