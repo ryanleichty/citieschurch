@@ -20,10 +20,18 @@
 
     <form action="/search" method="get" class="search-form">
     <fieldset class="search-form-fieldset container">
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 33 33" enable-background="new 0 0 33 33" xml:space="preserve">
+        <line fill="none" stroke="#1a1a1a" stroke-width="4" stroke-linecap="square" x1="30" y1="3.3" x2="3.3" y2="30"></line>
+        <line fill="none" stroke="#1a1a1a" stroke-width="4" stroke-linecap="square" x1="30" y1="30" x2="3" y2="3"></line>
+      </svg>
       <input type="search" name="q" class="search-form-field" autocomplete="off">
     </fieldset>
     </form>
 
+    <script src="//code.jquery.com/jquery-2.2.1.min.js"></script>
+    <script>
+     window.jQuery || document.write('<script src="scripts/jquery-2.2.1.min.js"><\/script>')
+    </script>
     <squarespace:script src="site.js" combo="true" />
     <squarespace:script src="helpers.js" combo="true" />
     <squarespace:script src="sticky.js" combo="true" />
