@@ -639,6 +639,14 @@ body:not(.has-banner-image),
 #content {
   width: 100%;
   display: block;
+  // Corrects Squarespace grid to accomodate my grid
+  .sqs-layout {
+      padding: @siteMargin;
+  }
+}
+
+#content .sqs-layout {
+    padding: 20px;
 }
 
 .collection-type-page #content {
