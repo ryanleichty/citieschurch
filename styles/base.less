@@ -490,7 +490,7 @@ blockquote {
 .pre-footer-inner { max-width: @pageWidth; }
 
 #header {
-  padding: 0 @sitePadding-2;
+  padding: 0 calc(@siteMargin + @gridPadding);
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
@@ -2442,12 +2442,6 @@ html.touch {
 .sqs-search-page-input .spinner-wrapper {
     left: inherit;
     right: 15px;
-}
-
-.blog-list {
-
-
-
 }
 
 .page-list, .blog-list {
