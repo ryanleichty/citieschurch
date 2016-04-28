@@ -8,10 +8,6 @@
     {squarespace-headers}
     <script>/* Must be below squarespace-headers */(function(){var e='ontouchstart'in window||navigator.msMaxTouchPoints;var t=document.documentElement;if(!e&&t){t.className=t.className.replace(/touch-styles/,'')}})()
     </script>
-    <script src="//code.jquery.com/jquery-2.2.1.min.js"></script>
-    <script>
-       window.jQuery || document.write('<script src="scripts/jquery-2.2.1.min.js"><\/script>')
-    </script>
   </head>
 
   <body id="{squarespace.page-id}" class="{squarespace.page-classes}{.if item}{.section item}{.if productType}{.or}{.main-image?} has-banner-image item-main-image{.end}{.end}{.end}{.or}{.section collection}{.collectionTypeNameEquals? index}{.section collections}{.section 0}{.main-image?} has-banner-image index-page{.end}{.end}{.end}{.or}{.main-image?} has-banner-image general-page{.end}{.end}{.end}{.end}">
@@ -315,6 +311,10 @@
       </fieldset>
     </form>
 
+    <script>
+       window.jQuery || document.write('<squarespace:script src="scripts/jquery-2.2.1.min.js" combo="true" />')
+    </script>
+    <squarespace:script src="//code.jquery.com/jquery-2.2.1.min.js" combo="true" />
     <squarespace:script src="site.js" combo="true" />
     <squarespace:script src="helpers.js" combo="true" />
     <squarespace:script src="sticky.js" combo="true" />
