@@ -32,28 +32,6 @@
     margin: 0 auto;
   }
 
-  .blog-list {
-    display: flex;
-    flex-wrap: wrap;
-
-    article {
-      width: 25%;
-      padding: @gridPadding;
-      box-sizing: border-box;
-      text-align: center;
-    }
-
-    .blog-home:nth-of-type(-n+4) {
-      width: 50%;
-    }
-
-    .entry-morefrom:after {
-      content: " ·";
-      margin: 0 .3em;
-    }
-
-  }
-
   .filter-heading {
     .border-box;
     max-width: @pageWidth;
@@ -77,26 +55,6 @@
   /*.entry + .entry {
     margin-top: (@sitePadding * 4);
   }*/
-
-  article header h1 {
-    font-size: 24px;
-  }
-
-  .excerpt-thumb {
-    display: block;
-    width: 100%;
-    margin: 0 0 1em 0;
-    overflow: hidden;
-    a {
-      display: block;
-      height: 100%;
-      padding-bottom: 66.6667%;
-      position: relative;
-      img {
-        position: absolute;
-      }
-    }
-  }
 
   .p-summary {
     p:first-child { margin-top: 0; }
