@@ -192,7 +192,7 @@
                 <div class="excerpt-thumb">
                   <a href="{fullUrl}" class="excerpt-image content-fill">
 
-                    {.equal?:collection.title:"Sermons"}
+                    {.equal?:collection.title:"Journal"}
                       <span class="post-type">Sermon</span>
                     {.end}
 
