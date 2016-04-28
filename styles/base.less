@@ -490,7 +490,7 @@ blockquote {
 .pre-footer-inner { max-width: @pageWidth; }
 
 #header {
-  padding: 0 calc(@siteMargin + @gridPadding);
+  padding: 0 @siteMargin;
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
@@ -518,7 +518,7 @@ blockquote {
 }
 .header-inner {
   // position:relative;
-  padding: @headerVertPadding 0;
+  padding: @headerVertPadding @gridPadding;
   display: table;
   width: 100%;
   -webkit-box-sizing: border-box;
