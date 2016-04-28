@@ -130,6 +130,7 @@
 
       <main id="page" role="main">
         <div id="content" class="main-content" data-content-field="main-content" data-collection-id="{collection.id}" {.equal? collection.typeName "gallery"}{.or}{.equal? collection.typeName "index"}{.or}data-edit-main-image="Banner"{.end}{.end}>
+          {squarespace.main-content}
           <squarespace:query collection="journal" limit="4">
             <div class="page-list">
               {.repeated section items}
