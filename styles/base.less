@@ -2486,14 +2486,7 @@ html.touch {
   }
 }
 
-.page-list, .blog-list {
-  display: flex;
-  flex-wrap: wrap;
-
-  article {
-    width: 25%;
-    padding: @gridPadding;
-    box-sizing: border-box;
-    text-align: center;
-  }
+// Hide SQS content on home page
+.homepage #content .sqs-layout {
+    display: none;
 }
