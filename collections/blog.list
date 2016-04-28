@@ -1,12 +1,17 @@
 <div class="blog-list">
 
   {.repeated section items}
-  <article class="entry h-entry clearfix {@|item-classes} {.if pagination.prevPage} {.or} blog-home{.end}" id="article-{id}" data-item-id="{id}">
+  <article class="entry h-entry {@|item-classes} {.if pagination.prevPage} {.or} blog-home{.end}" id="article-{id}" data-item-id="{id}">
 
     {.main-image?}
     <div class="excerpt-thumb">
       <a href="{fullUrl}" class="excerpt-image content-fill">
-        <span class="post-type">{collection.title}</span>
+        {.equal?:collection.title:"Journal"}
+          <span class="post-type">Article</span>
+        {.end}
+        {.equal?:collection.title:"Sermons"}
+          <span class="post-type">Sermon</span>
+        {.end}
         <img {@|image-meta} />
       </a>
     </div>
