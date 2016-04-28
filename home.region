@@ -133,7 +133,7 @@
           <squarespace:query collection="journal" limit="4">
             <div class="page-list">
               {.repeated section items}
-              <article class="entry h-entry {@|item-classes}" id="article-{id}" data-item-id="{id}">
+              <article class="article-home {@|item-classes}" id="article-{id}" data-item-id="{id}">
 
                 {.main-image?}
                 <div class="excerpt-thumb">
