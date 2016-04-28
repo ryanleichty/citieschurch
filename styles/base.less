@@ -596,7 +596,9 @@ body:not(.has-banner-image),
     a:visited
     {
       color: @footerTextColor;
-      border-bottom: 1px solid @footerTextColor;
+    }
+    a:hover {
+      text-decoration: underline;
     }
   }
   nav:not(.social-account-list) {
@@ -2288,17 +2290,6 @@ html.touch {
 
 #footer .sqs-block:last-of-type {
   padding-top: 0;
-}
-
-// Footer Link to I'm New
-
-#footer .html-block a,
-#footer .html-block a:visited {
-	border-bottom: none;
-}
-
-#footer .html-block a:hover {
-  text-decoration: underline;
 }
 
 //// Search ////
