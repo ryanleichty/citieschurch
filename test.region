@@ -1,7 +1,7 @@
       <main id="page" role="main">
         <div id="content" class="main-content" data-content-field="main-content" data-collection-id="{collection.id}" {.equal? collection.typeName "gallery"}{.or}{.equal? collection.typeName "index"}{.or}data-edit-main-image="Banner"{.end}{.end}>
           <squarespace:query collection="sermons" limit="4">
-          {.equal?:customContent.sermonSeries:"The Summer Letters"}
+          {.equal?:collection:customContent:sermonSeries:"The Summer Letters"}
             <div class="page-list">
               {.repeated section items}
               <article class="article-home {@|item-classes}" id="article-{id}" data-item-id="{id}">
