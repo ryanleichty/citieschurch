@@ -95,8 +95,9 @@
                 // Let's also add a marker while we're at it
                 var marker = new google.maps.Marker({
                     position: new google.maps.LatLng(44.9455762, -93.2075663),
+                    icon: 'http://w-v.co/img/marker.svg',
                     map: map,
-                    title: 'Snazzy!'
+                    title: 'Cities Church'
                 });
             }
         </script>
