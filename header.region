@@ -8,12 +8,13 @@
     {squarespace-headers}
     <script>/* Must be below squarespace-headers */(function(){var e='ontouchstart'in window||navigator.msMaxTouchPoints;var t=document.documentElement;if(!e&&t){t.className=t.className.replace(/touch-styles/,'')}})()
     </script>
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB8zoVAxrXfJ9ciNvS8RZxSJW2P204fWpQ&sensor=false"></script>
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB8zoVAxrXfJ9ciNvS8RZxSJW2P204fWpQ&callback=initMap">
+    </script>
     <script type="text/javascript">
             // When the window has finished loading create our google map below
-            google.maps.event.addDomListener(window, 'load', init);
 
-            function init() {
+            function initMap() {
                 // Basic options for a simple Google Map
                 // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
                 var mapOptions = {
