@@ -1,52 +1,5 @@
-      <main id="page" role="main">
-        <div id="content" class="main-content" data-content-field="main-content" data-collection-id="{collection.id}" {.equal? collection.typeName "gallery"}{.or}{.equal? collection.typeName "index"}{.or}data-edit-main-image="Banner"{.end}{.end}>
-          <squarespace:query collection="sermons" limit="50">
-          {.section collection}
-          {.equal?:customContent.sermonSeries:"The Summer Letters"}
-            <div class="page-list">
-              {.repeated section items}
-              <article class="article-home {@|item-classes}" id="article-{id}" data-item-id="{id}">
-
-                {.main-image?}
-                <div class="excerpt-thumb">
-                  <a href="{fullUrl}" class="excerpt-image content-fill">
-                    {.equal?:collection.title:"Journal"}
-                      <span class="post-type">Article</span>
-                    {.end}
-                    <img {@|image-meta} />
-                  </a>
-                </div>
-                {.end}
-
-                <header class="entry-header">
-
-                  <div class="meta-above-title">
-
-                    {.section author}
-                    <div class="entry-byline">
-                      <span class="entry-author"><a href="{collection.fullUrl}?author={author.id}" class="p-author author entry-byline-link" rel="author">{displayName}</a></span>
-                    </div>
-                    {.end}
-
-                  </div>
-
-                  <h1 data-content-field="title" class="entry-title p-name">
-                  {.passthrough?}
-                    <a href="{sourceUrl}" class="entry-title-passthrough" target="_blank">{title}</a>
-                  {.or}
-                    <a href="{fullUrl}" class="u-url" rel="bookmark">{title}</a>
-                  {.end}
-                  </h1>
-
-                </header>
-
-              </article>
-              {.end}
-
-            </div>
-          {.end}
-          {.end}
-          </squarespace:query>
-
-        </div>
-      </main>
+<main id="page" role="main">
+  <div id="content" class="main-content" data-content-field="main-content" data-collection-id="{collection.id}" {.equal? collection.typeName "gallery"}{.or}{.equal? collection.typeName "index"}{.or}data-edit-main-image="Banner"{.end}{.end}>
+    <div id="map" style="width: 200px; height:200px; position: relative; overflow: hidden; transform: translateZ(0px); background-color: rgb(229, 227, 223);"></div>
+  </div>
+</main>
