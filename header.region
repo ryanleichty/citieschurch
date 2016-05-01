@@ -22,7 +22,7 @@
                     zoom: 13,
 
                     // The latitude and longitude to center the map (always required)
-                    center: new google.maps.LatLng(93.2077582, -93.2077582),
+                    center: new google.maps.LatLng(44.9459555, -93.2077582),
 
                     disableDefaultUI: true,
                     scrollwheel: false,
