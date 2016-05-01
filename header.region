@@ -100,6 +100,11 @@
                     map: map,
                     title: 'Cities Church'
                 });
+
+                var marker-two = new google.maps.Marker({
+                    position: new google.maps.LatLng(44.930376, -93.2140126),
+                    map: map,
+                });
             }
         </script>
   </head>
