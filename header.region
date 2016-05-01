@@ -24,7 +24,7 @@
                     // The latitude and longitude to center the map (always required)
                     center: new google.maps.LatLng(44.9459555, -93.2077582),
 
-                    disableDefaultUI: true,
+                    disableDefaultUI: false,
                     scrollwheel: false,
 
                     // How you would like to style the map.
