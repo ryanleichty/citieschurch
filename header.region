@@ -102,11 +102,9 @@
                 });*/
 
                 var locations = [
-                  ['Bondi Beach', -33.890542, 151.274856, 4],
-                  ['Coogee Beach', -33.923036, 151.259052, 5],
-                  ['Cronulla Beach', -34.028249, 151.157507, 3],
-                  ['Manly Beach', -33.80010128657071, 151.28747820854187, 2],
-                  ['Maroubra Beach', -33.950198, 151.259302, 1]
+                  ['Cities Church', 44.9459555, -93.2077582, 1],
+                  ['Hiawatha', 44.930376,-93.2140126, 2],
+                  ['Falcon Heights', 44.993732,-93.1673087, 3]
                 ];
 
                 var infowindow = new google.maps.InfoWindow();
