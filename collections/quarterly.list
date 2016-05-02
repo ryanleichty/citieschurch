@@ -14,10 +14,12 @@
     <header class="entry-header">
 
       <div class="meta-above-title">
+        {.if customContent.volumeNumber}
         {.section customContent}
         <div class="entry-byline">
           <span class="entry-author">Volume {volumeNumber}</span>
         </div>
+        {.end}
         {.end}
       </div>
 
