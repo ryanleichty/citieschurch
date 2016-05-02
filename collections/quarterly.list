@@ -15,11 +15,9 @@
 
       <div class="meta-above-title">
         {.if customContent.volumeNumber}
-        {.section customContent}
-        <div class="entry-byline">
-          <span class="entry-author">Volume {volumeNumber}</span>
-        </div>
-        {.end}
+          <div class="entry-byline">
+            <span class="entry-author">Volume {customContent.volumeNumber}</span>
+          </div>
         {.end}
       </div>
 
