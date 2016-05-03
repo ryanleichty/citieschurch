@@ -21,7 +21,8 @@
         <h1 data-content-field="title" class="quarterly-title">{title}</h1>
 
       </header>
-
+      
+      <hr>
       <a href="{customContent.amazonURL}" class="quarterly-button">Purchase</a>
 
       <div class="entry-content e-content">
