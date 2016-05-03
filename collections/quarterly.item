@@ -3,9 +3,7 @@
 
     {.main-image?}
     <div class="quarterly-thumb">
-      <a href="{fullUrl}">
-        <img {@|image-meta} />
-      </a>
+      <img {@|image-meta} />
     </div>
     {.end}
 
