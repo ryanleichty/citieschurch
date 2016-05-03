@@ -21,9 +21,17 @@
         <h1 data-content-field="title" class="quarterly-title">{title}</h1>
 
       </header>
-      
+
       <hr>
-      <a href="{customContent.amazonURL}" class="quarterly-button">Purchase</a>
+      <div class="buttons-block">
+        <div class="buttons-inline">
+          <a href="{customContent.amazonURL}" class="quarterly-button">Purchase</a>
+          <div>
+            or</br>
+            <a href="{customContent.pdfURL}">Download Free PDF</a>
+          </div>
+        </div>
+      </div>
 
       <div class="entry-content e-content">
         {.section body}
