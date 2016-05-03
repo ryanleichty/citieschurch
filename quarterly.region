@@ -8,10 +8,14 @@
                 </div>
               {.end}
             {.or}
-              {.main-image?}
+              {.if customContent.bannerImage}
                 <div class="banner-thumbnail-wrapper" data-content-field="main-image">
                   <div class="color-overlay"></div>
-                  <figure id="thumbnail" class="loading content-fill"><img {@|image-meta} /></figure>
+                  <figure id="thumbnail" class="loading content-fill">
+                    {.section customContent.bannerImage}
+                      <img {@|image-meta} />
+                    {.end}
+                  </figure>
                   <div class="blog-item-wrapper">
                     <div class="title-desc-wrapper">
                       <!--{.section title}<div class="post-title">{@}</div>{.end}-->
