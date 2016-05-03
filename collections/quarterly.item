@@ -46,6 +46,8 @@
 
       </header>
 
+      <a href="{customContent.amazonURL}" class="sqs-block-button-element--large sqs-block-button-element">Purchase</a>
+
       <div class="entry-content e-content">
         {.section body}
           {@}
