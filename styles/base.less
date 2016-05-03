@@ -139,14 +139,20 @@ body {
  * Lineto.com, 2016
  */
 
- @font-face {
-     font-family: "Brown-Regular";
-     src:url("assets/fonts/lineto-brown-regular.eot");
-     src:url("assets/fonts/lineto-brown-regular.eot?#iefix") format("embedded-opentype"),
-         url("assets/fonts/lineto-brown-regular.woff") format("woff");
-     font-weight: normal;
-     font-style: normal;
- }
+@font-face {
+   font-family: "Brown-Regular";
+   src:url("assets/fonts/lineto-brown-regular.eot");
+   src:url("assets/fonts/lineto-brown-regular.eot?#iefix") format("embedded-opentype"),
+       url("assets/fonts/lineto-brown-regular.woff") format("woff");
+   font-weight: normal;
+   font-style: normal;
+}
+
+.brown-regular {
+  font-family: "Brown-Regular";
+  font-weight: normal;
+  font-style: normal;
+}
 
 // Portrait Regular
 
@@ -2580,5 +2586,6 @@ html.touch {
 
 .quarterly-title {
   margin: 0;
+  .brown-regular
   font-size: 48px;
 }
