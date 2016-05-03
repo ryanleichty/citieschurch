@@ -2,8 +2,8 @@
   <article class="quarterly-item {@|item-classes}{.main-image?} has-main-image{.end} clear" id="article-{id}" data-item-id="{id}">
 
     {.main-image?}
-    <div class="quarterly-img">
-      <a href="{fullUrl}" class="content-fit">
+    <div class="quarterly-thumb">
+      <a href="{fullUrl}">
         <img {@|image-meta} />
       </a>
     </div>
