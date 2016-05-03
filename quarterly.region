@@ -127,7 +127,6 @@
           {.end}
         {.end}
       {.end}
-    -->
 
       <main id="page" role="main">
         <div id="content" class="main-content" data-content-field="main-content" data-collection-id="{collection.id}" {.equal? collection.typeName "gallery"}{.or}{.equal? collection.typeName "index"}{.or}data-edit-main-image="Banner"{.end}{.end}>
