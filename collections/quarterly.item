@@ -5,7 +5,7 @@
 
     {.main-image?}
     <div class="quarterly-img">
-      <a href="{fullUrl}" class="content-fill">
+      <a href="{fullUrl}" class="content-fit">
         <img {@|image-meta} />
       </a>
     </div>
