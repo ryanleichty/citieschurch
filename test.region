@@ -286,12 +286,14 @@
           <div class="q-thumb">
           </div>
           <div class="q-volume">
-            {.repeated section items}
-              <div class="volume-container">
-                <span class="v-number">Volume {customContent.volumeNumber}</span>
-                <span class="v-title">{.title}</span>
-              </div>
-            {.end}
+            <squarespace:query collection="the-quarterly-overview" limit="5">
+              {.repeated section items}
+                <div class="volume-container">
+                  <span class="v-number">Volume {customContent.volumeNumber}</span>
+                  <span class="v-title">{.title}</span>
+                </div>
+              {.end}
+            </squarespace:query>
           </div>
           <div class="post-more">
             <a href="/the-quarterly/">View More →</a>
