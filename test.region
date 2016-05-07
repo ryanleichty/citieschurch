@@ -276,3 +276,19 @@
 
         </div>
       </main>
+
+      <div class="quarterly-container">
+        <div class="quarterly-inner">
+          <div class="q-content">
+            <h1>The Quarterly</h1>
+            <p>The Quarterly is a publication of Cities Church that is both a Bible study guide and a magazine.</p>
+          </div>
+          <div class="q-thumb">
+          </div>
+          <div class="q-volume">
+          </div>
+          <div class="post-more">
+            <a href="/the-quarterly/">View More →</a>
+          </div>
+        </div>
+      </div>
