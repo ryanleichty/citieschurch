@@ -2704,12 +2704,20 @@ html.touch {
       box-sizing: border-box;
       .volume-container {
         width: 100%;
+        padding: @gridPadding 0;
+        border-top-width: 1px;
+        border-top-style: dotted;
+        border-top: #535353;
         .v-number {
           font: 14px/1.4em "brown-regular";
         }
         .v-title {
           font: 18px/1.4em "brown-regular";
         }
+      }
+      .volume-container:first-of-type {
+        border: none;
+        padding: 0 0 @gridPadding;
       }
     }
 
