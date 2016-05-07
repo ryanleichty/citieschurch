@@ -289,8 +289,8 @@
             <squarespace:query collection="the-quarterly-overview" limit="5">
               {.repeated section items}
                 <div class="volume-container">
-                  <span class="v-number">Volume {customContent.volumeNumber}</span>
-                  <span class="v-title">{.title}</span>
+                  <div class="v-number">Volume {customContent.volumeNumber}</div>
+                  <div class="v-title">{.title}</div>
                 </div>
               {.end}
             </squarespace:query>
