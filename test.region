@@ -298,7 +298,7 @@
           <a href="https://twitter.com/citieschurch">@citieschurch</a>
         </div>
         <div class="twitter-content">
-          <squarespace:block-field id="twitterBlock" columns="1" lock-layout="false"/>
+          <squarespace:block-field id="twitterBlock" columns="1"/>
         </div>
         <div class="twitter-more">
           <a href="https://twitter.com/citieschurch">Twitter →</a>
