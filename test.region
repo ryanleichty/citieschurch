@@ -291,14 +291,14 @@
                 {.end}
               {.end}
             </div>
-            <div class="q-volume">
+            <ul class="q-volume">
                 {.repeated section items}
-                  <div class="volume-container">
+                  <li class="volume-container">
                     <div class="v-number">Volume {customContent.volumeNumber}</div>
                     <div class="v-title">{title}</div>
-                  </div>
+                  </li>
                 {.end}
-            </div>
+            </ul>
           </squarespace:query>
           <div class="post-more">
             <a href="/the-quarterly/">View More →</a>
