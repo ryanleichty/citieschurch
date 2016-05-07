@@ -2507,7 +2507,7 @@ html.touch {
     right: 15px;
 }
 
-.page-list, .blog-list, .quarterly-list {
+.post-list, .page-list, .blog-list, .quarterly-list {
   display: flex;
   flex-wrap: wrap;
 
@@ -2615,4 +2615,38 @@ html.touch {
 .quarterly-button:hover {
   background-color: #1a1a1a;
   color: #fff;
+}
+
+//// Homepage ////
+
+.intro-content {
+  width: 100%
+  margin-bottom: 2em;
+  h1 {
+    font-size: 36px;
+  }
+  a {
+    display: block;
+    font-size: 16px;
+    color: #808080;
+  }
+}
+
+.post-list {
+  .post-section {
+    width: 50%;
+    padding: @gridPadding;
+    h1 {
+      font-size: 36px;
+    }
+  }
+  .post-more {
+    width: 50%;
+    padding: @gridPadding;
+    a {
+      font-size: 16px;
+      text-align: right;
+      color: #808080;
+    }
+  }
 }
