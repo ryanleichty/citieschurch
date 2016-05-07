@@ -301,6 +301,6 @@
           <squarespace:block-field id="twitterBlock" columns="1"/>
         </div>
         <div class="twitter-more">
-          <a href="https://twitter.com/citieschurch">Twitter →</a>
+          <a href="https://twitter.com/citieschurch" target="_blank">Twitter →</a>
         </div>
       </div>
