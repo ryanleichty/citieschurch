@@ -2621,13 +2621,14 @@ html.touch {
 
 .intro-content {
   width: 100%;
-  margin-bottom: 2em;
+  padding: @gridPadding;
+  margin-bottom: 4em;
   h1 {
-    font-size: 36px;
+    font: 36px/1.4em "brown-regular";
   }
   a {
     display: block;
-    font-size: 16px;
+    font: 16px/1.4em "brown-regular";
     color: #808080;
   }
 }
@@ -2636,16 +2637,18 @@ html.touch {
   .post-section {
     width: 50%;
     padding: @gridPadding;
+    box-sizing: border-box;
     h1 {
-      font-size: 36px;
+      font: 36px/1.4em "brown-regular";
     }
   }
   .post-more {
     width: 50%;
     padding: @gridPadding;
+    box-sizing: border-box;
+    text-align: right;
     a {
-      font-size: 16px;
-      text-align: right;
+      font: 16px/1.4em "brown-regular";
       color: #808080;
     }
   }
