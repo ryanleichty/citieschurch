@@ -290,7 +290,7 @@
               {.repeated section items}
                 <div class="volume-container">
                   <div class="v-number">Volume {customContent.volumeNumber}</div>
-                  <div class="v-title">{.title}</div>
+                  <div class="v-title">{title}</div>
                 </div>
               {.end}
             </squarespace:query>
