@@ -2666,8 +2666,7 @@ html.touch {
   .border-box;
   width: auto;
   max-width: none;
-  margin: 0 @siteMargin;
-  padding: @siteMargin 0;
+  padding: @siteMargin;
   background-color: #000;
   .quarterly-inner {
     display: flex;
@@ -2677,6 +2676,14 @@ html.touch {
       width: 25%;
       padding: @gridPadding;
       box-sizing: border-box;
+      h1 {
+        font: 36px/1em "brown-regular";
+        color: #fff;
+      }
+      p {
+        font: 18px/1.4em "brown-regular";
+        color: #fff;
+      }
     }
 
     .q-thumb {
