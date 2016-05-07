@@ -2661,3 +2661,48 @@ html.touch {
     }
   }
 }
+
+.quarterly-container {
+  .border-box;
+  width: auto;
+  max-width: none;
+  margin: 0 @siteMargin;
+  padding: @siteMargin 0;
+  background-color: #000;
+  .quarterly-inner {
+    display: flex;
+    flex-wrap: wrap;
+
+    .q-content {
+      width: 25%;
+      padding: @gridPadding;
+      box-sizing: border-box;
+    }
+
+    .q-thumb {
+      width: 50%;
+      padding: @gridPadding;
+      box-sizing: border-box;
+    }
+
+    .q-volume {
+      width: 12.5%;
+      padding: @gridPadding;
+      box-sizing: border-box;
+    }
+
+    .post-more {
+      width: 12.5%;
+      padding: @gridPadding;
+      box-sizing: border-box;
+      text-align: right;
+      a {
+        font: 16px/1em "brown-regular";
+        color: #535353;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
