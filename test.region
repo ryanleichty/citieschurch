@@ -239,7 +239,7 @@
               </div>
 
               {.repeated section items}
-              <article class="article-home {@|item-classes}" id="article-{id}" data-item-id="{id}">
+              <article class="{@|item-classes}" id="article-{id}" data-item-id="{id}">
 
                 {.main-image?}
                 <div class="excerpt-thumb">
