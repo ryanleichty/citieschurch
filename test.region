@@ -283,18 +283,25 @@
             <h1>The Quarterly</h1>
             <p>The Quarterly is a publication of Cities Church that is both a Bible study guide and a magazine.</p>
           </div>
-          <div class="q-thumb">
-          </div>
-          <div class="q-volume">
-            <squarespace:query collection="the-quarterly-overview" limit="5">
+          <squarespace:query collection="the-quarterly-overview" limit="5">
+            <div class="q-thumb">
               {.repeated section items}
-                <div class="volume-container">
-                  <div class="v-number">Volume {customContent.volumeNumber}</div>
-                  <div class="v-title">{title}</div>
-                </div>
+                {.main-image?}
+                  <div class="quarterly-thumb">
+                    <img {@|image-meta} />
+                  </div>
+                {.end}
               {.end}
-            </squarespace:query>
-          </div>
+            </div>
+            <div class="q-volume">
+                {.repeated section items}
+                  <div class="volume-container">
+                    <div class="v-number">Volume {customContent.volumeNumber}</div>
+                    <div class="v-title">{title}</div>
+                  </div>
+                {.end}
+            </div>
+          </squarespace:query>
           <div class="post-more">
             <a href="/the-quarterly/">View More →</a>
           </div>
