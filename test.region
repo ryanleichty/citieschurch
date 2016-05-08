@@ -169,9 +169,11 @@
 
           {squarespace.main-content}
 
-          <div class="intro-content">
-            <h1>Cities Church is a gospel community in Minneapolis–St. Paul committed to worshiping Jesus, loving one another, and seeking the good of the Cities. Jesus, one another, and the Cities.</h1>
-            <a href="/im-new-here/">Learn More →</a>
+          <div class="intro-container">
+            <div class="intro-inner">
+              <h1>Cities Church is a gospel community in Minneapolis–St. Paul committed to worshiping Jesus, loving one another, and seeking the good of the Cities. Jesus, one another, and the Cities.</h1>
+              <a href="/im-new-here/">Learn More →</a>
+            </div>
           </div>
 
           <squarespace:query collection="sermons" limit="4">
@@ -277,8 +279,8 @@
         </div>
       </main>
 
-      <div class="quarterly-container">
-        <div class="quarterly-inner">
+      <div class="q-container">
+        <div class="q-inner">
           <div class="q-content">
             <h1>The Quarterly</h1>
             <p>The Quarterly is a publication of Cities Church that is both a Bible study guide and a magazine.</p>
