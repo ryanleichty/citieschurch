@@ -290,7 +290,7 @@
               <div class="cycle-slideshow"
                   data-cycle-fx="scrollHorz"
                   data-cycle-speed="200"
-                  data-cycle-pause-on-hover=".q-thumb .volume-container"
+                  data-cycle-pause-on-hover=".q-thumb, .volume-container"
                   data-cycle-pager=".q-volume"
                   data-cycle-pager-template=""
                   data-cycle-pager-event="mouseover">
