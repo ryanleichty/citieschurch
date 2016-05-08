@@ -285,7 +285,7 @@
           </div>
           <squarespace:query collection="the-quarterly-overview" limit="5">
             <div class="q-thumb">
-              <div class="cycle-slideshow" data-cycle-fx="scrollLeft">
+              <div class="cycle-slideshow" data-cycle-fx="scrollHorz">
                 {.repeated section items}
                   {.main-image?}
                     <img {@|image-meta} />
