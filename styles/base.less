@@ -2619,10 +2619,12 @@ html.touch {
 
 //// Homepage ////
 
-.intro-content {
+.intro-container {
   width: 100%;
-  padding: @gridPadding;
   margin-bottom: (@siteMargin * 2);
+  .intro-inner {
+    padding: @gridPadding;
+  }
   h1 {
     font: 36px/1.4em "brown-regular";
   }
@@ -2662,14 +2664,14 @@ html.touch {
   }
 }
 
-.quarterly-container {
+.q-container {
   .border-box;
   width: auto;
   max-width: none;
   padding: calc(@siteMargin * 2) @siteMargin;
   background-color: #000;
   color: #fff;
-  .quarterly-inner {
+  .q-inner {
     display: flex;
     flex-wrap: wrap;
 
