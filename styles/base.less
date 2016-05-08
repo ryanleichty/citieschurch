@@ -2694,10 +2694,22 @@ html.touch {
       width: 50%;
       padding: @gridPadding;
       box-sizing: border-box;
+      position: relative;
       img {
         width: 100%;
         height: auto;
+        position:  absolute;
+      	top: 0;
+      	left: 0;
+      	bottom: 0;
+      	right: 0;
       }
+    }
+
+    .q-thumb:before{
+    	content: "";
+    	display: block;
+    	padding-top: 141.4%; 	/* initial ratio of 1:1*/
     }
 
     .q-volume {
