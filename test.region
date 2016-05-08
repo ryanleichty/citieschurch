@@ -290,7 +290,7 @@
               <div class="cycle-slideshow"
                   data-cycle-fx="scrollHorz"
                   data-cycle-speed="200"
-                  data-cycle-pause-on-hover=".q-thumb, .volume-container"
+                  data-cycle-pause-on-hover=".q-thumb, .v-container"
                   data-cycle-pager=".q-volume"
                   data-cycle-pager-template=""
                   data-cycle-pager-event="mouseover">
@@ -303,7 +303,7 @@
             </div>
             <ul class="q-volume">
               {.repeated section items}
-                <li class="volume-container">
+                <li class="v-container">
                   <div class="v-number">Volume {customContent.volumeNumber}</div>
                   <div class="v-title">{title}</div>
                 </li>
