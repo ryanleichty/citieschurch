@@ -287,6 +287,7 @@
             <div class="q-thumb">
               <div class="cycle-slideshow"
                   data-cycle-fx="scrollHorz"
+                  data-cycle-speed="200"
                   data-cycle-pause-on-hover="true"
                   data-cycle-pager=".q-volume"
                   data-cycle-pager-template=""
