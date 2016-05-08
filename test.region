@@ -284,7 +284,7 @@
             <p>The Quarterly is a publication of Cities Church that is both a Bible study guide and a magazine.</p>
           </div>
           <squarespace:query collection="the-quarterly-overview" limit="5">
-            <div class="q-thumb">
+            <div class="q-thumb cycle-slideshow">
               {.repeated section items}
                 {.main-image?}
                   <img {@|image-meta} />
