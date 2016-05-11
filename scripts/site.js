@@ -476,6 +476,6 @@ $(document).ready(function() {
 
 // Remove Indent on New Paragraphs
 
-		$( "p:contains('\xa0') + p" ).next().css( "text-indent", "0" );
+		$( "p:contains('\xa0')" ).next().css( "text-indent", "0" );
 
 })
