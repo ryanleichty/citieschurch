@@ -243,31 +243,58 @@ body:not(.button-style-default) .sqs-editable-button, body:not(.button-style-def
     color: #000;
 }
 
-/*// Indentation
+// Indentation
 
-#page p  {
-  	-webkit-margin-before: 0;
-  	-webkit-margin-after: 0;
-    text-indent: 2.5em;
-}
+@textIndent: 2.5em;
 
 #page {
-  p:first-of-type, h1 + p, h2 + p, h3 + p, blockquote + p, ol + p, ul + p {
-    text-indent: 0;
+
+  p  {
+    	margin: 0;
+      text-indent: @textIndent;
   }
-}
 
-blockquote {
-    -webkit-margin-before: 1em;
-  	-webkit-margin-after: 1em;
-}
+  p:first-of-type {
+      text-indent: 0;
+  }
 
-ol, ul {
-    -webkit-padding-start: 2.5em;
-}
+  h1 , h2 , h3 , blockquote , ol, ul {
+    + p {
+      text-indent: 0;
+    }
+  }
 
-ol li:not(:last-of-type) {
-  margin-bottom: 1em;
+  blockquote {
+      margin: 1em 0;
+  }
+
+  ol, ul {
+      padding-left: @textIndent;
+      margin-top: 1em;
+      margin-bottom: 0;
+  }
+
+  ol , ul {
+    + p {
+      margin-top: 1em;
+    }
+  }
+
+  p[style*="margin-left"] {
+      margin-top: 1em;
+      text-indent: 0;
+  }
+
+  p[style*="margin-left"] + p[style*="margin-left"] {
+      margin-top: 0;
+      text-indent: @textIndent;
+  }
+
+  p[style*="margin-left"] + p {
+      margin-top: 1em;
+      text-indent: 0;
+  }
+
 }
 
 //*/
