@@ -205,7 +205,7 @@ body {
 }
 
 // Text Rendering
-#siteWrapper, h1, h2, h3 {
+#siteWrapper, h1, h2, h3, h4, h5, h6, p, a, article, blockquote {
   text-rendering: geometricPrecision;
 }
 
@@ -231,10 +231,6 @@ body {
 body:not(.button-style-default) .sqs-editable-button, body:not(.button-style-default) .sqs-editable-button-font
 {
   font-family: 'Brown-Regular', Arial, sans-serif !important;
-}
-
-h1, h2, h3 {
-  margin: 2em 0 1em 0;
 }
 
 h2 {
@@ -352,7 +348,7 @@ h1,
 h2,
 h3,
 .entry-title {
-  margin: 1em 0 0.5em;
+  margin: 2em 0 1em;
   &:first-child { margin-top: 0; }
 }
 
@@ -1029,7 +1025,7 @@ li.filter {
       height:auto !important;
       overflow-y:visible !important;
 
-      text-rendering: optimizeLegibility;
+      text-rendering: geometricPrecision;
 
       .meta-inside {
         padding: 0 @sitePadding;
@@ -1193,7 +1189,7 @@ li.filter {
   padding: @sitePadding;
   text-align: center;
 
-  text-rendering: optimizeLegibility;
+  text-rendering: geometricPrecision;
 
   p {
     .banner-text-font;
