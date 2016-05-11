@@ -476,6 +476,6 @@ $(document).ready(function() {
 
 // Remove Indent on New Paragraphs
 
-		$( "p:contains(' ') + p" ).css( "color", "blue" );
+		$( "p:contains(' ')+p" ).css( "color", "blue" );
 
 })
