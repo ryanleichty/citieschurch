@@ -452,6 +452,8 @@ Y.use('node', function (Y) {
 
 $(document).ready(function() {
 
+// Search Function
+
     function e() {
         n.fadeIn("fast"), i.focus(), i.val("")
     }
@@ -471,4 +473,9 @@ $(document).ready(function() {
     }), i.keyup(function(e) {
         27 == e.keyCode && t()
     })
+
+// Remove Indent on New Paragraphs
+
+		$( "p:contains('&nbsp;') + p" ).css( "text-indent", "0" );
+
 })
