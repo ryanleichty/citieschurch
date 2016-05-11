@@ -36,9 +36,6 @@
     <squarespace:script src="site.js" combo="true" />
     <squarespace:script src="helpers.js" combo="true" />
     <squarespace:script src="sticky.js" combo="true" />
-    <script>
-    $(document).ready(function() { $( "p:contains(' ') + p" ).css( "color", "blue" );})
-    </script>
     {.if authenticatedAccount}<squarespace:script src="authenticated.js" combo="false" />{.end}
     {squarespace-footers}
 
