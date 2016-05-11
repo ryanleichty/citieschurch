@@ -474,4 +474,8 @@ $(document).ready(function() {
         27 == e.keyCode && t()
     })
 
+// Remove Indent on New Paragraphs
+
+		$( "p:contains(' ') + p" ).css( "color", "blue" );
+
 })
