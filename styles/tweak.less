@@ -226,11 +226,11 @@
 
 /* Sidebar */
 
-// tweak: { "type" : "checkbox", "title" : "Hide Products Sidebar", "label" : "Hide Product Category Nav", "active" : "false", "category" : "Sidebar", "target" : ".collection-type-products #page", "showOnlyWhenPresent" : "#categoryNav" }
+// tweak: { "type" : "checkbox", "title" : "Hide Products Sidebar", "label" : "Hide Product Category Nav", "active" : "true", "category" : "Sidebar", "target" : ".collection-type-products #page", "showOnlyWhenPresent" : "#categoryNav" }
 
-// tweak: { "type" : "checkbox", "title" : "Hide Page Sidebar", "active" : "false", "category" : "Sidebar", "target" : ".collection-type-page #page", "showOnlyWhenPresent" : "#folderNav" }
+// tweak: { "type" : "checkbox", "title" : "Hide Page Sidebar", "active" : "true", "category" : "Sidebar", "target" : ".collection-type-page #page", "showOnlyWhenPresent" : "#folderNav" }
 
-// tweak: { "type" : "checkbox", "title" : "Hide Sidebar Title", "active" : "false", "category" : "Sidebar", "target" : ".collection-type-page #page", "showOnlyWhenPresent" : ".collection-type-page:not(.hide-page-sidebar) .folder-nav, .collection-type-products:not(.hide-products-sidebar) .category-nav" }
+// tweak: { "type" : "checkbox", "title" : "Hide Sidebar Title", "active" : "true", "category" : "Sidebar", "target" : ".collection-type-page #page", "showOnlyWhenPresent" : ".collection-type-page:not(.hide-page-sidebar) .folder-nav, .collection-type-products:not(.hide-products-sidebar) .category-nav" }
 
 // tweak: { "category": "Sidebar", "title": "Sub Nav Title Font", "type": "font", "showOnlyWhenPresent": ".collection-type-page:not(.hide-page-sidebar):not(.hide-sidebar-title) .folder-nav, .collection-type-products:not(.hide-products-sidebar):not(.hide-sidebar-title) .category-nav", "target": "#page, nav.folder-nav, nav.category-nav" }
 .subnav-title-font {
@@ -284,6 +284,17 @@
 
 // tweak: { "type" : "color", "title" : "Footer Text Color", "category" : "Footer", "target" : "#footer" }
 @footerTextColor: #1a1a1a;
+
+// Footer Nav Font
+.footer-nav-font {
+  font-family: 'Brown-Regular', Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 16px;
+  letter-spacing: 0;
+  text-transform: capitalize;
+  text-decoration: none;
+}
 
 // tweak: { "type" : "color", "title" : "Footer Nav Link Color", "category" : "Footer", "target" : "#footer, #secondaryNavigation", "showOnlyWhenPresent" : "#secondaryNavigation" }
 @footerNavLinkColor: #1a1a1a;
