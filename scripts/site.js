@@ -476,6 +476,6 @@ $(document).ready(function() {
 
 // Remove Indent on New Paragraphs
 
-		$( "p:contains('&nbsp;') + p" ).css( "text-indent", "0" );
+		$( "p:contains(' ') + p" ).css( "text-indent", "0" );
 
 })
