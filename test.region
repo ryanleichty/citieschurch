@@ -172,7 +172,7 @@
           <div class="intro-container">
             <div class="intro-inner">
               <h1>Cities Church is a gospel community in Minneapolis–St. Paul committed to worshiping Jesus, loving one another, and seeking the good of the Cities.</h1>
-              <a href="/im-new-here/">Learn More →</a>
+              <a href="/im-new-here/">More →</a>
             </div>
           </div>
 
@@ -184,7 +184,7 @@
               </div>
 
               <div class="post-more">
-                <a href="/sermons/">View More →</a>
+                <a href="/sermons/">More →</a>
               </div>
 
               {.repeated section items}
@@ -234,7 +234,7 @@
               </div>
 
               <div class="post-more">
-                <a href="/journal/">View More →</a>
+                <a href="/journal/">More →</a>
               </div>
 
               {.repeated section items}
@@ -311,7 +311,7 @@
             </ul>
           </squarespace:query>
           <div class="post-more">
-            <a href="/the-quarterly/">View More →</a>
+            <a href="/the-quarterly/">More →</a>
           </div>
         </div>
       </div>
