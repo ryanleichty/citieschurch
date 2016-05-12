@@ -690,11 +690,14 @@ body:not(.has-banner-image),
   }
 }
 #footer{
-  color: @footerTextColor;
   .footer-font;
+  color: @footerTextColor;
   h1,
   h2,
-  h3 { color: @footerTextColor; }
+  h3 {
+    text-align: left;
+    color: @footerTextColor;
+  }
 }
 
 #page {
