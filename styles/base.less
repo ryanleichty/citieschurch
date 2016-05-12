@@ -2765,22 +2765,19 @@ html.touch {
       width: 50%;
       padding: @gridPadding;
       box-sizing: border-box;
-      position: relative;
+      overflow: hidden;
+      .cycle-slideshow {
+        padding-bottom: 117%;
+      }
       img {
         width: 100%;
         height: auto;
-        position:  absolute;
+        position:  absolute !important;
       	top: 0;
       	left: 0;
       	bottom: 0;
       	right: 0;
       }
-    }
-
-    .q-thumb:before{
-    	content: "";
-    	display: block;
-    	padding-top: 141.4%;
     }
 
     .q-volume {
