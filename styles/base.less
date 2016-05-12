@@ -7,8 +7,7 @@
 @pageWidth: 1020px;
 @pageWidthNarrow: 700px;
 @galleryHeight: 600px;
-
-@sitePadding-2: 4.1667%;
+@lineHeight: 1.4em;
 
 // Global Site Margin and Padding
 @siteMargin: 4.1667%;
@@ -236,18 +235,18 @@ body {
 
   ol, ul {
       padding-left: @textIndent;
-      margin-top: 1em;
+      margin-top: @lineHeight;
       margin-bottom: 0;
   }
 
   ol , ul {
     + p {
-      margin-top: 1em;
+      margin-top: @lineHeight;
     }
   }
 
   p[style*="margin-left"] {
-      margin-top: 1em;
+      margin-top: @lineHeight;
       text-indent: 0;
   }
 
@@ -257,7 +256,7 @@ body {
   }
 
   p[style*="margin-left"] + p {
-      margin-top: 1em;
+      margin-top: @lineHeight;
       text-indent: 0;
   }
 
