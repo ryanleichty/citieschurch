@@ -24,7 +24,7 @@
         <line fill="none" stroke="#1a1a1a" stroke-width="4" stroke-linecap="square" x1="30" y1="3.3" x2="3.3" y2="30"></line>
         <line fill="none" stroke="#1a1a1a" stroke-width="4" stroke-linecap="square" x1="30" y1="30" x2="3" y2="3"></line>
       </svg>
-      <input type="search" name="q" class="search-form-field" autocomplete="off">
+      <input type="search" name="Search" class="search-form-field" autocomplete="off" placeholder="Search">
     </fieldset>
     </form>
 
