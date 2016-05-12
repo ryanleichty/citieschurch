@@ -7,7 +7,7 @@
 @pageWidth: 1020px;
 @pageWidthNarrow: 700px;
 @galleryHeight: 600px;
-@lineHeight: 1.4;
+@lineHeight: 1.4em;
 
 // Global Site Margin and Padding
 @siteMargin: 4.1667%;
@@ -390,7 +390,7 @@ h1,
 h2,
 h3,
 .entry-title {
-  margin: (@lineHeight*2rem) 0 (@lineHeight*1rem);
+  margin: @lineHeight*2 0 @lineHeight;
   &:first-child { margin-top: 0; }
 }
 
