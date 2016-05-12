@@ -480,14 +480,6 @@ $(document).ready(function() {
 			return $(this).text() === "\xa0";
 		}).next("p").css("text-indent", "0");
 
-		$(document).keypress(function(e) {
-	    if(e.which == 13) {
-				$("p").filter(function() {
-					return $(this).text() === "\xa0";
-				}).next("p").css("text-indent", "0");
-	    }
-		});
-
 // Add Copyright Year
 
 		$(".copyrightYear").text( (new Date).getFullYear() );
