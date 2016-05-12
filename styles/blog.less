@@ -168,7 +168,7 @@
 .pagination {
 
   margin: 0 @siteMargin;
-  padding: @siteMargin @gridPadding;
+  padding: @siteMargin 0;
 
   > div {
 
@@ -189,14 +189,14 @@
   }
 
   .newer {
-    padding: 0 1em 0 0;
+    padding: @gridPadding;
     float: left;
     text-align: left;
     .prev-label { }
   }
 
   .older {
-    padding: 0 0 0 1em;
+    padding: @gridPadding;
     float: right;
     text-align: right;
     .next-label { }
