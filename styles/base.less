@@ -7,7 +7,7 @@
 @pageWidth: 1020px;
 @pageWidthNarrow: 700px;
 @galleryHeight: 600px;
-@lineHeight: 1.4em;
+@lineHeight: 1.4;
 
 // Global Site Margin and Padding
 @siteMargin: 4.1667%;
@@ -210,7 +210,7 @@ body {
 
 // Indentation
 
-@textIndent: @lineHeight*1.5 ;
+@textIndent: @lineHeight*1.5rem ;
 
 #page {
 
@@ -230,23 +230,23 @@ body {
   }
 
   blockquote {
-      margin: @lineHeight 0;
+      margin: @lineHeight*1rem 0;
   }
 
   ol, ul {
       padding-left: @textIndent;
-      margin-top: @lineHeight;
+      margin-top: @lineHeight*1rem;
       margin-bottom: 0;
   }
 
   ol , ul {
     + p {
-      margin-top: @lineHeight;
+      margin-top: @lineHeight*1rem;
     }
   }
 
   p[style*="margin-left"] {
-      margin-top: @lineHeight;
+      margin-top: @lineHeight*1rem;
       text-indent: 0;
   }
 
@@ -256,7 +256,7 @@ body {
   }
 
   p[style*="margin-left"] + p {
-      margin-top: @lineHeight;
+      margin-top: @lineHeight*1rem;
       text-indent: 0;
   }
 
@@ -390,7 +390,7 @@ h1,
 h2,
 h3,
 .entry-title {
-  margin: @lineHeight*2 0 @lineHeight;
+  margin: @lineHeight*2rem 0 @lineHeight*1rem;
   &:first-child { margin-top: 0; }
 }
 
