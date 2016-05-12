@@ -482,9 +482,7 @@ $(document).ready(function() {
 
 		$(document).keypress(function(e) {
 	    if(e.which == 13) {
-				$("p").filter(function() {
-		    	return $(this).text() === "\xa0";
-				}).next("p").css("text-indent", "0");
+				alert('You pressed a "enter" key in somewhere'); 
 	    }
 		});
 
