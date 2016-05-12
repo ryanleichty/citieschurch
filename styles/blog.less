@@ -167,7 +167,8 @@
 
 .pagination {
 
-  margin-top: 6em;
+  margin: 0 @siteMargin;
+  padding: @siteMargin @gridPadding;
 
   > div {
 
@@ -183,21 +184,27 @@
 
   }
 
+  .older, .newer {
+    width: 50%;
+  }
+
   .newer {
-
-    padding-right: 1em;
-
+    padding: 0 1em 0 0;
+    float: left;
+    text-align: left;
     .prev-label { }
-
   }
 
   .older {
-
-    padding-left: 1em;
+    padding: 0 0 0 1em;
+    float: right;
     text-align: right;
-
     .next-label { }
+  }
 
+  .next-label, .prev-label {
+    font-family: 'Brown-Regular', Arial, sans-serif;
+    font-size: 16px;
   }
 
 }
@@ -344,7 +351,7 @@
   padding: @sitePadding;
   text-align: center;
 
-  text-rendering: optimizeLegibility;
+  text-rendering: geometricPrecision;
 
   .title-desc-wrapper{
     -webkit-animation:feature-text-anim 0.75s ease-in-out;
@@ -482,7 +489,7 @@
     opacity:0;
     .transition(all 0.25s ease-in-out 0.3s);
 
-    text-rendering: optimizeLegibility;
+    text-rendering: geometricPrecision;
 
     .post-title{
       margin-bottom:0.75em;
