@@ -290,11 +290,15 @@ body {
   a:not(.sqs-block-button-element):visited {
     color: @pageLinkColor;
     text-decoration: none;
-    border-bottom: 1px solid rgba(136,136,136,0.8);
+    border-bottom: 1px solid rgba(128,128,128,1.0);
     -moz-transition: color 0.1s,border-color 0.1s;
     -o-transition: color 0.1s,border-color 0.1s;
     -webkit-transition: color 0.1s,border-color 0.1s;
     transition: color 0.1s,border-color 0.1s;
+  }
+  a:not(.sqs-block-button-element):hover {
+    color: @pageTextColor;
+    border-bottom: 1px solid rgba(26,26,26,1.0);
   }
 }
 
@@ -661,6 +665,7 @@ body:not(.has-banner-image),
     a:visited
     {
       color: @footerTextColor;
+      border-bottom: none;
     }
     a:hover {
       text-decoration: underline;
