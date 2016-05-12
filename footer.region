@@ -34,6 +34,7 @@
     <squarespace:script src="site.js" combo="true" />
     <squarespace:script src="helpers.js" combo="true" />
     <squarespace:script src="sticky.js" combo="true" />
+    <script src="http://malsup.github.com/jquery.cycle2.js"></script>
     <squarespace:script src="cycle2.js" combo="true" />
     {.if authenticatedAccount}<squarespace:script src="authenticated.js" combo="false" />{.end}
     {squarespace-footers}
