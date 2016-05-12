@@ -476,7 +476,15 @@ $(document).ready(function() {
 
 // Remove Indent on New Paragraphs
 
-		//$( "p:contains('\xa0') + p" ).css( "text-indent", "0" );
+		$().keypress(function {
+		 if(key == 13)  // the enter key code
+		  {
+				$("p").filter(function() {
+				 return $(this).text() === "\xa0";
+			 	}).next("p").css("text-indent", "0");
+		  }
+		});
+
 		$("p").filter(function() {
     	return $(this).text() === "\xa0";
 		}).next("p").css("text-indent", "0");
