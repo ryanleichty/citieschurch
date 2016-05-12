@@ -171,10 +171,7 @@
   padding: @siteMargin 0;
 
   > div {
-
     .border-box;
-    display: inline-block;
-    vertical-align: top;
     width: 50%;
 
     a {
@@ -184,25 +181,19 @@
 
   }
 
-  .older, .newer {
-    width: 50%;
-  }
-
   .newer {
     padding: @gridPadding;
     float: left;
     text-align: left;
-    .prev-label { }
   }
 
   .older {
     padding: @gridPadding;
     float: right;
     text-align: right;
-    .next-label { }
   }
 
-  .next-label, .prev-label {
+  .prev-label, .next-label {
     font-family: 'Brown-Regular', Arial, sans-serif;
     font-size: 16px;
   }
