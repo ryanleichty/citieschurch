@@ -476,7 +476,7 @@ $(document).ready(function() {
 
 // Remove Indent on New Paragraphs
 
-		$().keypress(function {
+		$("p").keypress(function {
 		 if(key == 13)  // the enter key code
 		  {
 				$("p").filter(function() {
