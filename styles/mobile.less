@@ -31,10 +31,15 @@
 		}
 	}
 
-	.q-container .q-inner .q-volume {
-		width: 25%;
+	.q-container .q-inner {
+		.q-volume {
+			width: 25%;
+		}
+		.post-more {
+			width: 100%;
+			text-align: left;
+		}
 	}
-
 }
 
 @media only screen and (max-device-height: 768px) {
@@ -261,12 +266,12 @@
 				width: 50%;
 			}
 			.q-volume {
-				.v-container {
+				.v-container:nth-of-type(1,2,3,4) {
 					width: 50%;
 					border-top: 1px #282828;
 	        border-top-style: dotted;
 				}
-				.v-container:nth-of-type(2), .v-container:nth-of-type(4) {
+				.v-container:nth-of-type(2,4) {
 					padding: @gridPadding 0 @gridPadding @gridPadding;
 					border-left: 1px #282828;
 					border-left-style: dotted;
