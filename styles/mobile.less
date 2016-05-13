@@ -266,8 +266,11 @@
 				width: 50%;
 			}
 			.q-volume {
-				.v-container, .v-container:first-of-type {
+				.v-container {
 					width: 50%;
+				}
+				.v-container:nth-of-type(1) {
+					padding: @gridPadding 0;
 					border-top: 1px #282828;
 	        border-top-style: dotted;
 				}
