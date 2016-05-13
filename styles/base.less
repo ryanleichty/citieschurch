@@ -2762,9 +2762,7 @@ html.touch {
         .border-box;
         width: 100%;
         padding: @gridPadding 0;
-        border-top-width: 1px;
-        border-top-style: dotted;
-        border-top-color: #282828;
+        border-top: 1px dotted #282828;
         .v-number {
           font: 12px/1.4em "brown-regular";
         }
@@ -2773,7 +2771,7 @@ html.touch {
         }
       }
       .v-container:nth-of-type(1) {
-        border: none;
+        border-top: none;
         padding: 0 0 @gridPadding;
       }
       .v-container:hover {
