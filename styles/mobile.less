@@ -266,12 +266,12 @@
 				width: 50%;
 			}
 			.q-volume {
-				.v-container:nth-of-type(1,2,3,4) {
+				.v-container, .v-container:first-of-type {
 					width: 50%;
 					border-top: 1px #282828;
 	        border-top-style: dotted;
 				}
-				.v-container:nth-of-type(2,4) {
+				.v-container:nth-of-type(2n) {
 					padding: @gridPadding 0 @gridPadding @gridPadding;
 					border-left: 1px #282828;
 					border-left-style: dotted;
