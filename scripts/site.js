@@ -49,19 +49,6 @@ Y.use('node', function (Y) {
 			this.hideArrowsWhenOneSlide();
 			this.repositionCartButton();
 
-			if (!this._touch) {
-				var preFooter = Y.one('#preFooter');
-				if (preFooter.inViewportRegion() === false) {
-					preFooter.addClass('unscrolled');
-				}
-
-				Y.one(window).on('scroll', function () {
-					if (preFooter.hasClass('unscrolled')) {
-						preFooter.toggleClass('unscrolled', !preFooter.inViewportRegion());
-					}
-				});
-			}
-
 
 		},
 
