@@ -2299,27 +2299,36 @@ html.touch {
     border-top-color: #c0c0c0;
 }
 
-/*
+
 .copyright {
-  float: right;
-  display: block;
   padding: .75em 0;
   font-size: 12px;
+  text-align: right;
   color: #808080;
 }
-*/
 
-.footer-inner, .pre-footer-inner {
+.footer-inner {
     margin: 0 @siteMargin;
     padding: 50px @gridPadding;
+    display: flex;
+    flex-wrap: wrap;
+    .border-box;
+
+    div:first-of-type {
+      margin-right: auto;
+    }
+
+    .footer-inner-secondary {
+      padding-top: 50px;
+      margin-top: 74px;
+      border-top-width: 1px;
+      border-top-style: dotted;
+      border-top-color: #c0c0c0;
+    }
 }
 
 #footerBlocks:not(.empty) {
   margin-bottom: 1.5em;
-}
-
-.footer-inner div:first-of-type {
-  margin-right: auto;
 }
 
 // Typography
