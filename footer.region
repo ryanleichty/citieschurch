@@ -9,6 +9,9 @@
         <div class="gridBlock-25">
           <squarespace:block-field id="footerBlock3" columns="1" label="Footer Content 3" />
         </div>
+        <div class="gridBlock-25">
+          <squarespace:block-field id="footerBlock4" columns="1" label="Footer Content 4" />
+        </div>
         <div class="footer-inner-secondary grid-100">
           <div class="gridBlock-50">
             <squarespace:navigation navigationId="secondaryNav" template="secondary-navigation" />
