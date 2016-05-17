@@ -282,7 +282,7 @@
         <div class="q-inner">
           <div class="q-content">
             <h1>The Quarterly</h1>
-            <p>The Quarterly is a publication of Cities Church that is both a Bible study guide and a magazine.</p>
+            <p>The Quarterly is a publication of Cities Church that began as a Bible study but eventually evolved into what it is now: a magazine Bible study hybrid. It follows the current sermon series and includes content from the pastors and various member contributors.</p>
           </div>
           <squarespace:query collection="the-quarterly-overview" limit="4">
             <div class="q-thumb">
