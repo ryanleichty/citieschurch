@@ -1,42 +1,106 @@
-      {.if item}
-        {.section item}
-          {.if productType}
-          {.or}
-            {.if startDate}
-              {.main-image?}
-                <div class="banner-thumbnail-wrapper" data-content-field="main-image">
-                  <div class="color-overlay"></div>
-                  <figure id="thumbnail" class="loading content-fill"><img {@|image-meta} /></figure>
-                </div>
-              {.end}
-            {.or}
-              {.main-image?}
-                <div class="banner-thumbnail-wrapper" data-content-field="main-image">
-                  <div class="color-overlay"></div>
-                  <figure id="thumbnail" class="loading content-fill"><img {@|image-meta} /></figure>
-                  <div class="blog-item-wrapper">
-                    <div class="title-desc-wrapper">
-                      <!--<time class="dt-published published post-date" datetime="{addedOn|date %F}" pubdate>{addedOn|date %B %e, %Y}</time>-->
-                      <div class="post-category">{.section categories}{.repeated section @}<a href="{collection.fullUrl}?category={@|url-encode}">{@}</a>{.alternates with}, {.end}{.end}</div>
-                      <!--<div class="post-author"><a href="{collection.fullUrl}?author={author.id}">{.section author}{displayName}{.end}</a></div>-->
-                      {.section title}<div class="post-title">{@}</div>{.end}
+{.if item}
+  {.section item}
+    {.if productType}
+    {.or}
+      {.if startDate}
+        {.main-image?}
+          <div class="banner-thumbnail-wrapper" data-content-field="main-image">
+            <div class="color-overlay"></div>
+            <figure id="thumbnail" class="loading content-fill"><img {@|image-meta} /></figure>
+          </div>
+        {.end}
+      {.or}
+        {.main-image?}
+          <div class="banner-thumbnail-wrapper" data-content-field="main-image">
+            <div class="color-overlay"></div>
+            <figure id="thumbnail" class="loading content-fill"><img {@|image-meta} /></figure>
+            <div class="blog-item-wrapper">
+              <div class="title-desc-wrapper">
+                <!--<time class="dt-published published post-date" datetime="{addedOn|date %F}" pubdate>{addedOn|date %B %e, %Y}</time>-->
+                <div class="post-category">{.section categories}{.repeated section @}<a href="{collection.fullUrl}?category={@|url-encode}">{@}</a>{.alternates with}, {.end}{.end}</div>
+                <!--<div class="post-author"><a href="{collection.fullUrl}?author={author.id}">{.section author}{displayName}{.end}</a></div>-->
+                {.section title}<div class="post-title">{@}</div>{.end}
+              </div>
+            </div>
+          </div>
+        {.end}
+      {.end}
+    {.end}
+  {.end}
+{.or}
+  {.section collection}
+    {.collectionTypeNameEquals? gallery}
+    {.or}
+      {.collectionTypeNameEquals? index}
+      {.or}
+        {.collectionTypeNameEquals? page}
+          <div id="promotedGalleryWrapper" class="sqs-layout promoted-gallery-wrapper"><div class="row"><div class="col"></div></div></div>
+          {.main-image?}
+          <div class="banner-thumbnail-wrapper{.if description} has-description{.end}" data-content-field="main-image" data-collection-id="{collection.id}" data-edit-main-image="Banner" data-annotation-alignment="bottom left">
+            {.section mainImage}
+            <div class="color-overlay"></div>
+            <figure id="thumbnail" class="loading content-fill"><img {@|image-meta} /></figure>
+            {.end}
+            {.if description}<div class="desc-wrapper" data-collection-id="{id}">{description}</div>{.end}
+          </div>
+          {.end}
+        {.or}
+          {.collectionTypeNameEquals? blog}
+            <squarespace:query collection="{collection.urlId}" featured="true" limit="5">
+            {.section items}
+              <div class="sqs-featured-posts-gallery">
+
+                <div class="gallery-wrapper">
+
+                  <!--FULL SIZE IMAGES-->
+
+                  <div class="slides-controls">
+                    <div class="posts">
+                      {.repeated section @}
+
+                        <!--SLIDE-->
+
+                        <div class="post{.main-image?}{.or} no-main-image{.end} content-fill" data-slide-id="{id}">
+
+                          <div class="title-desc-wrapper">
+                            <!--<time class="dt-published published post-date" datetime="{addedOn|date %F}" pubdate>{addedOn|date %B %e, %Y}</time>-->
+                            <div class="post-category">{.section categories}{.repeated section @}{@}{.alternates with}, {.end}{.end}</div>
+                            <!--<div class="post-author">{.section author}{displayName}{.end}</div>-->
+                            {.section title}<div class="post-title"><a href="{fullUrl}">{@|truncate 48}</a></div>{.end}
+                            {.excerpt?}<div class="post-excerpt">{excerpt}</div>{.end}
+                            <a href="{fullUrl}" class="view-post"></a>
+                          </div>
+
+                          <div class="color-overlay"></div>
+
+                          {.main-image?}
+                            <img data-load="viewport" {@|image-meta}>
+                          {.end}
+                        </div>
+
+                      {.end}
+                    </div>
+
+                    {.section 1}
+                      <!--PREVIOUS/NEXT CONTROLS-->
+                      <span class="arrow previous-slide"></span>
+                      <span class="arrow next-slide"></span>
+                    {.end}
+
+                    <!--CIRCLES-->
+                    <div class="circles gallery-nav">
+                      {.repeated section @}
+                        <span class="circle"></span>
+                      {.end}
                     </div>
                   </div>
                 </div>
-              {.end}
-            {.end}
-          {.end}
-        {.end}
-      {.or}
-        {.section collection}
-          {.collectionTypeNameEquals? gallery}
-          {.or}
-            {.collectionTypeNameEquals? index}
+
+              </div>
             {.or}
-              {.collectionTypeNameEquals? page}
-                <div id="promotedGalleryWrapper" class="sqs-layout promoted-gallery-wrapper"><div class="row"><div class="col"></div></div></div>
+              {.section collection}
                 {.main-image?}
-                <div class="banner-thumbnail-wrapper{.if description} has-description{.end}" data-content-field="main-image" data-collection-id="{collection.id}" data-edit-main-image="Banner" data-annotation-alignment="bottom left">
+                <div class="banner-thumbnail-wrapper" data-content-field="main-image" data-collection-id="{collection.id}" data-edit-main-image="Banner" data-annotation-alignment="bottom left">
                   {.section mainImage}
                   <div class="color-overlay"></div>
                   <figure id="thumbnail" class="loading content-fill"><img {@|image-meta} /></figure>
@@ -44,202 +108,185 @@
                   {.if description}<div class="desc-wrapper" data-collection-id="{id}">{description}</div>{.end}
                 </div>
                 {.end}
-              {.or}
-                {.collectionTypeNameEquals? blog}
-                  <squarespace:query collection="{collection.urlId}" featured="true" limit="5">
-                  {.section items}
-                    <div class="sqs-featured-posts-gallery">
-
-                      <div class="gallery-wrapper">
-
-                        <!--FULL SIZE IMAGES-->
-
-                        <div class="slides-controls">
-                          <div class="posts">
-                            {.repeated section @}
-
-                              <!--SLIDE-->
-
-                              <div class="post{.main-image?}{.or} no-main-image{.end} content-fill" data-slide-id="{id}">
-
-                                <div class="title-desc-wrapper">
-                                  <!--<time class="dt-published published post-date" datetime="{addedOn|date %F}" pubdate>{addedOn|date %B %e, %Y}</time>-->
-                                  <div class="post-category">{.section categories}{.repeated section @}{@}{.alternates with}, {.end}{.end}</div>
-                                  <!--<div class="post-author">{.section author}{displayName}{.end}</div>-->
-                                  {.section title}<div class="post-title"><a href="{fullUrl}">{@|truncate 48}</a></div>{.end}
-                                  {.excerpt?}<div class="post-excerpt">{excerpt}</div>{.end}
-                                  <a href="{fullUrl}" class="view-post"></a>
-                                </div>
-
-                                <div class="color-overlay"></div>
-
-                                {.main-image?}
-                                  <img data-load="viewport" {@|image-meta}>
-                                {.end}
-                              </div>
-
-                            {.end}
-                          </div>
-
-                          {.section 1}
-                            <!--PREVIOUS/NEXT CONTROLS-->
-                            <span class="arrow previous-slide"></span>
-                            <span class="arrow next-slide"></span>
-                          {.end}
-
-                          <!--CIRCLES-->
-                          <div class="circles gallery-nav">
-                            {.repeated section @}
-                              <span class="circle"></span>
-                            {.end}
-                          </div>
-                        </div>
-                      </div>
-
-                    </div>
-                  {.or}
-                    {.section collection}
-                      {.main-image?}
-                      <div class="banner-thumbnail-wrapper" data-content-field="main-image" data-collection-id="{collection.id}" data-edit-main-image="Banner" data-annotation-alignment="bottom left">
-                        {.section mainImage}
-                        <div class="color-overlay"></div>
-                        <figure id="thumbnail" class="loading content-fill"><img {@|image-meta} /></figure>
-                        {.end}
-                        {.if description}<div class="desc-wrapper" data-collection-id="{id}">{description}</div>{.end}
-                      </div>
-                      {.end}
-                    {.end}
-                  {.end}
-                  </squarespace:query>
-                {.or}
-                  {.main-image?}
-                  <div class="banner-thumbnail-wrapper" data-content-field="main-image" data-collection-id="{collection.id}" data-edit-main-image="Banner" data-annotation-alignment="bottom left">
-                    {.section mainImage}
-                    <div class="color-overlay"></div>
-                    <figure id="thumbnail" class="loading content-fill"><img {@|image-meta} /></figure>
-                    {.end}
-                    {.if description}<div class="desc-wrapper" data-collection-id="{id}">{description}</div>{.end}
-                  </div>
-                  {.end}
-                {.end}
               {.end}
+            {.end}
+            </squarespace:query>
+          {.or}
+            {.main-image?}
+            <div class="banner-thumbnail-wrapper" data-content-field="main-image" data-collection-id="{collection.id}" data-edit-main-image="Banner" data-annotation-alignment="bottom left">
+              {.section mainImage}
+              <div class="color-overlay"></div>
+              <figure id="thumbnail" class="loading content-fill"><img {@|image-meta} /></figure>
+              {.end}
+              {.if description}<div class="desc-wrapper" data-collection-id="{id}">{description}</div>{.end}
+            </div>
             {.end}
           {.end}
         {.end}
       {.end}
+    {.end}
+  {.end}
+{.end}
 
-      <main id="page" role="main">
-        <div id="content" class="main-content" data-content-field="main-content" data-collection-id="{collection.id}" {.equal? collection.typeName "gallery"}{.or}{.equal? collection.typeName "index"}{.or}data-edit-main-image="Banner"{.end}{.end}>
-          {squarespace.main-content}
-          <squarespace:query collection="journal" limit="4">
-            <div class="page-list">
-              {.repeated section items}
-              <article class="article-home {@|item-classes}" id="article-{id}" data-item-id="{id}">
+<main id="page" role="main">
+  <div id="content" class="main-content" data-content-field="main-content" data-collection-id="{collection.id}" {.equal? collection.typeName "gallery"}{.or}{.equal? collection.typeName "index"}{.or}data-edit-main-image="Banner"{.end}{.end}>
 
-                {.main-image?}
-                <div class="excerpt-thumb">
-                  <a href="{fullUrl}" class="excerpt-image content-fill">
-                    {.equal?:collection.title:"Journal"}
-                      <span class="post-type">Article</span>
-                    {.end}
-                    <img {@|image-meta} />
-                  </a>
-                </div>
-                {.end}
+    {squarespace.main-content}
 
-                <header class="entry-header">
+    <div class="intro-container">
+      <div class="intro-inner">
+        <h1>Cities Church is a gospel community in Minneapolis–St. Paul committed to worshiping Jesus, loving one another, and seeking the good of the Cities.</h1>
+      </div>
+    </div>
 
-                  <div class="meta-above-title">
+    <squarespace:query collection="sermons" limit="4">
+      <div class="post-list">
 
-                    <!--{.section categories}
-                    <div class="entry-morefrom">
-                      <span class="entry-category">{.repeated section @}<a href="{collection.fullUrl}?category={@|url-encode}" class="entry-morefrom-link" rel="tag">{@}</a>{.alternates with}, {.end}</span>
-                    </div>
-                    {.end}-->
-
-                    {.section author}
-                    <div class="entry-byline">
-                      <span class="entry-author"><a href="{collection.fullUrl}?author={author.id}" class="p-author author entry-byline-link" rel="author">{displayName}</a></span>
-                    </div>
-                    {.end}
-
-                    <!--<div class="entry-dateline">
-                      <time class="dt-published published entry-date" datetime="{addedOn|date %F}" pubdate><a href="{fullUrl}" class="entry-dateline-link">{addedOn|date %B %e, %Y}</a></time>
-                      {.if updatedOn}<time class="dt-updated updated" datetime="{updatedOn|date %F}"></time>{.end}
-                    </div>-->
-
-                  </div>
-
-                  <h1 data-content-field="title" class="entry-title p-name">
-                  {.passthrough?}
-                    <a href="{sourceUrl}" class="entry-title-passthrough" target="_blank">{title}</a>
-                  {.or}
-                    <a href="{fullUrl}" class="u-url" rel="bookmark">{title}</a>
-                  {.end}
-                  </h1>
-
-                </header>
-
-              </article>
-              {.end}
-
-            </div>
-          </squarespace:query>
-
-          <squarespace:query collection="sermons" limit="8">
-            <div class="page-list">
-              {.repeated section items}
-              <article class="entry h-entry {@|item-classes}" id="article-{id}" data-item-id="{id}">
-
-                {.main-image?}
-                <div class="excerpt-thumb">
-                  <a href="{fullUrl}" class="excerpt-image content-fill">
-                    {.equal?:collection.title:"Sermons"}
-                      <span class="post-type">Sermon</span>
-                    {.end}
-                    <img {@|image-meta} />
-                  </a>
-                </div>
-                {.end}
-
-                <header class="entry-header">
-
-                  <div class="meta-above-title">
-
-                    <!--{.section categories}
-                    <div class="entry-morefrom">
-                      <span class="entry-category">{.repeated section @}<a href="{collection.fullUrl}?category={@|url-encode}" class="entry-morefrom-link" rel="tag">{@}</a>{.alternates with}, {.end}</span>
-                    </div>
-                    {.end}-->
-
-                    {.section author}
-                    <div class="entry-byline">
-                      <span class="entry-author"><a href="{collection.fullUrl}?author={author.id}" class="p-author author entry-byline-link" rel="author">{displayName}</a></span>
-                    </div>
-                    {.end}
-
-                    <!--<div class="entry-dateline">
-                      <time class="dt-published published entry-date" datetime="{addedOn|date %F}" pubdate><a href="{fullUrl}" class="entry-dateline-link">{addedOn|date %B %e, %Y}</a></time>
-                      {.if updatedOn}<time class="dt-updated updated" datetime="{updatedOn|date %F}"></time>{.end}
-                    </div>-->
-
-                  </div>
-
-                  <h1 data-content-field="title" class="entry-title p-name">
-                  {.passthrough?}
-                    <a href="{sourceUrl}" class="entry-title-passthrough" target="_blank">{title}</a>
-                  {.or}
-                    <a href="{fullUrl}" class="u-url" rel="bookmark">{title}</a>
-                  {.end}
-                  </h1>
-
-                </header>
-
-              </article>
-              {.end}
-
-            </div>
-          </squarespace:query>
-
+        <div class="post-section">
+          <h1>Sermons</h1>
         </div>
-      </main>
+
+        <div class="post-more">
+          <a href="/sermons/">More →</a>
+        </div>
+
+        {.repeated section items}
+        <article class="entry h-entry {@|item-classes}" id="article-{id}" data-item-id="{id}">
+
+          {.main-image?}
+          <div class="excerpt-thumb">
+            <a href="{fullUrl}" class="excerpt-image content-fill">
+              <img {@|image-meta} />
+            </a>
+          </div>
+          {.end}
+
+          <header class="entry-header">
+
+            <div class="meta-above-title">
+
+              {.section author}
+              <div class="entry-byline">
+                <span class="entry-author"><a href="{collection.fullUrl}?author={author.id}" class="p-author author entry-byline-link" rel="author">{displayName}</a></span>
+              </div>
+              {.end}
+
+            </div>
+
+            <h1 data-content-field="title" class="entry-title p-name">
+            {.passthrough?}
+              <a href="{sourceUrl}" class="entry-title-passthrough" target="_blank">{title}</a>
+            {.or}
+              <a href="{fullUrl}" class="u-url" rel="bookmark">{title}</a>
+            {.end}
+            </h1>
+
+          </header>
+
+        </article>
+        {.end}
+
+      </div>
+    </squarespace:query>
+
+    <squarespace:query collection="journal" limit="4">
+      <div class="post-list">
+
+        <div class="post-section">
+          <h1>Articles</h1>
+        </div>
+
+        <div class="post-more">
+          <a href="/journal/">More →</a>
+        </div>
+
+        {.repeated section items}
+        <article class="{@|item-classes}" id="article-{id}" data-item-id="{id}">
+
+          {.main-image?}
+          <div class="excerpt-thumb">
+            <a href="{fullUrl}" class="excerpt-image content-fill">
+              <img {@|image-meta} />
+            </a>
+          </div>
+          {.end}
+
+          <header class="entry-header">
+
+            <div class="meta-above-title">
+
+              {.section author}
+              <div class="entry-byline">
+                <span class="entry-author"><a href="{collection.fullUrl}?author={author.id}" class="p-author author entry-byline-link" rel="author">{displayName}</a></span>
+              </div>
+              {.end}
+
+            </div>
+
+            <h1 data-content-field="title" class="entry-title p-name">
+            {.passthrough?}
+              <a href="{sourceUrl}" class="entry-title-passthrough" target="_blank">{title}</a>
+            {.or}
+              <a href="{fullUrl}" class="u-url" rel="bookmark">{title}</a>
+            {.end}
+            </h1>
+
+          </header>
+
+        </article>
+        {.end}
+
+      </div>
+    </squarespace:query>
+
+  </div>
+</main>
+
+<div class="q-container">
+  <div class="q-inner">
+    <div class="q-content">
+      <h1>The Quarterly</h1>
+      <p>The Quarterly is a publication of Cities Church that follows the current sermon series with a Bible study and includes articles and other content from the pastors and church members.</p>
+    </div>
+    <squarespace:query collection="the-quarterly-overview" limit="4">
+      <div class="q-thumb">
+        <div class="cycle-slideshow"
+            data-cycle-fx="scrollHorz"
+            data-cycle-speed="200"
+            data-cycle-pause-on-hover=".q-thumb, .v-container"
+            data-cycle-pager=".q-volume"
+            data-cycle-pager-template=""
+            data-cycle-pager-event="mouseover">
+          {.repeated section items}
+            {.main-image?}
+              <img {@|image-meta} />
+            {.end}
+          {.end}
+        </div>
+      </div>
+      <ul class="q-volume">
+        {.repeated section items}
+          <li class="v-container">
+            <div class="v-number">Volume {customContent.volumeNumber}</div>
+            <div class="v-title">{title}</div>
+          </li>
+        {.end}
+      </ul>
+    </squarespace:query>
+    <div class="post-more">
+      <a href="/the-quarterly/">More →</a>
+    </div>
+  </div>
+</div>
+
+<div id="twitter-container">
+  <div class="twitter-section gridBlock-25">
+    <span>@citieschurch</span>
+  </div>
+  <div class="twitter-content gridBlock-50">
+    <squarespace:block-field id="twitterBlock" columns="1" lock-layout="true"/>
+  </div>
+  <div class="twitter-more gridBlock-25">
+    <a href="https://twitter.com/citieschurch" target="_blank">More →</a>
+  </div>
+</div>
