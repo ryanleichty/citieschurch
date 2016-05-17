@@ -2808,18 +2808,12 @@ html.touch {
   flex-wrap: wrap;
 
   .twitter-section {
-    width: 25%;
-    padding: @gridPadding;
-    box-sizing: border-box;
     span {
       font: 16px/1em "brown-regular";
     }
   }
 
   .twitter-content {
-    width: 50%;
-    padding: @gridPadding;
-    box-sizing: border-box;
     .tweet, .tweet-list {
       margin: 0;
     }
@@ -2832,9 +2826,6 @@ html.touch {
   }
 
   .twitter-more {
-    width: 25%;
-    padding: @gridPadding;
-    box-sizing: border-box;
     text-align: right;
     a {
       font: 16px/1em "brown-regular";
@@ -2871,4 +2862,36 @@ html.touch {
   .artistName {
     color: rgba(255,255,255,.5);
   }
+}
+
+// GRID BLOCKS
+
+.gridBlock-100 {
+  width: 100%;
+  padding: @gridPadding;
+  .border-box;
+}
+
+.gridBlock-50 {
+  width: 50%;
+  padding: @gridPadding;
+  .border-box;
+}
+
+.gridBlock-25 {
+  width: 25%;
+  padding: @gridPadding;
+  .border-box;
+}
+
+.grid-100 {
+  width: 100%;
+}
+
+.grid-50 {
+  width: 50%;
+}
+
+.grid-25 {
+  width: 25%;
 }
