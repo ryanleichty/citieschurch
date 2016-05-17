@@ -668,49 +668,6 @@ body:not(.has-banner-image),
   .transform( translate3d(0,12px,0) );
 }
 
-#footer {
-  background-color: @footerBgColor;
-  .font-smoothing(@footerBgColor);
-  .html-block{
-    a,
-    a:visited
-    {
-      color: @footerTextColor;
-      border-bottom: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-  }
-  nav:not(.social-account-list) {
-    .footer-nav-font;
-    a,
-    a:visited,
-    label {
-      text-decoration: none;
-      line-height: 1.25em;
-      color: @footerNavLinkColor;
-      border: none;
-      &.active, &:hover {
-        color: @footerNavActiveColor;
-      }
-    }
-  }
-  .folder .subnav{
-    background-color: fade(@footerBgColor, 100%);
-  }
-}
-#footer{
-  .footer-font;
-  color: @footerTextColor;
-  h1,
-  h2,
-  h3 {
-    text-align: left;
-    color: @footerTextColor;
-  }
-}
-
 #page {
   .border-box;
   width: auto;
@@ -2262,6 +2219,51 @@ html.touch {
 
 // FOOTER
 
+#footer {
+  background-color: @footerBgColor;
+
+  .html-block {
+    a,
+    a:visited
+    {
+      color: @footerTextColor;
+      border-bottom: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+
+  nav:not(.social-account-list) {
+    .footer-nav-font;
+    a,
+    a:visited,
+    label {
+      text-decoration: none;
+      line-height: 1.25em;
+      color: @footerNavLinkColor;
+      border: none;
+      &.active, &:hover {
+        color: @footerNavActiveColor;
+      }
+    }
+  }
+  .folder .subnav{
+    background-color: fade(@footerBgColor, 100%);
+  }
+}
+
+#footer {
+  .footer-font;
+  color: @footerTextColor;
+  h1,
+  h2,
+  h3 {
+    text-align: left;
+    color: @footerTextColor;
+  }
+}
+
 // Secondary Footer
 
 #footer hr {
@@ -2336,10 +2338,6 @@ html.touch {
 
 .login {
   font-size: 16px;
-}
-
-#preFooter {
-  display: none;
 }
 
 // Fix Social Media Padding
