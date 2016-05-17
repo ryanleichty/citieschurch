@@ -10,7 +10,9 @@
           <squarespace:block-field id="footerBlock3" columns="1" label="Footer Content 3" />
         </div>
         <div class="footer-inner-secondary grid-100">
-          <squarespace:navigation navigationId="secondaryNav" class="gridBlock-50" template="secondary-navigation" />
+          <div class="gridBlock-50">
+            <squarespace:navigation navigationId="secondaryNav" template="secondary-navigation" />
+          </div>
           <div class="copyright gridBlock-50">&copy; <span class="copyrightYear"></span> Cities Church</div>
         </div>
       </div>
