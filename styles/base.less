@@ -2695,10 +2695,6 @@ html.touch {
     a {
       font: 14px/1em "brown-regular";
       color: #bebebe;
-      -moz-transition: color 0.1s;
-      -o-transition: color 0.1s;
-      -webkit-transition: color 0.1s;
-      transition: color 0.1s;
     }
     a:hover {
       color: @pageTextColor;
@@ -2894,4 +2890,18 @@ html.touch {
 
 .grid-25 {
   width: 25%;
+}
+
+// ANIMATE ANYTHING THAT RESIZES
+
+img {
+  .transition;
+}
+
+h1,
+h2,
+h3,
+p,
+a {
+  .transition;
 }
