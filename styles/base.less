@@ -2276,7 +2276,7 @@ html.touch {
   display: none;
 }
 
-//// FOOTER ////
+// FOOTER
 
 // Secondary Footer
 
@@ -2291,11 +2291,6 @@ html.touch {
     display: block;
 }
 
-#secondaryNavWrapper {
-  float: left;
-  padding: 0;
-}
-
 .footer-inner-secondary {
     padding-top: 50px;
     margin-top: 74px;
@@ -2304,6 +2299,7 @@ html.touch {
     border-top-color: #c0c0c0;
 }
 
+/*
 .copyright {
   float: right;
   display: block;
@@ -2311,15 +2307,19 @@ html.touch {
   font-size: 12px;
   color: #808080;
 }
+*/
 
 .footer-inner, .pre-footer-inner {
     margin: 0 @siteMargin;
     padding: 50px @gridPadding;
-    max-width: none;
 }
 
 #footerBlocks:not(.empty) {
   margin-bottom: 1.5em;
+}
+
+.footer-inner div:first-of-type {
+  margin-right: auto;
 }
 
 // Typography
