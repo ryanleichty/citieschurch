@@ -211,6 +211,12 @@
 	// collapse sqs layouts
   @import 'sqs-grid-breaker';
 
+	// fix SQS padding
+	.sqs-layout .sqs-row .sqs-block:first-child {
+		padding-top: 0 !important;
+		padding-bottom: 0 !important;
+	}
+
 	.gridBlock-75, .gridBlock-50, .gridBlock-25, .grid-75, .grid-50, .grid-25 {
 	  width: 100%;
 	}
@@ -343,12 +349,6 @@
 }
 
 @media only screen and (max-width: 640px) {
-
-	// fix SQS padding
-	.sqs-layout .sqs-row .sqs-block:first-child {
-		padding-top: 0 !important;
-		padding-bottom: 0 !important;
-	}
 
 	// Base Font Size
 	html {
