@@ -6,12 +6,20 @@
 	box-sizing:         border-box;
 }
 
-.transition (@transition) {
-	-webkit-transition: @transition;
-	-moz-transition:    @transition;
-	-ms-transition:     @transition;
-	-o-transition:      @transition;
-	transition:    		  @transition;
+.transition {
+	-webkit-transition: all 0.1s ease-in-out;
+	-moz-transition:    all 0.1s ease-in-out;
+	-ms-transition:     all 0.1s ease-in-out;
+	-o-transition:      all 0.1s ease-in-out;
+	transition:    		  all 0.1s ease-in-out;
+}
+
+.transitionSlow {
+	-webkit-transition: all 0.25s ease-in-out;
+	-moz-transition:    all 0.25s ease-in-out;
+	-ms-transition:     all 0.25s ease-in-out;
+	-o-transition:      all 0.25s ease-in-out;
+	transition:    		  all 0.25s ease-in-out;
 }
 
 .transition2 (@transition1, @transition2) {
