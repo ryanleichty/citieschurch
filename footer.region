@@ -1,8 +1,22 @@
-    <div id="preFooter">
-      <div class="pre-footer-inner">
-        <squarespace:block-field id="preFooterBlocks" columns="12" label="Pre-Footer Content" />
+    <footer id="footer" role="contentinfo">
+      <div class="footer-inner">
+        <div class="gridBlock-25">
+          <squarespace:block-field id="footerBlock1" columns="1" label="Footer Content 1" />
+        </div>
+        <div class="gridBlock-25">
+          <squarespace:block-field id="footerBlock2" columns="1" label="Footer Content 2" />
+        </div>
+        <div class="gridBlock-25">
+          <squarespace:block-field id="footerBlock3" columns="1" label="Footer Content 3" />
+        </div>
+        <div class="footer-inner-secondary grid-100">
+          <squarespace:navigation navigationId="secondaryNav" class="gridBlock-50" template="secondary-navigation" />
+          <div class="copyright gridBlock-50">&copy; <span class="copyrightYear"></span> Cities Church</div>
+        </div>
       </div>
-    </div>
+    </footer>
+
+    <!--
 
     <footer id="footer" role="contentinfo">
       <div class="footer-inner">
@@ -14,6 +28,8 @@
         </div>
       </div>
     </footer>
+
+    -->
 
     </div>
 
