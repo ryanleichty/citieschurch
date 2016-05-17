@@ -2303,8 +2303,8 @@ html.touch {
     .footer-inner-secondary {
       display: flex;
       flex-wrap: wrap;
-      padding-top: 50px;
-      margin-top: 74px;
+      padding-top: @siteMargin;
+      margin: @siteMargin @gridPadding;
       border-top-width: 1px;
       border-top-style: dotted;
       border-top-color: #c0c0c0;
@@ -2853,6 +2853,12 @@ html.touch {
   .border-box;
 }
 
+.gridBlock-75 {
+  width: 75%;
+  padding: @gridPadding;
+  .border-box;
+}
+
 .gridBlock-50 {
   width: 50%;
   padding: @gridPadding;
@@ -2867,6 +2873,10 @@ html.touch {
 
 .grid-100 {
   width: 100%;
+}
+
+.grid-75 {
+  width: 75%;
 }
 
 .grid-50 {
