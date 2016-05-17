@@ -1,7 +1,7 @@
   {.section item}
-  <article class="quarterly-item {@|item-classes}{.main-image?} has-main-image{.end} clear" id="article-{id}" data-item-id="{id}">
+  <article class="quarterly-item" id="article-{id}" data-item-id="{id}">
 
-    <div class="quarterly-content">
+    <div class="quarterly-content gridBlock-25">
 
       <header class="entry-header">
         <div class="meta-above-title">
@@ -14,8 +14,21 @@
         <h1 data-content-field="title" class="quarterly-title">{title}</h1>
       </header>
 
-      <hr>
+      <div class="entry-content">
+        {.section body}
+          {@}
+        {.end}
+      </div>
 
+    </div>
+
+    {.main-image?}
+    <div class="quarterly-thumb gridBlock-50">
+      <img {@|image-meta} />
+    </div>
+    {.end}
+
+    <div class="gridBlock-25">
       <div class="buttons-block">
         <div class="buttons-inline">
           <a href="{customContent.amazonURL}" class="quarterly-button">Purchase</a>
@@ -25,20 +38,7 @@
           </div>
         </div>
       </div>
-
-      <div class="entry-content e-content">
-        {.section body}
-          {@}
-        {.end}
-      </div>
-
     </div>
-
-    {.main-image?}
-    <div class="quarterly-thumb">
-      <img {@|image-meta} />
-    </div>
-    {.end}
 
 
 
