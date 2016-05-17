@@ -208,6 +208,9 @@
 
 @media only screen and (max-width: 767px) {
 
+	// collapse sqs layouts
+  @import 'sqs-grid-breaker';
+
 	.gridBlock-50, .gridBlock-25, .grid-50, .grid-25 {
 	  width: 100%;
 	}
@@ -305,9 +308,6 @@
 }
 
 @media only screen and (max-width: 640px) {
-
-	// collapse sqs layouts
-  @import 'sqs-grid-breaker';
 
 	// fix SQS padding
 	.sqs-layout .sqs-row .sqs-block:first-child {
