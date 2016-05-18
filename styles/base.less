@@ -206,6 +206,12 @@ body {
   url('/assets/310573_0_0.ttf') format('truetype');
 }
 
+font-family: 'Portrait Web';
+src: url('assets/fonts/Portrait-RegularItalic-Web.eot');
+src: url('assets/fonts/Portrait-RegularItalic-Web.eot?#iefix') format('embedded-opentype'),
+url('assets/fonts/Portrait-RegularItalic-Web.woff2') format('woff2'),
+url('assets/fonts/Portrait-RegularItalic-Web.woff') format('woff');
+
 // Text Rendering
 #siteWrapper, h1, h2, h3, h4, h5, h6, p, a, article, blockquote, input {
   text-rendering: geometricPrecision;
@@ -2706,7 +2712,7 @@ html.touch {
       padding: @gridPadding;
       box-sizing: border-box;
       h1 {
-        font: 1.25rem/1em "Moyenage25";
+        font: 1.25rem/1em "Moyenage25", "Brown-Regular", Arial, sans-serif;;
         color: #fff;
         margin: 0 0 (@gridPadding * 2);
       }
