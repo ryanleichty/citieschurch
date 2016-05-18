@@ -246,7 +246,7 @@
   <div class="q-inner">
     <div class="q-content">
       <h1>The Quarterly</h1>
-      <p>The Quarterly is a publication of Cities Church that follows the current sermon series with a Bible study and includes articles and other content from the pastors and church members.</p>
+      <p>The Quarterly is a publication of Cities Church that corresponds to our current sermon series with additional Bible study resources and articles from our pastors and church members.</p>
     </div>
     <squarespace:query collection="the-quarterly-overview" limit="4">
       <div class="q-thumb">
