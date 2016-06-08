@@ -394,7 +394,7 @@ h3,
 
 blockquote {
   margin: 0;
-  padding: 0 2.5em;
+  padding: 0 @textIndent;
   font-style: italic;
 }
 
@@ -498,11 +498,6 @@ blockquote {
   margin: @sitePadding 0;
   color: fade(@pageTextColor, 15%);
   background-color: fade(@pageTextColor, 15%);
-}
-
-#preFooter .sqs-block-horizontalrule hr {
-  color: fade(@preFooterTextColor, 15%);
-  background-color: fade(@preFooterTextColor, 15%);
 }
 
 #footer .sqs-block-horizontalrule hr {
@@ -2267,26 +2262,6 @@ html.touch {
 }
 
 // Secondary Footer
-
-#footer hr {
-    color: rgba(26,26,26,.15);
-    background-color: rgba(26,26,26,.15);
-    border-style: none;
-    border-width: 0;
-    height: 1px;
-    margin-top: 74px;
-    margin-bottom: 0;
-    display: block;
-}
-
-.footer-inner-secondary {
-    padding-top: 50px;
-    margin-top: 74px;
-    border-top-width: 1px;
-    border-top-style: dotted;
-    border-top-color: #c0c0c0;
-}
-
 
 .copyright {
   padding: .75em 0;
