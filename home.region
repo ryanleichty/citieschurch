@@ -258,12 +258,12 @@
             {.end}
             <p class="v-title">{title}</p>
           </div>
-          <div class="q-buy-download">
+          <div class="v-buy-download">
             {.if customContent.amazonURL}
-              <a href="{customContent.amazonURL}" target="_blank" class="q-buy">Buy</a>
+              <a href="{customContent.amazonURL}" target="_blank" class="v-buy">Buy</a>
             {.end}
             {.if customContent.pdfURL}
-              <a href="{customContent.pdfURL}" target="_blank" class="q-download">Download</a>
+              <a href="{customContent.pdfURL}" target="_blank" class="v-download">Download</a>
             {.end}
           </div>
         {.end}
