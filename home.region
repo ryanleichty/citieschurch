@@ -251,7 +251,7 @@
         </div>
       </div>
       <div class="q-volume">
-        {.section items}
+        {.repeated section items}
           <div class="v-container">
             <p class="v-title">Volume {customContent.volumeNumber}</p>
             <p class="v-title">{title}</p>
