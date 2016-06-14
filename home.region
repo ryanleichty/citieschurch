@@ -253,12 +253,18 @@
       <div class="q-volume gridBlock-25">
         {.repeated section items}
           <div class="v-container">
-            <p class="v-title">Volume {customContent.volumeNumber}</p>
+            {.if customContent.volumeNumber}
+              <p class="v-title">Volume {customContent.volumeNumber}</p>
+            {.end}
             <p class="v-title">{title}</p>
           </div>
           <div class="q-buy-download">
-            <a href="{customContent.amazonURL}" target="_blank" class="q-buy">Buy</a>
-            <a href="{customContent.pdfURL}" target="_blank" class="q-download">Download</a>
+            {.if customContent.amazonURL}
+              <a href="{customContent.amazonURL}" target="_blank" class="q-buy">Buy</a>
+            {.end}
+            {.if customContent.pdfURL}
+              <a href="{customContent.pdfURL}" target="_blank" class="q-download">Download</a>
+            {.end}
           </div>
         {.end}
       </div>
