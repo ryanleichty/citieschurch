@@ -133,12 +133,6 @@
 
     {squarespace.main-content}
 
-    <div class="intro-container">
-      <div class="intro-inner">
-        <h1>Cities Church is a community of Christians in Minneapolis committed to worshiping Jesus, loving one another, and seeking the good of the Cities.</h1>
-      </div>
-    </div>
-
     <squarespace:query collection="sermons" featured="true" limit="4">
       <div class="post-list">
 
@@ -184,6 +178,12 @@
 
       </div>
     </squarespace:query>
+
+    <div class="intro-container">
+      <div class="intro-inner">
+        <h1>Cities Church is a community of Christians in Minneapolis committed to worshiping Jesus, loving one another, and seeking the good of the Cities.</h1>
+      </div>
+    </div>
 
     <squarespace:query collection="sermons" limit="4">
       <div class="post-list">
