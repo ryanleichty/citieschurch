@@ -142,12 +142,8 @@
     <squarespace:query collection="sermons" limit="4">
       <div class="post-list">
 
-        <div class="post-section">
-          <h1>Sermons</h1>
-        </div>
-
-        <div class="post-more">
-          <a href="/sermons/">More →</a>
+        <div class="post-section gridBlock-100">
+          <h1><a href="/sermons/">Sermons</a></h1>
         </div>
 
         {.repeated section items}
