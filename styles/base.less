@@ -2700,7 +2700,7 @@ html.touch {
 
     .q-volume {
       .border-box;
-      width: 12.5%;
+      width: 25%;
       margin: 0;
       padding: @gridPadding;
       list-style: none;
@@ -2711,37 +2711,9 @@ html.touch {
         border-top: 1px dotted #282828;
         .transition;
 
-        .v-number {
-          font: 0.5rem/1.4em "brown-regular";
-        }
         .v-title {
           font: 0.75rem/1.4em "brown-regular";
         }
-      }
-      .v-container:nth-of-type(1) {
-        border-top: none;
-        padding: 0 0 @gridPadding;
-      }
-      .v-container:hover {
-        cursor: pointer;
-      }
-      .cycle-pager-active {
-        color: #535353;
-      }
-    }
-
-    .post-more {
-      width: 12.5%;
-      padding: @gridPadding;
-      box-sizing: border-box;
-      text-align: right;
-      a {
-        font: 0.667rem/1em "brown-regular";
-        color: #535353;
-        vertical-align: top;
-      }
-      a:hover {
-        color: #fff;
       }
     }
   }
@@ -2893,4 +2865,28 @@ strong {
 
 .entry-header-featured {
   text-align: left;
+}
+
+.q-buy {
+    display: block;
+    color: white;
+    font-size: 18px;
+    font-family: "Brown-Regular", Arial, sans-serif;
+    width: 100%;
+    border: 2px white solid;
+    text-align: center;
+    line-height: .5;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.q-download {
+  font-family: "Brown-Regular", Arial, sans-serif;
+  font-size: 14px;
+  color: #505050;
+  text-align: center;
+  width: 100%;
+  display: block;
+  line-height: 1;
+  margin-top: 20px;
 }
