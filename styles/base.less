@@ -2218,8 +2218,13 @@ html.touch {
 
 #footer {
   background-color: @footerBgColor;
-
   .html-block {
+
+    h2 + p {
+      font-size: 0.5rem;
+      color: gray;
+    }
+    
     a,
     a:visited
     {
@@ -2227,7 +2232,7 @@ html.touch {
       border-bottom: none;
     }
     a:hover {
-      color: @footerTextColor;
+      color: #808080;
     }
   }
 
