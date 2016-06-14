@@ -2224,7 +2224,7 @@ html.touch {
       font-size: 0.5rem;
       color: gray;
     }
-    
+
     a,
     a:visited
     {
@@ -2871,4 +2871,26 @@ a,
 em,
 strong {
   .transition;
+}
+
+.excerpt-thumb-featured {
+  display: block;
+  width: 50%;
+  margin: 0 @gridPadding 0 0;
+  overflow: hidden;
+  float: left;
+  a {
+    display: block;
+    height: 100%;
+    padding-bottom: 100%;
+    border-radius: 50%;
+    position: relative;
+    img {
+      position: absolute;
+    }
+  }
+}
+
+.entry-header-featured {
+  text-align: left;
 }
