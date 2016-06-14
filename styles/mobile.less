@@ -30,16 +30,6 @@
 			width: 50%;
 		}
 	}
-
-	.q-container .q-inner {
-		.q-volume {
-			width: 25%;
-		}
-		.post-more {
-			width: 100%;
-			text-align: left;
-		}
-	}
 }
 
 @media only screen and (max-device-height: 768px) {
@@ -315,31 +305,6 @@
 	.post-list, .page-list, .blog-list, .quarterly-list {
 		article {
 			width: 50%;
-		}
-	}
-
-	.q-container {
-		.q-inner {
-			.q-content, .q-thumb, .q-volume, .post-more {
-				width: 100%;
-			}
-			.q-volume {
-				display: flex;
-	      flex-wrap: wrap;
-				.v-container {
-					width: 50%;
-				}
-				.v-container:nth-of-type(1n) {
-					padding: @gridPadding @gridPadding @gridPadding 0;
-				}
-				.v-container:nth-of-type(2) {
-					border-top: none;
-				}
-				.v-container:nth-of-type(2n) {
-					padding: @gridPadding 0 @gridPadding @gridPadding;
-					border-left: 1px dotted #282828;
-				}
-			}
 		}
 	}
 }
