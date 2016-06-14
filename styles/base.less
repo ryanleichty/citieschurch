@@ -2858,26 +2858,32 @@ strong {
   text-align: left;
 }
 
-.q-buy {
-    display: block;
-    color: white;
-    font-size: 18px;
-    font-family: "Brown-Regular", Arial, sans-serif;
-    width: 100%;
-    border: 2px white solid;
-    text-align: center;
-    line-height: .5;
-    padding: 20px;
-    box-sizing: border-box;
-}
-
-.q-download {
-  font-family: "Brown-Regular", Arial, sans-serif;
-  font-size: 14px;
-  color: #505050;
-  text-align: center;
-  width: 100%;
+.v-buy-download {
   display: block;
-  line-height: 1;
-  margin-top: 20px;
+  width: 100%;
+  font-family: "Brown-Regular", Arial, sans-serif;
+  text-align: center;
+  .border-box;
+
+  .v-buy {
+    padding: @gridPadding;
+    border: 2px white solid;
+    font-size: 0.75rem;
+    line-height: 0.5;
+    color: white;
+    &:hover {
+      background-color: white;
+      color: black;
+    }
+  }
+
+  .v-download {
+    margin-top: @gridPadding;
+    font-size: 0.583rem;
+    line-height: 1;
+    color: #666666;
+    &:hover {
+      color: white;
+    }
+  }
 }
