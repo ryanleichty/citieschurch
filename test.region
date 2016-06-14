@@ -143,21 +143,21 @@
       <div class="post-list">
 
         <div class="post-section gridBlock-100">
-          <h1><a href="/sermons/">Sermons</a></h1>
+          <h1><a href="/sermons/">Featured</a></h1>
         </div>
 
         {.repeated section items}
         <article class="{@|item-classes}" id="article-{id}" data-item-id="{id}">
 
           {.main-image?}
-          <div class="excerpt-thumb">
+          <div class="excerpt-thumb-featured">
             <a href="{fullUrl}" class="excerpt-image content-fill">
               <img {@|image-meta} />
             </a>
           </div>
           {.end}
 
-          <header class="entry-header">
+          <header class="entry-header-featured">
 
             <div class="meta-above-title">
 
