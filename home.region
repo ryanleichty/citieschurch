@@ -188,12 +188,8 @@
     <squarespace:query collection="journal" limit="4">
       <div class="post-list">
 
-        <div class="post-section">
-          <h1>Articles</h1>
-        </div>
-
-        <div class="post-more">
-          <a href="/journal/">More →</a>
+        <div class="post-section gridBlock-100">
+          <h1><a href="/journal/">Articles</a></h1>
         </div>
 
         {.repeated section items}
