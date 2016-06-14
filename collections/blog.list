@@ -6,12 +6,6 @@
     {.main-image?}
     <div class="excerpt-thumb">
       <a href="{fullUrl}" class="excerpt-image content-fill">
-        {.equal?:collection.title:"Journal"}
-          <span class="post-type">Article</span>
-        {.end}
-        {.equal?:collection.title:"Sermons"}
-          <span class="post-type">Sermon</span>
-        {.end}
         <img {@|image-meta} />
       </a>
     </div>
