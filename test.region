@@ -139,7 +139,7 @@
       </div>
     </div>
 
-    <squarespace:query collection="sermons" limit="4">
+    <squarespace:query collection="sermons" featured="true" limit="4">
       <div class="post-list">
 
         <div class="post-section gridBlock-100">
