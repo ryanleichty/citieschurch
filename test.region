@@ -133,6 +133,12 @@
 
     {squarespace.main-content}
 
+    <div class="intro-container">
+      <div class="intro-inner">
+        <h1>Cities Church is a community of Christians in Minneapolis committed to worshiping Jesus, loving one another, and seeking the good of the Cities.</h1>
+      </div>
+    </div>
+
     <squarespace:query collection="sermons" featured="true" limit="4">
       <div class="post-list">
 
@@ -178,12 +184,6 @@
 
       </div>
     </squarespace:query>
-
-    <div class="intro-container">
-      <div class="intro-inner">
-        <h1>Cities Church is a community of Christians in Minneapolis committed to worshiping Jesus, loving one another, and seeking the good of the Cities.</h1>
-      </div>
-    </div>
 
     <squarespace:query collection="sermons" limit="4">
       <div class="post-list">
@@ -286,15 +286,9 @@
       <h1>The Quarterly</h1>
       <p>The Quarterly is a publication of Cities Church that corresponds to our current sermon series with additional Bible study resources and articles from our pastors and church members.</p>
     </div>
-    <squarespace:query collection="the-quarterly-overview" limit="4">
+    <squarespace:query collection="the-quarterly-overview" limit="1">
       <div class="q-thumb">
-        <div class="cycle-slideshow"
-            data-cycle-fx="scrollHorz"
-            data-cycle-speed="200"
-            data-cycle-pause-on-hover=".q-thumb, .v-container"
-            data-cycle-pager=".q-volume"
-            data-cycle-pager-template=""
-            data-cycle-pager-event="mouseover">
+        <div class="cycle-slideshow">
           {.repeated section items}
             {.main-image?}
               <img {@|image-meta} />
@@ -303,17 +297,18 @@
         </div>
       </div>
       <ul class="q-volume">
-        {.repeated section items}
-          <li class="v-container">
-            <div class="v-number">Volume {customContent.volumeNumber}</div>
-            <div class="v-title">{title}</div>
-          </li>
+        {.section items}
+          <div class="v-container">
+            <p class="v-number">Volume {customContent.volumeNumber}</p>
+            <p class="v-title">{title}</p>
+          </div>
+          <div class="buy-download">
+            <a href="{customContent.amazonURL}" target="_blank" class="q-buy">Buy</a>
+            <a href="{customContent.pdfURL}" target="_blank" class="q-download">Download</a>
+          </div>
         {.end}
       </ul>
     </squarespace:query>
-    <div class="post-more">
-      <a href="/the-quarterly/">More →</a>
-    </div>
   </div>
 </div>
 
