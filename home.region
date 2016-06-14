@@ -236,12 +236,12 @@
 
 <div class="q-container">
   <div class="q-inner">
-    <div class="q-content">
+    <div class="q-content gridBlock-25">
       <h1>The Quarterly</h1>
       <p>The Quarterly is a publication of Cities Church that corresponds to our current sermon series with additional Bible study resources and articles from our pastors and church members.</p>
     </div>
     <squarespace:query collection="the-quarterly-overview" limit="1">
-      <div class="q-thumb">
+      <div class="q-thumb gridBlock-50">
         <div class="cycle-slideshow">
           {.repeated section items}
             {.main-image?}
@@ -250,7 +250,7 @@
           {.end}
         </div>
       </div>
-      <div class="q-volume">
+      <div class="q-volume gridBlock-25">
         {.repeated section items}
           <div class="v-container">
             <p class="v-title">Volume {customContent.volumeNumber}</p>
