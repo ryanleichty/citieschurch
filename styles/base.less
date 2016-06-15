@@ -2665,48 +2665,49 @@ html.touch {
   padding: calc(@siteMargin * 2) @siteMargin;
   background-color: #000;
   color: #fff;
-  .q-inner {
-    display: flex;
-    flex-wrap: wrap;
+}
 
-    .q-content {
-      h1 {
-        font: 1.25rem/1em "Brown-Regular", Arial, sans-serif;
-        color: #fff;
-        margin: 0 0 (@gridPadding * 2);
-      }
-      p {
-        font: 0.75rem/1.4em "Brown-Regular", Arial, sans-serif;
-        color: #fff;
-      }
+.q-inner {
+  display: flex;
+  flex-wrap: wrap;
+
+  .q-content {
+    h1 {
+      font: 1.25rem/1em "Brown-Regular", Arial, sans-serif;
+      color: #fff;
+      margin: 0 0 (@gridPadding * 2);
     }
-
-    .q-thumb {
-      overflow: hidden;
-      .cycle-slideshow {
-        padding-bottom: 117%;
-        position: relative;
-      }
-      img {
-        width: 100%;
-        height: auto;
-        position:  absolute !important;
-      }
+    p {
+      font: 0.75rem/1.4em "Brown-Regular", Arial, sans-serif;
+      color: #fff;
     }
+  }
 
-    .q-volume {
-      margin: 0;
-      list-style: none;
-      .v-container {
-        .border-box;
-        width: 100%;
-        padding: 0;
-        margin-bottom: (@gridPadding * 2);
-        .transition;
+  .q-thumb {
+    overflow: hidden;
+    .cycle-slideshow {
+      padding-bottom: 117%;
+      position: relative;
+    }
+    img {
+      width: 100%;
+      height: auto;
+      position:  absolute !important;
+    }
+  }
 
-        .v-title {
-          font: 0.75rem/1.4em "brown-regular";
-        }
+  .q-volume {
+    margin: 0;
+    list-style: none;
+    .v-container {
+      .border-box;
+      width: 100%;
+      padding: 0;
+      margin-bottom: (@gridPadding * 2);
+      .transition;
+
+      .v-title {
+        font: 0.75rem/1.4em "brown-regular";
       }
     }
   }
@@ -2892,9 +2893,18 @@ strong {
   }
 }
 
-.collection-type-quarterly .color-overlay {
-  background: -moz-linear-gradient(top,  rgba(0,0,0,.3) 0%, rgba(0,0,0,1) 100%);
-  background: -webkit-linear-gradient(top,  rgba(0,0,0,.3) 0%,rgba(0,0,0,1) 100%);
-  background: linear-gradient(to bottom,  rgba(0,0,0,.3) 0%,rgba(0,0,0,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 );
+.collection-type-quarterly {
+  background-color: black;
+
+  #siteWrapper, #footer {
+    background-color: black;
+    color: white;
+  }
+
+  .color-overlay {
+    background: -moz-linear-gradient(top,  rgba(0,0,0,.3) 0%, rgba(0,0,0,1) 100%);
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,.3) 0%,rgba(0,0,0,1) 100%);
+    background: linear-gradient(to bottom,  rgba(0,0,0,.3) 0%,rgba(0,0,0,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 );
+  }
 }
