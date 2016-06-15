@@ -1,7 +1,6 @@
   {.section item}
   <article class="quarterly-item" id="article-{id}" data-item-id="{id}">
 
-    <div class="q-container">
       <div class="q-inner">
 
         <div class="q-content gridBlock-25">
@@ -35,7 +34,6 @@
         </div>
 
       </div>
-    </div>
 
   </article>
   {.end}
