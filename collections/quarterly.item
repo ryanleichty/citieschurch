@@ -23,7 +23,7 @@
               {.end}
               <p class="v-title">{title}</p>
               {.if customContent.price}
-                <p class="vol-price">{customContent.price}</p>
+                <p class="vol-price">${customContent.price}</p>
               {.end}
             </div>
             <div class="v-buy-download">
