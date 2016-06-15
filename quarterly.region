@@ -8,15 +8,21 @@
       </div>
     </div>
   </div>
+
   {.or}
+
   {.section collection}
     {.main-image?}
-    <div class="banner-thumbnail-wrapper" data-content-field="main-image" data-collection-id="{collection.id}" data-edit-main-image="Banner" data-annotation-alignment="bottom left">
+    <div class="banner-thumbnail-wrapper" data-content-field="main-image">
       {.section mainImage}
-      <div class="color-overlay"></div>
-      <figure id="thumbnail" class="loading content-fill"><img {@|image-meta} /></figure>
+        <div class="color-overlay"></div>
+        <figure id="thumbnail" class="loading content-fill"><img {@|image-meta} /></figure>
       {.end}
-      {.if description}<div class="desc-wrapper" data-collection-id="{id}">{description}</div>{.end}
+      <div class="blog-item-wrapper">
+        <div class="title-desc-wrapper">
+          <div class="post-title">{title}</div>
+        </div>
+      </div>
     </div>
     {.end}
   {.end}
