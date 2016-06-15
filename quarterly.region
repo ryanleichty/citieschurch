@@ -26,4 +26,6 @@
 <main id="page" role="main">
    {squarespace.main-content}
 </main>
-<hr>
+<div class="quarterly-hr">
+  <hr>
+</div>
