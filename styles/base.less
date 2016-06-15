@@ -2722,7 +2722,7 @@ html.touch {
 .back-to-all-vol {
   position: absolute;
   top: -120px;
-  z-index: 999999;
+  z-index: 1000;
   margin: @gridPadding;
   font-family: "Brown-Regular", Arial, sans-serif;;
   font-size: 12px;
@@ -2941,7 +2941,7 @@ strong {
     h1, h2, h3, p, a {
       color: white;
     }
-    
+
     a:hover {
       color: #666;
     }
@@ -2949,6 +2949,37 @@ strong {
     h2 + p {
       color: #666;
     }
+  }
+
+  .search-form {
+    background-color: black;
+  }
+
+  .search-form-field {
+    border-bottom: 2px solid white;
+    color: white;
+  }
+
+  line {
+    stroke: white;
+  }
+
+  // Search Placeholder
+
+  ::-webkit-input-placeholder {
+     color: white;
+  }
+
+  :-moz-placeholder { /* Firefox 18- */
+     color: white;
+  }
+
+  ::-moz-placeholder {  /* Firefox 19+ */
+     color: white;
+  }
+
+  :-ms-input-placeholder {
+     color: white;
   }
 
 }
