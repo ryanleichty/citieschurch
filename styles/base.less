@@ -2737,6 +2737,41 @@ html.touch {
   }
 }
 
+// THE QUARTERLY LIST PAGE
+
+.quarterly-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  article {
+    width: 25%;
+    padding: @gridPadding;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  .entry-title {
+    margin: 0;
+    font-size: 18px;
+  }
+
+  .excerpt-thumb {
+    display: block;
+    width: 100%;
+    margin: 0 0 @gridPadding 0;
+    overflow: hidden;
+    a {
+      display: block;
+      height: 100%;
+      padding-bottom: 117%;
+      position: relative;
+      img {
+        position: absolute;
+      }
+    }
+  }
+}
+
 // Twitter
 
 #twitter-container {
