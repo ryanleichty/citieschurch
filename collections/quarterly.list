@@ -1,17 +1,13 @@
 <div class="quarterly-list">
-
   {.repeated section items}
-  <article class="{@|item-classes}" id="article-{id}" data-item-id="{id}">
-
-    {.main-image?}
-    <div class="excerpt-thumb">
-      <a href="{fullUrl}" class="excerpt-image content-fit">
-        <img {@|image-meta} />
-      </a>
-    </div>
-    {.end}
-
-  </article>
+    <article class="{@|item-classes}" id="article-{id}" data-item-id="{id}">
+      {.main-image?}
+        <div class="excerpt-thumb">
+          <a href="{fullUrl}" class="excerpt-image content-fit">
+            <img {@|image-meta} />
+          </a>
+        </div>
+      {.end}
+    </article>
   {.end}
-
 </div>
