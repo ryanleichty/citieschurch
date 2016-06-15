@@ -2726,7 +2726,7 @@ html.touch {
   text-align: center;
   a {
     margin: 0 @gridPadding;
-    font-family: "Brown-Regular", Arial, sans-serif;;
+    font-family: "Brown-Regular", Arial, sans-serif;
     font-size: 12px;
     color: #666;
     text-transform: uppercase;
@@ -2746,8 +2746,14 @@ html.touch {
   article {
     width: 25%;
     padding: @gridPadding;
-    box-sizing: border-box;
+    margin-bottom: (@gridPadding * 2);
     text-align: center;
+    .border-box;
+  }
+
+  .volume-number {
+    font-family: "Brown-Regular", Arial, sans-serif;
+    font-size: 0.75rem;
   }
 
   .entry-title {
