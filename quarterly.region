@@ -9,23 +9,18 @@
     </div>
   </div>
 
-  {.or}
+{.or}
 
-  {.section collection}
-    {.main-image?}
     <div class="banner-thumbnail-wrapper" data-content-field="main-image">
-      {.section mainImage}
-        <div class="color-overlay"></div>
-        <figure id="thumbnail" class="loading content-fill"><img {@|image-meta} /></figure>
-      {.end}
+      <div class="color-overlay"></div>
+      <figure id="thumbnail" class="loading content-fill">{.section items}<img {@|image-meta} />{.end}</figure>
       <div class="desc-wrapper">
         <p>
-          <strong>{title}</strong>
+          {.section collection}<strong>{title}</strong>{.end}
         </p>
       </div>
     </div>
-    {.end}
-  {.end}
+
 {.end}
 
 <main id="page" role="main">
