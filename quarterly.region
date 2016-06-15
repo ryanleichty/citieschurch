@@ -26,3 +26,4 @@
 <main id="page" role="main">
    {squarespace.main-content}
 </main>
+<hr>
