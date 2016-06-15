@@ -29,7 +29,7 @@
   {.end}
 {.or}
   {.section collection}
-    {.collectionTypeNameEquals? blog}
+    {.collectionTypeNameEquals? gallery}
       <squarespace:query collection="{collection.urlId}" featured="true" limit="5">
       {.section items}
         <div class="sqs-featured-posts-gallery">
