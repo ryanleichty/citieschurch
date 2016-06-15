@@ -1,9 +1,9 @@
 {.if item}
   {.section item}
-      {.main-image?}
+      {.if customContent.bannerImage}
         <div class="banner-thumbnail-wrapper" data-content-field="main-image">
           <div class="color-overlay"></div>
-          <figure id="thumbnail" class="loading content-fill"><img {@|image-meta} /></figure>
+          {.section customContent.bannerImage}<figure id="thumbnail" class="loading content-fill"><img {@|image-meta} /></figure>{.end}
           <div class="blog-item-wrapper">
             <div class="title-desc-wrapper">
               {.section title}<div class="post-title">{@}</div>{.end}
@@ -13,6 +13,8 @@
       {.end}
   {.end}
 {.or}
+
+
 
 {.section collection}
   {.main-image?}
