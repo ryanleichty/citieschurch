@@ -1,11 +1,11 @@
 <div class="quarterly-list">
 
   {.repeated section items}
-  <article class="entry h-entry {@|item-classes}" id="article-{id}" data-item-id="{id}">
+  <article class="{@|item-classes}" id="article-{id}" data-item-id="{id}">
 
     {.main-image?}
     <div class="excerpt-thumb">
-      <a href="{fullUrl}" class="excerpt-image content-fill">
+      <a href="{fullUrl}" class="excerpt-image content-fit">
         <img {@|image-meta} />
       </a>
     </div>
@@ -31,28 +31,7 @@
 
     </header>
 
-    <footer class="entry-footer clear">
-      {.section sourceUrl}
-      <p class="entry-source">
-        Source: <a href="{sourceUrl}" target="_blank">{sourceUrl}</a>
-      </p>
-      {.end}
-      {.section tags}
-      <p class="entry-tags">
-        Tagged: {.repeated section @}<a href="{collection.fullUrl}?tag={@|url-encode}" rel="tag">{@}</a>{.alternates with}, {.end}
-      </p>
-      {.end}
-      <div class="entry-actions">
-        {.comments?}{.if websiteSettings.disqusShortname}{@|comment-link}{.or}
-        <a href="{fullUrl}#comments-{id}" class="entry-comments">{.section publicCommentCount}{@} Comment{@|pluralize}{.or}Comment{.end}</a>{.end}{.end}{@|like-button}{@|social-button-inline}
-      </div>
-    </footer>
-
-    {.if postItemInjectCode}<div class="entry-injection">{postItemInjectCode}</div>{.end}
-
   </article>
   {.end}
-
-
 
 </div>
