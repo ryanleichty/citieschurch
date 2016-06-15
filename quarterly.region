@@ -1,3 +1,19 @@
+{.if item}
+  {.section item}
+      {.main-image?}
+        <div class="banner-thumbnail-wrapper" data-content-field="main-image">
+          <div class="color-overlay"></div>
+          <figure id="thumbnail" class="loading content-fill"><img {@|image-meta} /></figure>
+          <div class="blog-item-wrapper">
+            <div class="title-desc-wrapper">
+              {.section title}<div class="post-title">{@}</div>{.end}
+            </div>
+          </div>
+        </div>
+      {.end}
+  {.end}
+{.or}
+
 {.section collection}
   {.main-image?}
   <div class="banner-thumbnail-wrapper" data-content-field="main-image" data-collection-id="{collection.id}" data-edit-main-image="Banner" data-annotation-alignment="bottom left">
@@ -8,6 +24,8 @@
     {.if description}<div class="desc-wrapper" data-collection-id="{id}">{description}</div>{.end}
   </div>
   {.end}
+{.end}
+
 {.end}
 
 
