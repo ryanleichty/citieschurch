@@ -2706,15 +2706,23 @@ html.touch {
       margin-bottom: (@gridPadding * 4);
       .transition;
 
-      .v-title, .vol-price {
+      .v-title, .vol-meta {
         font: 0.75rem/1.4em "brown-regular";
       }
 
-      .vol-price {
-        display: block;
+      .vol-meta {
+        display: flex;;
         margin-top: @gridPadding !important;
         padding-top: @gridPadding;
         border-top: 1px #333 dotted;
+        .vol-price, .vol-usa {
+          width: 50%;
+        }
+        .vol-usa {
+          font-size: 0.583rem;
+          color: #555;
+          text-align: right;
+        }
       }
     }
   }
