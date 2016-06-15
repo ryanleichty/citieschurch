@@ -18,10 +18,10 @@
         <div class="color-overlay"></div>
         <figure id="thumbnail" class="loading content-fill"><img {@|image-meta} /></figure>
       {.end}
-      <div class="blog-item-wrapper">
-        <div class="title-desc-wrapper">
-          <div class="post-title">{title}</div>
-        </div>
+      <div class="desc-wrapper">
+        <p>
+          <strong>{title}</strong>
+        </p>
       </div>
     </div>
     {.end}
