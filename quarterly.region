@@ -1,20 +1,14 @@
 {.if item}
-  {.section item}
-      {.if customContent.bannerImage}
-        <div class="banner-thumbnail-wrapper" data-content-field="main-image">
-          <div class="color-overlay"></div>
-          {.section customContent.bannerImage}<figure id="thumbnail" class="loading content-fill"><img {@|image-meta} /></figure>{.end}
-          <div class="blog-item-wrapper">
-            <div class="title-desc-wrapper">
-              {.section title}<div class="post-title">{@}</div>{.end}
-            </div>
-          </div>
-        </div>
-      {.end}
-  {.end}
+  <div class="banner-thumbnail-wrapper" data-content-field="main-image">
+    <div class="color-overlay"></div>
+    {.section item.customContent.bannerImage}<figure id="thumbnail" class="loading content-fill"><img {@|image-meta} /></figure>{.end}
+    <div class="blog-item-wrapper">
+      <div class="title-desc-wrapper">
+        {.section collection}<div class="post-title">{title}</div>{.end}
+      </div>
+    </div>
+  </div>
 {.or}
-
-
 
 {.section collection}
   {.main-image?}
@@ -28,9 +22,6 @@
   {.end}
 {.end}
 
-{.end}
-
-
-      <main id="page" role="main">
-         {squarespace.main-content}
-      </main>
+<main id="page" role="main">
+   {squarespace.main-content}
+</main>
