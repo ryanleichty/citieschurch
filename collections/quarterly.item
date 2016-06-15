@@ -9,11 +9,7 @@
 
         <div class="q-content gridBlock-25">
           <h1>{title}</h1>
-          {.section customContent}
-            {.if description}
-              <p>{description}</p>
-            {.end}
-          {.end}
+          <p>The Quarterly is a publication of Cities Church that corresponds to our current sermon series with additional Bible study resources and articles from our pastors and church members.</p>
         </div>
 
         <div class="q-thumb gridBlock-50">
