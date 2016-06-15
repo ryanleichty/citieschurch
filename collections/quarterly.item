@@ -31,7 +31,10 @@
               {.end}
               <p class="v-title">{title}</p>
               {.if customContent.price}
-                <p class="vol-price">${customContent.price}</p>
+                <div class="vol-meta">
+                  <p class="vol-price">${customContent.price}</p>
+                  <p class="vol-usa">Printed in the USA</p>
+                </div>
               {.end}
             </div>
             <div class="v-buy-download">
