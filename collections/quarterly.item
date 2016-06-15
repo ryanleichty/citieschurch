@@ -1,47 +1,41 @@
   {.section item}
   <article class="quarterly-item" id="article-{id}" data-item-id="{id}">
 
-    <div class="quarterly-content gridBlock-25">
+    <div class="q-container">
+      <div class="q-inner">
 
-      <header class="entry-header">
-        <div class="meta-above-title">
-          {.if customContent.volumeNumber}
-            <div class="entry-byline">
-              <span class="entry-author">Volume {customContent.volumeNumber}</span>
-            </div>
-          {.end}
+        <div class="q-content gridBlock-25">
+          <h1>{title}</h1>
+          <p>The Quarterly is a publication of Cities Church that corresponds to our current sermon series with additional Bible study resources and articles from our pastors and church members.</p>
         </div>
-        <h1 data-content-field="title" class="quarterly-title">{title}</h1>
-      </header>
 
-      <div class="entry-content">
-        {.section body}
-          {@}
-        {.end}
-      </div>
-
-    </div>
-
-    {.main-image?}
-    <div class="quarterly-thumb gridBlock-50">
-      <img {@|image-meta} />
-    </div>
-    {.end}
-
-    <div class="gridBlock-25">
-      <div class="buttons-block">
-        <div class="buttons-inline">
-          <a href="{customContent.amazonURL}" class="quarterly-button">Purchase</a>
-          <div>
-            or</br>
-            <a href="{customContent.pdfURL}">Download Free PDF</a>
+        <div class="q-thumb gridBlock-50">
+          <div class="cycle-slideshow">
+              {.main-image?}
+                <img {@|image-meta} />
+              {.end}
           </div>
         </div>
+
+        <div class="q-volume gridBlock-25">
+            <div class="v-container">
+              {.if customContent.volumeNumber}
+                <p class="v-title">Volume {customContent.volumeNumber}</p>
+              {.end}
+              <p class="v-title">{title}</p>
+            </div>
+            <div class="v-buy-download">
+              {.if customContent.amazonURL}
+                <a href="{customContent.amazonURL}" target="_blank" class="v-buy">Buy</a>
+              {.end}
+              {.if customContent.pdfURL}
+                <a href="{customContent.pdfURL}" target="_blank" class="v-download">Download</a>
+              {.end}
+            </div>
+        </div>
+
       </div>
     </div>
 
-
-
   </article>
-
   {.end}
