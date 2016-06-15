@@ -3,7 +3,9 @@
 
       <div class="q-inner">
 
-        <a href="{collection.fullUrl}" class="back-to-all-vol">← Back to all Volumes</a>
+        <div class="grid-100">
+          <a href="{collection.fullUrl}" class="back-to-all-vol">← Back to all Volumes</a>
+        </div>
 
         <div class="q-content gridBlock-25">
           <h1>{title}</h1>
