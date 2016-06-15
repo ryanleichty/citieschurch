@@ -11,22 +11,6 @@
     </div>
     {.end}
 
-    <header class="entry-header">
-
-      {.if customContent.volumeNumber}
-        <p class="volume-number">Volume {customContent.volumeNumber}</p>
-      {.end}
-
-      <h1 data-content-field="title" class="entry-title p-name">
-      {.passthrough?}
-        <a href="{sourceUrl}" class="entry-title-passthrough" target="_blank">{title}</a>
-      {.or}
-        <a href="{fullUrl}" class="u-url" rel="bookmark">{title}</a>
-      {.end}
-      </h1>
-
-    </header>
-
   </article>
   {.end}
 
