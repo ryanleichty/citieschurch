@@ -3,6 +3,8 @@
 
       <div class="q-inner">
 
+        <a href="{collection.fullUrl}" class="back-to-all-vol gridBlock-100">← Back to all Volumes</a>
+
         <div class="q-content gridBlock-25">
           <h1>{title}</h1>
           <p>The Quarterly is a publication of Cities Church that corresponds to our current sermon series with additional Bible study resources and articles from our pastors and church members.</p>
