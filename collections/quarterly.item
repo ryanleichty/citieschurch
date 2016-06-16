@@ -22,7 +22,7 @@
           {.end}
           <div class="quarterly-pagination">
             <p>Volume {customContent.volumeNumber}</p>
-            <ol reversed>
+            <ul>
               <squarespace:query collection="the-quarterly-overview" limit="100">
                 {.repeated section items}
                   <li>
