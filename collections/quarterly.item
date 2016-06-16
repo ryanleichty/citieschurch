@@ -26,7 +26,7 @@
               <squarespace:query collection="the-quarterly-overview" limit="100">
                 {.repeated section items}
                   <li>
-                    <a href="{fullUrl}"><span>{customContent.volumeNumber}<span></a>
+                    <a href="{fullUrl}"><span>{customContent.volumeNumber}</span></a>
                   </li>
                 {.end}
               </squarespace:query>
