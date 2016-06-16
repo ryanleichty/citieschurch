@@ -13,7 +13,7 @@
 
     <div class="banner-thumbnail-wrapper" data-content-field="main-image">
       <div class="color-overlay"></div>
-      <figure id="thumbnail" class="loading content-fill">{.section items.1.customContent.bannerImage}<img {@|image-meta} />{.end}</figure>
+      <figure id="thumbnail" class="loading content-fill">{.section items.0.customContent.bannerImage}<img {@|image-meta} />{.end}</figure>
       <div class="desc-wrapper">
         <p>
           {.section collection}<strong>{title}</strong>{.end}
