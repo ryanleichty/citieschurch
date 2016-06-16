@@ -208,6 +208,16 @@
 	// collapse sqs layouts
   @import 'sqs-grid-breaker';
 
+
+	// Collapse grid blocks
+	.gridBlock-75, .gridBlock-50, .gridBlock-25, .grid-75, .grid-50, .grid-25 {
+	  width: 100%;
+	}
+
+	#page {
+		padding: @siteMargin 0 3*@mobilePadding;
+	}
+
 	// fix SQS padding
 	.sqs-layout .sqs-row .sqs-block:first-child {
 		padding-top: 0 !important;
@@ -217,20 +227,6 @@
 	// Intro container on home page font size
 	.intro-container h1 {
 		font-size: 1.25rem;
-	}
-
-	.gridBlock-75, .gridBlock-50, .gridBlock-25, .grid-75, .grid-50, .grid-25 {
-	  width: 100%;
-	}
-
-	#twitter-container {
-		.twitter-more {
-			text-align: left;
-		}
-	}
-
-	#page {
-		padding: @siteMargin 0 3*@mobilePadding;
 	}
 
 	// Hide empty grid block
@@ -268,7 +264,14 @@
 	  padding-top: 17px;
 	}
 
-	/* SEARCH */
+	// THE QUARTERLY //
+
+	// Back to all volumes
+	.back-to-all-vol {
+	  top: -40px;
+	}
+
+	// SEARCH //
 
 	.search-form-field, .sqs-search-page-input input {
 	    font-size: 24px;
@@ -318,14 +321,6 @@
 		article {
 			width: 50%;
 		}
-	}
-}
-
-@media only screen and (max-device-width: 667px) {
-	.back-to-top-nav { display: block; }
-	.back-to-top {
-		display: inline-block;
-		a { display: block; padding: .75em 1em; }
 	}
 }
 
