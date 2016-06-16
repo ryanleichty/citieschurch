@@ -2743,10 +2743,17 @@ html.touch {
   p {
     font: 0.75rem/1 "Brown-Regular", Arial, sans-serif;
     color: white;
+    text-align: center;
   }
   ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: @gridPadding 0 0;
     li {
       display: inline-block;
+      width: 30px;
+      height: 30px;
       a {
         font: 0.583rem/1 "Brown-Regular", Arial, sans-serif;
         color: #555;
