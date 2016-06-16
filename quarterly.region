@@ -1,11 +1,12 @@
 {.if item}
+
   <div class="banner-thumbnail-wrapper" data-content-field="main-image">
     <div class="color-overlay"></div>
-    {.section item.customContent.bannerImage}<figure id="thumbnail" class="loading content-fill"><img {@|image-meta} /></figure>{.end}
-    <div class="blog-item-wrapper">
-      <div class="title-desc-wrapper">
-        {.section collection}<div class="post-title">{title}</div>{.end}
-      </div>
+    <figure id="thumbnail" class="loading content-fill">{.section item.customContent.bannerImage}<img {@|image-meta} />{.end}</figure>
+    <div class="desc-wrapper">
+      <p>
+        {.section collection}<strong>{title}</strong>{.end}
+      </p>
     </div>
   </div>
 
