@@ -2754,6 +2754,7 @@ html.touch {
       position: relative;
       width: 30px;
       height: 30px;
+      margin-right: @gridPadding;
       list-style: none;
       a {
         position: absolute;
@@ -2763,6 +2764,7 @@ html.touch {
         border-radius: 50%;
         font: 0.583rem/1 "Brown-Regular", Arial, sans-serif;
         color: #555;
+        .border-box;
         span {
           position: absolute;
           top: 50%;
@@ -2770,6 +2772,9 @@ html.touch {
           transform: translate(-50%, -50%);
         }
       }
+    }
+    li:last-of-type {
+      margin: 0;
     }
   }
 }
