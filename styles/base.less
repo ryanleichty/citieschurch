@@ -2751,11 +2751,12 @@ html.touch {
     padding: 0;
     margin: @gridPadding 0 0;
     li {
+      position: relative;
       width: 30px;
       height: 30px;
       list-style: none;
       a {
-        position: relative;
+        position: absolute;
         width: 30px;
         height: 30px;
         border: 1px #555 solid;
@@ -2763,6 +2764,7 @@ html.touch {
         font: 0.583rem/1 "Brown-Regular", Arial, sans-serif;
         color: #555;
         span {
+          position: absolute;
           top: 50%;
           left: 50%;
           transform: translate(-50%, -50%);
