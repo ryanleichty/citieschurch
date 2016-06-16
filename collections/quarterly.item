@@ -17,11 +17,9 @@
         </div>
 
         <div class="q-thumb gridBlock-50">
-          <div class="cycle-slideshow">
-              {.main-image?}
-                <img {@|image-meta} />
-              {.end}
-          </div>
+          {.main-image?}
+            <img {@|image-meta} />
+          {.end}
         </div>
 
         <div class="q-volume gridBlock-25">
