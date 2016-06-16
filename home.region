@@ -242,13 +242,11 @@
     </div>
     <squarespace:query collection="the-quarterly-overview" limit="1">
       <div class="q-thumb gridBlock-50">
-        <div class="cycle-slideshow">
-          {.repeated section items}
+          {.section items.0}
             {.main-image?}
               <img {@|image-meta} />
             {.end}
           {.end}
-        </div>
       </div>
       <div class="q-volume gridBlock-25">
         {.repeated section items}
