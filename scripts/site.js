@@ -471,4 +471,14 @@ $(document).ready(function() {
 
 		$(".copyrightYear").text( (new Date).getFullYear() );
 
+// The Quarterly Active Pagination
+
+		$(function(){
+			$(".quarterly-pagination a").each(function(){
+				if ($(this).attr("href") == window.location.pathname){
+					$(this).addClass("active");
+				}
+			});
+		});
+
 })
