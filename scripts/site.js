@@ -471,7 +471,7 @@ $(document).ready(function() {
 
 		$(".copyrightYear").text( (new Date).getFullYear() );
 
-// The Quarterly Active Pagination
+// Pagination for The Quarterly - Add class "active" to the current volume number
 
 		$(function(){
 			$(".quarterly-pagination a").each(function(){
