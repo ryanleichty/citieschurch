@@ -37,7 +37,7 @@
         {.or}
 
           {.section collection}
-          <div class="collection{.if active} active{.end}{.if homepage} homepage{.end}">
+          <div class="collection{.if active} test{.end}{.if homepage} homepage{.end}">
             <a href="{fullUrl}">
               {navigationTitle}
             </a>
