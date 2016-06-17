@@ -481,7 +481,7 @@ $(document).ready(function() {
 			});
 		});
 
-		$("a.active").click(function( event ) {
+		$(".active").click(function( event ) {
 			event.preventDefault();
 		});
 
