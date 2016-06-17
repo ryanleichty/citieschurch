@@ -61,10 +61,7 @@
 
     <div class="collection search-icon">
       <a href="/search" class="search-link">
-        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="36px" height="34px" viewBox="0 0 36 34" enable-background="new 0 0 36 34" xml:space="preserve">
-        	<circle fill="none" stroke="#fff" stroke-width="3.5" stroke-miterlimit="10" cx="21" cy="14.8" r="11.6"></circle>
-        	<line fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-miterlimit="10" x1="11.4" y1="23.6" x2="3.3" y2="30.8"></line>
-        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><style type="text/css">.st0{fill:none;stroke:#000000;stroke-width:2;}.st1{fill:none;stroke:#000000;stroke-width:2;stroke-linecap:square;}</style><ellipse class="st0" cx="12" cy="8.5" rx="7" ry="7"/><line class="st1" x1="6.3" y1="13.8" x2="1.4" y2="18.1"/></svg>
       </a>
     </div>
 
