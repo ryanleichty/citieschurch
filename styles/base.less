@@ -2781,8 +2781,13 @@ html.touch {
         }
       }
       a.active {
-        border: 1px white solid;
+        border-color: white;
         color: white;
+        &:hover {
+          background-color: none;
+          border-color: white;
+          color: white;
+        }
       }
     }
     li:last-of-type {
