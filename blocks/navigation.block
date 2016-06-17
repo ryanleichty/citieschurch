@@ -61,7 +61,7 @@
 
     <div class="collection search-icon">
       <a href="/search" class="search-link">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><style type="text/css">.st0{fill:none;stroke:#000000;stroke-width:2;}.st1{fill:none;stroke:#000000;stroke-width:2;stroke-linecap:square;}</style><ellipse class="st0" cx="12" cy="8.5" rx="7" ry="7"/><line class="st1" x1="6.3" y1="13.8" x2="1.4" y2="18.1"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><style type="text/css">.st0{fill:none;stroke:#FFFFFF;stroke-width:2;}.st1{fill:none;stroke:#FFFFFF;stroke-width:2;stroke-linecap:square;}</style><ellipse class="st0" cx="12" cy="8.5" rx="7" ry="7"/><line class="st1" x1="6.3" y1="13.8" x2="1.4" y2="18.1"/></svg>
       </a>
     </div>
 
