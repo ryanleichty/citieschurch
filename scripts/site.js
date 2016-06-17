@@ -479,6 +479,8 @@ $(document).ready(function() {
 					$(this).addClass("active");
 				}
 			});
+
+			// Stops the active link from being clicked
 			$(".quarterly-pagination .active").click(function( event ) {
 				event.preventDefault();
 			});
