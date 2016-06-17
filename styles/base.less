@@ -2707,13 +2707,18 @@ html.touch {
         margin-top: @gridPadding !important;
         padding-top: @gridPadding;
         border-top: 1px #333 dotted;
-        .vol-price, .vol-usa {
-          width: 50%;
+        .vol-price {
+          width: 25%;
         }
         .vol-usa {
+          width: 75%;
           font-size: 0.583rem;
           color: #555;
           text-align: right;
+          svg {
+            height: 10px;
+            margin-right: 10px;
+          }
         }
       }
     }
