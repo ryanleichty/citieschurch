@@ -481,7 +481,7 @@ $(document).ready(function() {
 			});
 		});
 
-		$(".quarterly-pagination .active").click(function( event ) {
+		$("a.active").click(function( event ) {
 			event.preventDefault();
 		});
 
