@@ -17,9 +17,11 @@
         </div>
 
         <div class="q-thumb gridBlock-50">
+          <div class="q-image">
           {.main-image?}
             <img {@|image-meta} />
           {.end}
+          </div>
           <div class="quarterly-pagination">
             <ul>
               <squarespace:query collection="the-quarterly-overview" limit="100">
