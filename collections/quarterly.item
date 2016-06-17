@@ -25,7 +25,7 @@
             <ul>
               <squarespace:query collection="the-quarterly-overview" limit="100">
                 {.repeated section items}
-                  <li class="{.if active} active{.end}">
+                  <li>
                     <a href="{fullUrl}"><span>{customContent.volumeNumber}</span></a>
                   </li>
                 {.end}
@@ -43,7 +43,22 @@
               {.if customContent.price}
                 <div class="vol-meta">
                   <p class="vol-price">${customContent.price}</p>
-                  <p class="vol-usa">Printed in the USA</p>
+                  <p class="vol-usa">
+                    <span>
+                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      	 viewBox="0 0 22.5 15" style="enable-background:new 0 0 22.5 15;" xml:space="preserve">
+                      <style type="text/css">
+                      	.st0{fill:#FFFFFF;}
+                      </style>
+                      <g>
+                      	<rect x="11.2" class="st0" width="11.2" height="1.7"/>
+                      	<rect x="11.2" y="3.3" class="st0" width="11.2" height="1.7"/>
+                      	<rect x="11.2" y="6.7" class="st0" width="11.2" height="1.7"/>
+                      	<rect y="10" class="st0" width="22.5" height="1.7"/>
+                      	<rect y="13.3" class="st0" width="22.5" height="1.7"/>
+                      </g>
+                      </svg>
+                    </span>Printed in the USA</p>
                 </div>
               {.end}
             </div>
