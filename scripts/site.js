@@ -479,10 +479,9 @@ $(document).ready(function() {
 					$(this).addClass("active");
 				}
 			});
-		});
-
-		$(".active").click(function( event ) {
-			event.preventDefault();
+			$(".active").click(function( event ) {
+				event.preventDefault();
+			});
 		});
 
 })
