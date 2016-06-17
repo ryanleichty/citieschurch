@@ -477,6 +477,9 @@ $(document).ready(function() {
 			$(".quarterly-pagination a").each(function(){
 				if ($(this).attr("href") == window.location.pathname){
 					$(this).addClass("active");
+					$(this).click(function(event) {
+  					event.preventDefault();
+					}
 				}
 			});
 		});
