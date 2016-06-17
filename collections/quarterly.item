@@ -21,7 +21,6 @@
             <img {@|image-meta} />
           {.end}
           <div class="quarterly-pagination">
-            <p>Volume {customContent.volumeNumber}</p>
             <ul>
               <squarespace:query collection="the-quarterly-overview" limit="100">
                 {.repeated section items}
