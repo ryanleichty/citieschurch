@@ -481,10 +481,6 @@ $(document).ready(function() {
 			});
 		});
 
-		$(function(){
-			$(".quarterly-pagination .active").click(function(event) {
-				event.preventDefault();
-			}
-		});
+		
 
 })
