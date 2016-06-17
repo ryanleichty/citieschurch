@@ -44,7 +44,7 @@
                   <p class="vol-price">${customContent.price}</p>
                   <p class="vol-usa">
                     <span>
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 20"><rect x="15" width="15" height="2.2"/><rect x="15" y="4.4" width="15" height="2.2"/><rect x="15" y="8.9" width="15" height="2.2"/><circle cx="3.8" cy="7.8" r="0.6"/><circle cx="3.8" cy="3.3" r="0.6"/><circle cx="9" cy="7.8" r="0.6"/><circle cx="9" cy="3.3" r="0.6"/><circle cx="1.1" cy="10" r="0.6"/><circle cx="1.1" cy="1.1" r="0.6"/><circle cx="1.1" cy="5.6" r="0.6"/><circle cx="6.4" cy="10" r="0.6"/><circle cx="6.4" cy="1.1" r="0.6"/><circle cx="6.4" cy="5.6" r="0.6"/><circle cx="11.7" cy="10" r="0.6"/><circle cx="11.7" cy="1.1" r="0.6"/><circle cx="11.7" cy="5.6" r="0.6"/><polygon points="0 13.3 0 15.6 0 15.6 30 15.6 30 15.6 30 13.3 30 13.3 0 13.3 "/><rect y="17.8" width="30" height="2.2"/></svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 20"><circle cx="3.8" cy="7.8" r="0.7"/><circle cx="3.8" cy="3.3" r="0.7"/><circle cx="9" cy="7.8" r="0.7"/><circle cx="9" cy="3.3" r="0.7"/><circle cx="1.1" cy="10" r="0.7"/><circle cx="1.1" cy="1.1" r="0.7"/><circle cx="1.1" cy="5.6" r="0.7"/><circle cx="6.4" cy="10" r="0.7"/><circle cx="6.4" cy="1.1" r="0.7"/><circle cx="6.4" cy="5.6" r="0.7"/><circle cx="11.7" cy="10" r="0.7"/><circle cx="11.7" cy="1.1" r="0.7"/><circle cx="11.7" cy="5.6" r="0.7"/><rect x="15" width="15" height="2.2"/><rect x="15" y="4.4" width="15" height="2.2"/><rect x="15" y="8.9" width="15" height="2.2"/><rect y="13.3" width="30" height="2.3"/><rect y="17.8" width="30" height="2.2"/></svg>
                     </span>Printed in the USA</p>
                 </div>
               {.end}
