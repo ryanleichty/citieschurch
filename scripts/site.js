@@ -488,19 +488,3 @@ $(document).ready(function() {
 		});
 
 })
-
-/// WINDOW LOAD ///
-
-$( window ).load(function() {
-
-// Add height to the container of The Quarterly Volume image
-
-		var imgHeight = $(".q-image img").height();
-		$(".q-image").css({ "height": imgHeight });
-
-		$(window).resize(function() {
-			var imgHeight = $(".q-image img").height();
-			$(".q-image").css({ "height": imgHeight });
-		});
-
-});
