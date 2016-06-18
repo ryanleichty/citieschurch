@@ -487,7 +487,13 @@ $(document).ready(function() {
 			event.preventDefault();
 		});
 
-		$(".ssContainer li").html(total);
-		$(".ssContainer").css("counter-reset", "sermonSeries " + (+total + 1));
+});
 
+/// DOCUMENT READY ///
+
+$(window).load(function() {
+
+	$(".ssContainer li").html(total);
+	$(".ssContainer").css("counter-reset", "sermonSeries " + (+total + 1));
+	
 });
