@@ -260,7 +260,7 @@
             <p class="v-title">{title}</p>
           </div>
           <div class="v-buy-download">
-            <a href="/the-quarterly-overview" class="v-buy">All Volumes</a>
+            <a href="/the-quarterly/" class="v-buy">All Volumes</a>
           </div>
       </div>
       {.end}
