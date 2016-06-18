@@ -473,17 +473,17 @@ $(document).ready(function() {
 
 // Pagination for The Quarterly - Add class "active" to the current volume number
 
-		$(function(){
-			$(".quarterly-pagination a").each(function(){
-				if ($(this).attr("href") == window.location.pathname){
-					$(this).addClass("active");
-				}
-			});
 
-			// Stops the active link from being clicked
-			$(".quarterly-pagination .active").click(function( event ) {
-				event.preventDefault();
-			});
+		$(".quarterly-pagination a").each(function(){
+			if ($(this).attr("href") == window.location.pathname){
+				$(this).addClass("active");
+			}
 		});
+
+		// Stops the active link from being clicked
+		$(".quarterly-pagination .active").click(function( event ) {
+			event.preventDefault();
+		});
+
 
 })
