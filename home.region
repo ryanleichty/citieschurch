@@ -249,6 +249,7 @@
           {.end}
       </div>
 
+      {.section items}
       <div class="q-volume gridBlock-25">
           <div class="v-container">
             {.if customContent.volumeNumber}
@@ -271,6 +272,7 @@
             {.end}
           </div>
       </div>
+      {.end}
 
     </squarespace:query>
   </div>
