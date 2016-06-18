@@ -65,7 +65,7 @@
         <squarespace:query collection="sermons" limit="100" category="{customContent.sermonSeries}">
           <ol reversed class="ssContainer">
           {.repeated section items}
-            <li class="gridBlock-25 sermon">
+            <li class="sermon">
               <a href="{fullUrl}" class="sermonTitle">{title}</a>
               <div class="sermonAuthor">{author.displayName}</div>
             </li>
