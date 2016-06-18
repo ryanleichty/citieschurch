@@ -435,7 +435,9 @@ Y.use('node', function (Y) {
 	});
 });
 
-// Custom
+//// JQUERY ////
+
+/// DOCUMENT READY ///
 
 $(document).ready(function() {
 
@@ -471,20 +473,6 @@ $(document).ready(function() {
 
 		$(".copyrightYear").text( (new Date).getFullYear() );
 
-// Add height to the container of The Quarterly Volume image
-
-		var imgHeight = $(".q-image img").height();
-
-		$(".q-image").css({ "height": imgHeight });
-
-		$(window).resize(function() {
-
-			var imgHeight = $(".q-image img").height();
-
-			$(".q-image").css({ "height": imgHeight });
-			
-		});
-
 // Pagination for The Quarterly - Add class "active" to the current volume number
 
 		$(".quarterly-pagination a").each(function(){
@@ -499,5 +487,20 @@ $(document).ready(function() {
 			event.preventDefault();
 		});
 
-
 })
+
+/// WINDOW LOAD ///
+
+$( window ).load(function() {
+
+// Add height to the container of The Quarterly Volume image
+
+		var imgHeight = $(".q-image img").height();
+		$(".q-image").css({ "height": imgHeight });
+
+		$(window).resize(function() {
+			var imgHeight = $(".q-image img").height();
+			$(".q-image").css({ "height": imgHeight });
+		});
+
+});
