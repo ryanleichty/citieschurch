@@ -493,7 +493,7 @@ $(document).ready(function() {
 
 $(window).load(function() {
 
-	$(".ssContainer li").html(total);
-	$(".ssContainer").css("counter-reset", "sermonSeries " + (+total + 1));
-	
+	li = $(".ssContainer li").length;
+	$(".ssContainer").css("counter-reset", "sermonSeries " + (+li + 1));
+
 });
