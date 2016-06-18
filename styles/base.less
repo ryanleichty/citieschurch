@@ -2726,15 +2726,18 @@ html.touch {
 
 }
 
-ol.ssContainer {
+.ssContainer {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
+  li {
+    list-style: none;
+  }
 }
 
 .sermonSeries {
-  margin: 2*@gridPadding;
+  margin: 2*@gridPadding 0;
   h1 {
     font: 1.25rem/1 "Brown-Regular", Arial, sans-serif;
     color: white;
