@@ -487,13 +487,15 @@ $(document).ready(function() {
 			event.preventDefault();
 		});
 
+		li = $(".ssContainer li").length;
+		$(".ssContainer").css("counter-reset", "sermonSeries " + (+li + 1));
+
 });
 
 /// DOCUMENT READY ///
 
 $(window).load(function() {
 
-	li = $(".ssContainer li").length;
-	$(".ssContainer").css("counter-reset", "sermonSeries " + (+li + 1));
+
 
 });
