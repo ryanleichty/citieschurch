@@ -488,7 +488,7 @@ $(document).ready(function() {
 		});
 
 		$(".quarterly-list a").each(function () {
-			var color = ["red","blue","gray","yellow","green"];
+			var color = ["#fad0bb","#fbf89d","#d0e5fa","#d6eac6"];
 		  var rand = color[Math.floor(Math.random() * color.length)];
 		  console.log(rand);
 		  $(this).css("background-color",rand);
