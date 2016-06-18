@@ -249,7 +249,9 @@
           {.end}
       </div>
 
-      {.section items}
+      
+
+      {.section items.0}
       <div class="q-volume gridBlock-25">
           <div class="v-container">
             {.if customContent.volumeNumber}
