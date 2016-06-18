@@ -248,13 +248,19 @@
             {.end}
           {.end}
       </div>
+
       <div class="q-volume gridBlock-25">
-        {.repeated section items}
           <div class="v-container">
             {.if customContent.volumeNumber}
               <p class="v-title">Volume {customContent.volumeNumber}</p>
             {.end}
             <p class="v-title">{title}</p>
+            {.if customContent.price}
+              <div class="vol-meta">
+                <p class="vol-price">${customContent.price}</p>
+                <p class="vol-usa">Printed in the USA</p>
+              </div>
+            {.end}
           </div>
           <div class="v-buy-download">
             {.if customContent.amazonURL}
@@ -264,20 +270,8 @@
               <a href="{customContent.pdfURL}" target="_blank" class="v-download">Download</a>
             {.end}
           </div>
-        {.end}
       </div>
+
     </squarespace:query>
   </div>
 </div>
-
-<!--<div id="twitter-container">
-  <div class="twitter-section gridBlock-25">
-    <span>@citieschurch</span>
-  </div>
-  <div class="twitter-content gridBlock-50">
-    <squarespace:block-field id="twitterBlock" columns="1" lock-layout="true"/>
-  </div>
-  <div class="twitter-more gridBlock-25">
-    <a href="https://twitter.com/citieschurch" target="_blank">More →</a>
-  </div>
-</div>-->
