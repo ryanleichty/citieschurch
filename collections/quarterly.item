@@ -63,7 +63,7 @@
           <h1>Sermon Series</h1>
         </div>
         <squarespace:query collection="sermons" limit="100" category="{customContent.sermonSeries}">
-          <ol reversed>
+          <ol reversed class="ssContainer">
           {.repeated section items}
             <li class="gridBlock-25">
               <div class="sermonTitle">{title}</div>
