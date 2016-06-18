@@ -58,6 +58,22 @@
             </div>
         </div>
 
+        {.if customContent.sermonSeries}
+        <div class="gridBlock-100">
+          <h1>Sermon Series</h1>
+        </div>
+        <squarespace:query collection="sermons" limit="100" category="{customContent.sermonSeries}">
+          <ol reversed>
+          {.repeated section items}
+            <li class="gridBlock-25">
+              <div class="sermonTitle">{title}</div>
+              <div class="sermonAuthor">{author.displayName}</div>
+            </li>
+          {.end}
+          </ol>
+        </squarespace:query>
+        {.end}
+
       </div>
 
   </article>
