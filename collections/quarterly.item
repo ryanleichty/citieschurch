@@ -18,11 +18,9 @@
 
         <div class="q-thumb gridBlock-50">
           <div class="q-image">
-            <div>
-              {.main-image?}
-                <img {@|image-meta} />
-              {.end}
-            </div>
+          {.main-image?}
+            <img {@|image-meta} />
+          {.end}
           </div>
           <div class="quarterly-pagination">
             <ul>
