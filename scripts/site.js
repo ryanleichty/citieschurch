@@ -487,9 +487,11 @@ $(document).ready(function() {
 			event.preventDefault();
 		});
 
-		var color = ["#ff0000","blue","gray"];
-	  var rand = color[Math.floor(Math.random() * color.length)];
-	  console.log(rand);
-	  $(".quarterly-list a").css("background",rand);
+		$(".quarterly-list a").each(function () {
+			var color = ["red","blue","gray","yellow","green"];
+		  var rand = color[Math.floor(Math.random() * color.length)];
+		  console.log(rand);
+		  $(this).css("background-color",rand);
+		});
 
-})
+});
