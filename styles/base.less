@@ -2731,9 +2731,14 @@ html.touch {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
+  counter-reset: sermonSeries 2;
   li {
     list-style: none;
     margin-top: 2*@gridPadding;
+    counter-increment: sermonSeries -1;
+  }
+  li::before {
+    content: counter(sermonSeries);
   }
 }
 
