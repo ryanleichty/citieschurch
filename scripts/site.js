@@ -487,13 +487,7 @@ $(document).ready(function() {
 			event.preventDefault();
 		});
 
-
-
-			var color = ["#fad0bb","#fbf89d","#d0e5fa","#d6eac6"];
-		  var rand = color[Math.floor(Math.random() * color.length)];
-		  console.log(rand);
-		  $("::selection").css("background-color",rand);
-
-
+		$(".ssContainer li").html(total);
+		$(".ssContainer").css("counter-reset", "sermonSeries " + (+total + 1));
 
 });
