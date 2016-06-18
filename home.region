@@ -249,7 +249,7 @@
           {.end}
       </div>
 
-      
+
 
       {.section items.0}
       <div class="q-volume gridBlock-25">
@@ -258,20 +258,9 @@
               <p class="v-title">Volume {customContent.volumeNumber}</p>
             {.end}
             <p class="v-title">{title}</p>
-            {.if customContent.price}
-              <div class="vol-meta">
-                <p class="vol-price">${customContent.price}</p>
-                <p class="vol-usa">Printed in the USA</p>
-              </div>
-            {.end}
           </div>
           <div class="v-buy-download">
-            {.if customContent.amazonURL}
-              <a href="{customContent.amazonURL}" target="_blank" class="v-buy">Buy</a>
-            {.end}
-            {.if customContent.pdfURL}
-              <a href="{customContent.pdfURL}" target="_blank" class="v-download">Download</a>
-            {.end}
+            <a href="/the-quarterly-overview" target="_blank" class="v-buy">All Volumes</a>
           </div>
       </div>
       {.end}
