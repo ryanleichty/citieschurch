@@ -59,7 +59,7 @@
         </div>
 
         {.if customContent.sermonSeries}
-        <div class="gridBlock-100">
+        <div class="gridBlock-100 sermonSeries">
           <h1>Sermon Series</h1>
         </div>
         <squarespace:query collection="sermons" limit="100" category="{customContent.sermonSeries}">
