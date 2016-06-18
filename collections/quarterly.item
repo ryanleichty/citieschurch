@@ -59,6 +59,9 @@
         </div>
 
         {.if customContent.sermonSeries}
+        <div class="quarterly-hr">
+          <hr>
+        </div>
         <div class="gridBlock-100 sermonSeries">
           <h1>Sermon Series</h1>
         </div>
