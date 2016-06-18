@@ -2732,12 +2732,15 @@ html.touch {
   margin: 0;
   padding: 0;
   counter-reset: sermonSeries 2;
-  li {
+  .sermon {
     list-style: none;
     margin-top: 2*@gridPadding;
     counter-increment: sermonSeries -1;
+    width: 25%;
+    padding: @gridPadding;
+    .border-box;
   }
-  li::before {
+  .sermon::before {
     content: counter(sermonSeries);
     display: block;
     font: 0.75rem/1.4 "Brown-Regular", Arial, sans-serif;
