@@ -487,4 +487,9 @@ $(document).ready(function() {
 			event.preventDefault();
 		});
 
+		var color = ["#ff0000","blue","gray"];
+	  var rand = color[Math.floor(Math.random() * color.length)];
+	  console.log(rand);
+	  $(".quarterly-list a").css("background",rand);
+
 })
