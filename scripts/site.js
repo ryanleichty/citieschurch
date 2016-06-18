@@ -487,11 +487,13 @@ $(document).ready(function() {
 			event.preventDefault();
 		});
 
+		/*
 		$(".quarterly-list a").each(function () {
 			var color = ["#fad0bb","#fbf89d","#d0e5fa","#d6eac6"];
 		  var rand = color[Math.floor(Math.random() * color.length)];
 		  console.log(rand);
 		  $(this).css("background-color",rand);
 		});
+		*/
 
 });
