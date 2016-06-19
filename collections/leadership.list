@@ -6,8 +6,8 @@
           <img {@|image-meta} />
         </div>
         <div class="leaderTitle">
-          <h1 class="leaderName">{leaderName}</h1>
-          <div class="leaderRole">{leaderRole}</div>
+          <h1 class="leaderName">{title}</h1>
+          <div class="leaderRole">{customContent.leaderRole}</div>
         </div>
       {.end}
     </article>
