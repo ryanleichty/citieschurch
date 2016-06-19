@@ -1,0 +1,15 @@
+<div class="leadership-list">
+  {.repeated section items}
+    <article class="leaderItem" id="article-{id}">
+      {.main-image?}
+        <div class="leaderImage content-fill">
+          <img {@|image-meta} />
+        </div>
+        <div class="leaderTitle">
+          <h1 class="leaderName">{leaderName}</h1>
+          <div class="leaderRole">{leaderRole}</div>
+        </div>
+      {.end}
+    </article>
+  {.end}
+</div>
