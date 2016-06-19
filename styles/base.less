@@ -2764,6 +2764,9 @@ html.touch {
   color: white;
   &:hover {
     color: #555;
+    &:.sermon {
+
+    }
   }
   &:active {
     color: #333;
@@ -3154,4 +3157,34 @@ img {
      color: white;
   }
 
+}
+
+.leadership-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.leaderItem {
+  width: 25%;
+  padding: @gridPadding;
+  .border-box;
+}
+.leaderImage {
+  padding-bottom: 100%;
+  border-radius: 50%;
+  position: relative;
+  img {
+    position: absolute;
+  }
+}
+.leaderTitle {
+  margin-top: 2*@gridPadding;
+  text-align: center;
+  .leaderName {
+    font: 1.25rem/1.4 "Brown-Regular", Arial, sans-serif;
+    margin: 0;
+  }
+  .leaderRole {
+    font: 0.75rem/1.4 "Brown-Regular", Arial, sans-serif;
+    color: #808080;
+  }
 }
