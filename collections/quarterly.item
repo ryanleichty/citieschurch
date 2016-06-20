@@ -44,12 +44,12 @@
             </div>
           {.end}
         </div>
-        <div class="v-buy-download">
+        <div class="volume-buy-download">
           {.if customContent.amazonURL}
-            <a href="{customContent.amazonURL}" target="_blank" class="v-buy">Buy</a>
+            <a href="{customContent.amazonURL}" target="_blank" class="volume-buy">Buy</a>
           {.end}
           {.if customContent.pdfURL}
-            <a href="{customContent.pdfURL}" target="_blank" class="v-download">Download</a>
+            <a href="{customContent.pdfURL}" target="_blank" class="volume-download">Download</a>
           {.end}
         </div>
     </section>
