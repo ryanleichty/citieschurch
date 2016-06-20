@@ -5,12 +5,10 @@
       <a href="{collection.fullUrl}">← Back to all Volumes</a>
     </div>
 
-    <section class="volume-content gridBlock-25">
+    <section class="volume-info gridBlock-25">
       <h1 class="volume-title">{title}</h1>
-      {.section customContent}
-        {.if description}
-          <p class="volume-description">{description}</p>
-        {.end}
+      {.if customContent.description}
+        <p class="volume-description">{customContent.description}</p>
       {.end}
     </section>
 
