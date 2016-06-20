@@ -1,82 +1,76 @@
   {.section item}
-  <article class="quarterly-item" id="article-{id}" data-item-id="{id}">
+  <article class="volume" id="article-{id}">
 
-      <div class="q-inner">
+    <div class="back-to-all-vol grid-100">
+      <a href="{collection.fullUrl}">← Back to all Volumes</a>
+    </div>
 
-        <div class="back-to-all-vol grid-100">
-          <a href="{collection.fullUrl}">← Back to all Volumes</a>
-        </div>
+    <section class="volume-content gridBlock-25">
+      <h1 class="volume-title">{title}</h1>
+      {.section customContent}
+        {.if description}
+          <p class="volume-description">{description}</p>
+        {.end}
+      {.end}
+    </section>
 
-        <div class="q-content gridBlock-25">
-          <h1>{title}</h1>
-          {.section customContent}
-            {.if description}
-              <p>{description}</p>
-            {.end}
-          {.end}
-        </div>
-
-        <div class="q-thumb gridBlock-50">
-          <div class="q-image">
-          {.main-image?}
-            <img {@|image-meta} />
-          {.end}
-          </div>
-          <div class="quarterly-pagination">
-            <ul>
-              <squarespace:query collection="the-quarterly" limit="100">
-                {.repeated section items}
-                  <li>
-                    <a href="{fullUrl}"><span>{customContent.volumeNumber}</span></a>
-                  </li>
-                {.end}
-              </squarespace:query>
-            </ol>
-          </div>
-        </div>
-
-        <div class="q-volume gridBlock-25">
-            <div class="v-container">
-              {.if customContent.volumeNumber}
-                <p class="v-title">Volume {customContent.volumeNumber}</p>
-              {.end}
-              <p class="v-title">{title}</p>
-              {.if customContent.price}
-                <div class="vol-meta">
-                  <p class="vol-price">${customContent.price}</p>
-                  <p class="vol-usa">Printed in the USA</p>
-                </div>
-              {.end}
-            </div>
-            <div class="v-buy-download">
-              {.if customContent.amazonURL}
-                <a href="{customContent.amazonURL}" target="_blank" class="v-buy">Buy</a>
-              {.end}
-              {.if customContent.pdfURL}
-                <a href="{customContent.pdfURL}" target="_blank" class="v-download">Download</a>
-              {.end}
-            </div>
-        </div>
-
-        {.if customContent.sermonSeries}
-        <section class="sermon-series">
-          <div class="grid-100 sermon-series-title">
-            <h1>Sermon Series</h1>
-          </div>
-          <squarespace:query collection="sermons" limit="100" category="{customContent.sermonSeries}">
-            <ol class="sermon-series-sermons">
+    <section class="volume-image gridBlock-50">
+      {.main-image?}
+        <img {@|image-meta} />
+      {.end}
+      <div class="volume-pagination">
+        <ul>
+          <squarespace:query collection="the-quarterly" limit="100">
             {.repeated section items}
-              <li class="sermon">
-                <a href="{fullUrl}" class="sermon-title">{title}</a>
-                <div class="sermon-author">{author.displayName}</div>
+              <li>
+                <a href="{fullUrl}"><span>{customContent.volumeNumber}</span></a>
               </li>
             {.end}
-            </ol>
           </squarespace:query>
-        </section>
-        {.end}
-
+        </ol>
       </div>
+    </section>
+
+    <section class="volume-product gridBlock-25">
+        <div class="v-container">
+          {.if customContent.volumeNumber}
+            <p class="v-title">Volume {customContent.volumeNumber}</p>
+          {.end}
+          <p class="v-title">{title}</p>
+          {.if customContent.price}
+            <div class="vol-meta">
+              <p class="vol-price">${customContent.price}</p>
+              <p class="vol-usa">Printed in the USA</p>
+            </div>
+          {.end}
+        </div>
+        <div class="v-buy-download">
+          {.if customContent.amazonURL}
+            <a href="{customContent.amazonURL}" target="_blank" class="v-buy">Buy</a>
+          {.end}
+          {.if customContent.pdfURL}
+            <a href="{customContent.pdfURL}" target="_blank" class="v-download">Download</a>
+          {.end}
+        </div>
+    </section>
+
+    {.if customContent.sermonSeries}
+    <section class="sermon-series">
+      <div class="grid-100 sermon-series-title">
+        <h1>Sermon Series</h1>
+      </div>
+      <squarespace:query collection="sermons" limit="100" category="{customContent.sermonSeries}">
+        <ol class="sermon-series-sermons">
+        {.repeated section items}
+          <li class="sermon">
+            <a href="{fullUrl}" class="sermon-title">{title}</a>
+            <div class="sermon-author">{author.displayName}</div>
+          </li>
+        {.end}
+        </ol>
+      </squarespace:query>
+    </section>
+    {.end}
 
   </article>
   {.end}
