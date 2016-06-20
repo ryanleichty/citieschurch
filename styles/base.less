@@ -2719,6 +2719,46 @@ html.touch {
     }
   }
 
+  .volume-buy-download {
+    .volume-buy, .volume-download {
+      display: block;
+      width: 100%;
+      font-family: "Brown-Regular", Arial, sans-serif;
+      text-align: center;
+      .border-box;
+    }
+
+    .volume-buy {
+      padding: @gridPadding;
+      border: 2px white solid;
+      font-size: 0.75rem;
+      line-height: 0.5;
+      color: white;
+      &:hover {
+        background-color: white;
+        color: black;
+      }
+      &:active {
+        background-color: #a8a8a8;
+        border-color: #a8a8a8;
+        color: black;
+      }
+    }
+
+    .v-download {
+      margin-top: @gridPadding;
+      font-size: 0.583rem;
+      line-height: 1;
+      color: #555;
+      &:hover {
+        color: white;
+      }
+      &:active {
+        color: #a8a8a8;
+      }
+    }
+  }
+
 
 }
 
@@ -3040,46 +3080,6 @@ img {
 
 .entry-header-featured {
   text-align: left;
-}
-
-.volume-buy-download {
-  .volume-buy, .volume-download {
-    display: block;
-    width: 100%;
-    font-family: "Brown-Regular", Arial, sans-serif;
-    text-align: center;
-    .border-box;
-  }
-
-  .volume-buy {
-    padding: @gridPadding;
-    border: 2px white solid;
-    font-size: 0.75rem;
-    line-height: 0.5;
-    color: white;
-    &:hover {
-      background-color: white;
-      color: black;
-    }
-    &:active {
-      background-color: #a8a8a8;
-      border-color: #a8a8a8;
-      color: black;
-    }
-  }
-
-  .v-download {
-    margin-top: @gridPadding;
-    font-size: 0.583rem;
-    line-height: 1;
-    color: #555;
-    &:hover {
-      color: white;
-    }
-    &:active {
-      color: #a8a8a8;
-    }
-  }
 }
 
 .collection-type-quarterly {
