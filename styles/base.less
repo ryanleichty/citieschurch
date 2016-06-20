@@ -2662,25 +2662,25 @@ html.touch {
   color: #fff;
 }
 
-.q-inner {
+.volume {
   display: flex;
   flex-wrap: wrap;
   position: relative;
   width: 100%;
 
-  .q-content {
-    h1 {
+  .volume-content {
+    h1.volume-title {
       font: 1.25rem/1.25em "Brown-Regular", Arial, sans-serif;
       color: #fff;
       margin: 0 0 (@gridPadding * 2);
     }
-    p {
+    p.volume-description {
       font: 0.75rem/1.6 "Brown-Regular", Arial, sans-serif;
       color: #fff;
     }
   }
 
-  .q-thumb {
+  .volume-image {
     -webkit-animation: header-anim 1s ease-in-out;
     animation: header-anim 1s ease-in-out;
 
@@ -2690,7 +2690,7 @@ html.touch {
     }
   }
 
-  .q-volume {
+  .volume-product {
     margin: 0;
     list-style: none;
     .v-container {
@@ -2790,7 +2790,7 @@ html.touch {
 
 // The Quarterly Pagination (item)
 
-.quarterly-pagination {
+.volume-pagination {
   margin-top: 2*@gridPadding;
 
   p {
