@@ -489,8 +489,8 @@ $(document).ready(function() {
 
 // Counts the number li elements and adds the value to the sermon series counter
 
-		li = $(".ssContainer li").length;
-		$(".ssContainer").css("counter-reset", "sermonSeries " + (+li + 1));
+		sermon = $(".sermon").length;
+		$(".sermon-series-sermons").css("counter-reset", "sermonSeries " + (+sermon + 1));
 
 });
 
