@@ -59,19 +59,21 @@
         </div>
 
         {.if customContent.sermonSeries}
-        <div class="grid-100 sermonSeries">
-          <h1>Sermon Series</h1>
-        </div>
-        <squarespace:query collection="sermons" limit="100" category="{customContent.sermonSeries}">
-          <ol reversed class="ssContainer">
-          {.repeated section items}
-            <li class="sermon">
-              <a href="{fullUrl}" class="sermonTitle">{title}</a>
-              <div class="sermonAuthor">{author.displayName}</div>
-            </li>
-          {.end}
-          </ol>
-        </squarespace:query>
+        <section class="sermon-series">
+          <div class="grid-100 sermon-series-title">
+            <h1>Sermon Series</h1>
+          </div>
+          <squarespace:query collection="sermons" limit="100" category="{customContent.sermonSeries}">
+            <ol class="sermon-series-sermons">
+            {.repeated section items}
+              <li class="sermon">
+                <a href="{fullUrl}" class="sermon-title">{title}</a>
+                <div class="sermon-author">{author.displayName}</div>
+              </li>
+            {.end}
+            </ol>
+          </squarespace:query>
+        </section>
         {.end}
 
       </div>
