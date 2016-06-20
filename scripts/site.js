@@ -475,7 +475,7 @@ $(document).ready(function() {
 
 // Pagination for The Quarterly - Add class "active" to the current volume number
 
-		$(".quarterly-pagination a").each(function(){
+		$(".volume-pagination a").each(function(){
 			if ($(this).attr("href") == window.location.pathname){
 				$(this).addClass("active");
 			}
@@ -483,7 +483,7 @@ $(document).ready(function() {
 
 // Stops the active link from being clicked
 
-		$(".quarterly-pagination .active").click(function( event ) {
+		$(".volume-pagination .active").click(function( event ) {
 			event.preventDefault();
 		});
 
