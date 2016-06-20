@@ -235,7 +235,7 @@
 </main>
 
 <div class="q-container">
-  <div class="q-inner">
+  <div class="volume">
     <div class="volume-content gridBlock-25">
       <h1 class="quarterly-title">The Quarterly</h1>
       <p class="quarterly-description">The Quarterly is a publication of Cities Church that corresponds to our current sermon series with additional Bible study resources and articles from our pastors and church members.</p>
