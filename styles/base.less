@@ -2665,7 +2665,7 @@ html.touch {
   position: relative;
   width: 100%;
 
-  .volume-info {
+  .quarterly-info, .volume-info {
     .quarterly-title, .volume-title {
       font: 1.25rem/1.25em "Brown-Regular", Arial, sans-serif;
       color: #fff;
@@ -2696,25 +2696,24 @@ html.touch {
       padding: 0;
       margin-bottom: (@gridPadding * 4);
       .transition;
+    }
+    .v-title, .vol-meta {
+      font: 0.75rem/1.6 "brown-regular";
+    }
 
-      .v-title, .vol-meta {
-        font: 0.75rem/1.6 "brown-regular";
+    .vol-meta {
+      display: flex;;
+      margin-top: @gridPadding !important;
+      padding-top: @gridPadding;
+      border-top: 1px #333 dotted;
+      .vol-price {
+        width: 25%;
       }
-
-      .vol-meta {
-        display: flex;;
-        margin-top: @gridPadding !important;
-        padding-top: @gridPadding;
-        border-top: 1px #333 dotted;
-        .vol-price {
-          width: 25%;
-        }
-        .vol-usa {
-          width: 75%;
-          font-size: 0.583rem;
-          color: #555;
-          text-align: right;
-        }
+      .vol-usa {
+        width: 75%;
+        font-size: 0.583rem;
+        color: #555;
+        text-align: right;
       }
     }
   }
