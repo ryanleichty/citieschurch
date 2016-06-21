@@ -25,7 +25,7 @@
 
     </div>
 
-    <form action="/search" method="get" class="search-form">
+    <form action="/q" method="get" class="search-form">
     <fieldset class="search-form-fieldset container">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><style type="text/css">.svg-close{fill:none;stroke:#000000;stroke-width:2.5;stroke-linecap:square;}</style><line class="svg-close" x1="18.1" y1="18.2" x2="1.9" y2="1.8"/><line class="svg-close" x1="1.9" y1="18.2" x2="18.1" y2="1.8"/></svg>
       <input type="search" name="Search" class="search-form-field" autocomplete="off" value="" placeholder="Search">
