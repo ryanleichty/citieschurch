@@ -247,20 +247,24 @@
       <section class="volume-image gridBlock-50">
         {.section items.0}
           {.main-image?}
+          <a href="{fullUrl}">
             <img {@|image-meta} />
+          </a>
           {.end}
         {.end}
 
       </section>
 
-      {.section items.0}
       <section class="volume-product gridBlock-25">
+          {.section items.0}
           <a href="{fullUrl}" class="v-title">
             {.if customContent.volumeNumber}
               <p>Volume {customContent.volumeNumber}</p>
             {.end}
-            <p>{title}</br>→</p>
+            <p>{title}</p>
+            <p>→</p>
           </a>
+          {.end}
           <div class="volume-pagination">
             <ul>
               {.repeated section items}
@@ -271,7 +275,6 @@
             </ol>
           </div>
       </section>
-      {.end}
 
     </squarespace:query>
   </div>
