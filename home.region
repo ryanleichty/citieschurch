@@ -236,20 +236,32 @@
 
 <div class="quarterly">
   <div class="volume">
-    <div class="volume-info gridBlock-25">
+    
+    <section class="volume-info gridBlock-25">
       <h1 class="quarterly-title">The Quarterly</h1>
       <p class="quarterly-description">The Quarterly is a publication of Cities Church that corresponds to our current sermon series with additional Bible study resources and articles from our pastors and church members.</p>
-    </div>
+    </section>
+
     <squarespace:query collection="the-quarterly" limit="1">
-      <div class="volume-image gridBlock-50">
-          {.section items.0}
-            {.main-image?}
-              <img {@|image-meta} />
-            {.end}
+
+      <section class="volume-image gridBlock-50">
+        {.section items.0}
+          {.main-image?}
+            <img {@|image-meta} />
           {.end}
-      </div>
-
-
+        {.end}
+        <div class="volume-pagination">
+          <ul>
+            <squarespace:query collection="the-quarterly" limit="100">
+              {.repeated section items}
+                <li>
+                  <a href="{fullUrl}"><span>{customContent.volumeNumber}</span></a>
+                </li>
+              {.end}
+            </squarespace:query>
+          </ol>
+        </div>
+      </section>
 
       {.section items.0}
       <section class="volume-product gridBlock-25">
