@@ -237,7 +237,7 @@
 <div class="quarterly">
   <div class="volume">
 
-    <section class="volume-info gridBlock-25">
+    <section class="quarterly-info gridBlock-25">
       <h1 class="quarterly-title">The Quarterly</h1>
       <p class="quarterly-description">The Quarterly is a publication of Cities Church that corresponds to our current sermon series with additional Bible study resources and articles from our pastors and church members.</p>
     </section>
@@ -263,25 +263,11 @@
 
       {.section items.0}
       <section class="volume-product gridBlock-25">
-          <div class="v-container">
+          <a href="{fullUrl}">
             {.if customContent.volumeNumber}
               <p class="v-title">Volume {customContent.volumeNumber}</p>
             {.end}
-            <p class="v-title">{title}</p>
-            {.if customContent.price}
-              <div class="vol-meta">
-                <p class="vol-price">${customContent.price}</p>
-                <p class="vol-usa">Printed in the USA</p>
-              </div>
-            {.end}
-          </div>
-          <div class="volume-buy-download">
-            {.if customContent.amazonURL}
-              <a href="{customContent.amazonURL}" target="_blank" class="volume-buy">Buy</a>
-            {.end}
-            {.if customContent.pdfURL}
-              <a href="{customContent.pdfURL}" target="_blank" class="volume-download">Download</a>
-            {.end}
+            <p class="v-title">{title}</br>→</p>
           </div>
       </section>
       {.end}
