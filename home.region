@@ -268,7 +268,7 @@
               <p class="v-title">Volume {customContent.volumeNumber}</p>
             {.end}
             <p class="v-title">{title}</br>→</p>
-          </div>
+          </a>
       </section>
       {.end}
 
