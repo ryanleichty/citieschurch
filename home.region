@@ -255,12 +255,7 @@
 
       {.section items.0}
       <section class="volume-product gridBlock-25">
-          <a href="{fullUrl}">
-            {.if customContent.volumeNumber}
-              <p class="v-title">Volume {customContent.volumeNumber}</p>
-            {.end}
-            <p class="v-title">{title}</br>→</p>
-          </a>
+          <a href="{fullUrl}" class="v-title">{.if customContent.volumeNumber}Volume {customContent.volumeNumber}{.end}</br>{title}</br>→</a>
           <div class="volume-pagination">
             <ul>
               {.repeated section items}
