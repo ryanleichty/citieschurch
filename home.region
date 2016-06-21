@@ -252,17 +252,28 @@
 
 
       {.section items.0}
-      <div class="volume-product gridBlock-25">
+      <section class="volume-product gridBlock-25">
           <div class="v-container">
             {.if customContent.volumeNumber}
               <p class="v-title">Volume {customContent.volumeNumber}</p>
             {.end}
             <p class="v-title">{title}</p>
+            {.if customContent.price}
+              <div class="vol-meta">
+                <p class="vol-price">${customContent.price}</p>
+                <p class="vol-usa">Printed in the USA</p>
+              </div>
+            {.end}
           </div>
           <div class="volume-buy-download">
-            <a href="/the-quarterly/" class="volume-buy">All Volumes</a>
+            {.if customContent.amazonURL}
+              <a href="{customContent.amazonURL}" target="_blank" class="volume-buy">Buy</a>
+            {.end}
+            {.if customContent.pdfURL}
+              <a href="{customContent.pdfURL}" target="_blank" class="volume-download">Download</a>
+            {.end}
           </div>
-      </div>
+      </section>
       {.end}
 
     </squarespace:query>
