@@ -2690,6 +2690,17 @@ html.touch {
   .volume-product {
     margin: 0;
     list-style: none;
+
+    a {
+      color: white;
+      &:hover {
+        color: #555;
+      }
+      &:active {
+        color: #444;
+      }
+    }
+
     .v-container {
       .border-box;
       width: 100%;
@@ -2697,6 +2708,7 @@ html.touch {
       margin-bottom: (@gridPadding * 4);
       .transition;
     }
+
     .v-title, .vol-meta {
       font: 0.75rem/1.6 "brown-regular";
     }
