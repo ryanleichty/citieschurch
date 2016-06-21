@@ -2825,7 +2825,7 @@ html.touch {
   }
 }
 
-// The Quarterly Pagination (item)
+// The Quarterly Pagination
 
 .volume-pagination {
   margin-top: 2*@gridPadding;
@@ -2870,7 +2870,7 @@ html.touch {
           transform: translate(-50%, -50%);
         }
       }
-      a.active, .homepage .volume-pagination li:first-of-type a {
+      a.active {
         border: 2px white solid;
         color: white;
         cursor: default;
@@ -2886,6 +2886,23 @@ html.touch {
         }
       }
     }
+  }
+}
+
+// Homepage Pagination Active State
+.homepage .volume-pagination li:first-of-type a {
+  border: 2px white solid;
+  color: white;
+  cursor: default;
+  &:hover {
+    background-color: black;
+    border-color: white;
+    color: white;
+  }
+  &:active {
+    background-color: black;
+    border-color: white;
+    color: white;
   }
 }
 
