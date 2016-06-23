@@ -3219,7 +3219,7 @@ img {
   background-color: #ffc5b2;
 
   * {
-    color: red;
+    color: red !important;
   }
 
   #siteWrapper, #footer, .banner-thumbnail-wrapper {
@@ -3234,8 +3234,10 @@ img {
       font-size: 2rem;
   }
 
-  h1, h2, h3 {
-    margin: 0;
+  #content {
+    h1, h2, h3 {
+      margin: 0;
+    }
   }
 
   #page #content p {
