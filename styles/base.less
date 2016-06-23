@@ -3216,27 +3216,26 @@ img {
 // Concert Page
 
 .collection-layout-concert {
+  background-color: #ffc5b2;
 
   * {
+    color: red;
+  }
+
+  #siteWrapper, #footer, .banner-thumbnail-wrapper {
     background-color: #ffc5b2;
-    color: #f00;
   }
 
   .desc-wrapper p, .desc-wrapper p>strong, .desc-wrapper p>em>strong {
     font-size: 4rem;
-    color: #f00;
   }
 
-  #content {
-
-    h1, h2, h3, p, a {
+  #content * {
       font-size: 2rem;
-    }
+  }
 
-    h1, h2, h3 {
-      margin: 0;
-    }
-
+  h1, h2, h3 {
+    margin: 0;
   }
 
   #page #content p {
@@ -3258,6 +3257,9 @@ img {
       color: #f00;
     }
 
+    h2 + p {
+      color: #f00;
+    }
   }
 
   .search-form {
