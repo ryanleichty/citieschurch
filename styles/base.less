@@ -3218,22 +3218,22 @@ img {
 .collection-layout-concert {
   background-color: #ffc5b2;
 
+  // Text Color
   * {
     color: red !important;
   }
 
+  // Logo Color
   .logoSvg {
     fill: red !important;
   }
 
+  // Mobile Nav Color
   .top-bar, .middle-bar, .bottom-bar {
     background-color: red !important;
   }
 
-  .force-mobile-nav .mobile-nav-toggle-label .top-bar, .force-mobile-nav .mobile-nav-toggle-label .middle-bar, .force-mobile-nav .mobile-nav-toggle-label .bottom-bar {
-    background-color: red !important;
-  }
-
+  // Background Color
   #siteWrapper, #sidecarNav, #footer, .banner-thumbnail-wrapper {
     background-color: #ffc5b2;
   }
@@ -3244,12 +3244,18 @@ img {
     text-align: left;
   }
 
+  // Banner Text Size
   .desc-wrapper p, .desc-wrapper p>strong, .desc-wrapper p>em>strong {
     font-size: 8rem;
   }
 
+  // Text Size
   #content * {
       font-size: 2rem;
+  }
+
+  a:hover {
+    opacity: 0.5;
   }
 
   #content {
@@ -3262,23 +3268,13 @@ img {
     text-indent: 0;
   }
 
+  // Footer Line
   .concert-hr {
     margin: 0 @siteMargin;
     hr {
       margin: 0 @gridPadding;
       border: 0;
       border-top: 1px #f00 dotted;
-    }
-  }
-
-  #footer {
-
-    a:hover {
-      color: #f00;
-    }
-
-    h2 + p {
-      color: #f00;
     }
   }
 
