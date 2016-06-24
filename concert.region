@@ -1,3 +1,8 @@
+<div class="free-container">
+  <div class="free-outer">
+    <div class="free-inner">Free of Charge</div>
+  </div>
+</div>
 {.section collection}
 <div class="banner-thumbnail-wrapper" data-content-field="main-image">
   <figure id="thumbnail" class="loading content-fill">{.section mainImage}<img {@|image-meta} />{.end}</figure>
