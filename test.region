@@ -139,52 +139,6 @@
       </div>
     </div>
 
-    <squarespace:query collection="sermons" featured="true" limit="4">
-      <div class="post-list">
-
-        <div class="post-section gridBlock-100">
-          <h1><a href="/sermons/">Featured</a></h1>
-        </div>
-
-        {.repeated section items}
-        <article class="{@|item-classes}" id="article-{id}" data-item-id="{id}">
-
-          {.main-image?}
-          <div class="excerpt-thumb-featured">
-            <a href="{fullUrl}" class="excerpt-image content-fill">
-              <img {@|image-meta} />
-            </a>
-          </div>
-          {.end}
-
-          <header class="entry-header-featured">
-
-            <div class="meta-above-title">
-
-              {.section author}
-              <div class="entry-byline">
-                <span class="entry-author"><a href="{collection.fullUrl}?author={author.id}" class="p-author author entry-byline-link" rel="author">{displayName}</a></span>
-              </div>
-              {.end}
-
-            </div>
-
-            <h1 data-content-field="title" class="entry-title p-name">
-            {.passthrough?}
-              <a href="{sourceUrl}" class="entry-title-passthrough" target="_blank">{title}</a>
-            {.or}
-              <a href="{fullUrl}" class="u-url" rel="bookmark">{title}</a>
-            {.end}
-            </h1>
-
-          </header>
-
-        </article>
-        {.end}
-
-      </div>
-    </squarespace:query>
-
     <squarespace:query collection="sermons" limit="4">
       <div class="post-list">
 
@@ -280,46 +234,39 @@
   </div>
 </main>
 
-<div class="q-container">
-  <div class="q-inner">
-    <div class="q-content">
-      <h1>The Quarterly</h1>
-      <p>The Quarterly is a publication of Cities Church that corresponds to our current sermon series with additional Bible study resources and articles from our pastors and church members.</p>
-    </div>
-    <squarespace:query collection="the-quarterly-overview" limit="1">
-      <div class="q-thumb">
-        <div class="cycle-slideshow">
-          {.repeated section items}
-            {.main-image?}
-              <img {@|image-meta} />
-            {.end}
+<div class="quarterly">
+  <div class="volume">
+
+    <section class="quarterly-info gridBlock-25">
+      <h1 class="quarterly-title">The Quarterly</h1>
+      <p class="quarterly-description">The Quarterly is a publication of Cities Church that corresponds to our current sermon series with additional Bible study resources and articles from our pastors and church members.</p>
+    </section>
+
+    <squarespace:query collection="the-quarterly" limit="100">
+
+      <section class="volume-image gridBlock-50">
+        {.section items.0}
+          {.main-image?}
+          <a href="{fullUrl}">
+            <img {@|image-meta} />
+          </a>
           {.end}
-        </div>
-      </div>
-      <ul class="q-volume">
-        {.section items}
-          <div class="v-container">
-            <p class="v-number">Volume {customContent.volumeNumber}</p>
-            <p class="v-title">{title}</p>
-          </div>
-          <div class="buy-download">
-            <a href="{customContent.amazonURL}" target="_blank" class="q-buy">Buy</a>
-            <a href="{customContent.pdfURL}" target="_blank" class="q-download">Download</a>
-          </div>
         {.end}
-      </ul>
+
+      </section>
+
+      <section class="volume-product gridBlock-25">
+          {.section items.0}
+          <a href="{fullUrl}" class="v-title">
+            {.if customContent.volumeNumber}
+              <p>Volume {customContent.volumeNumber}</p>
+            {.end}
+            <p>{title}</p>
+            <p>→</p>
+          </a>
+          {.end}
+      </section>
+
     </squarespace:query>
   </div>
 </div>
-
-<!--<div id="twitter-container">
-  <div class="twitter-section gridBlock-25">
-    <span>@citieschurch</span>
-  </div>
-  <div class="twitter-content gridBlock-50">
-    <squarespace:block-field id="twitterBlock" columns="1" lock-layout="true"/>
-  </div>
-  <div class="twitter-more gridBlock-25">
-    <a href="https://twitter.com/citieschurch" target="_blank">More →</a>
-  </div>
-</div>-->
