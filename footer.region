@@ -32,14 +32,14 @@
     </fieldset>
     </form>
 
-    <script src="//code.jquery.com/jquery-2.2.1.min.js"></script>
+    <script async src="//code.jquery.com/jquery-2.2.1.min.js"></script>
     <script>
-     window.jQuery || document.write('<script src="scripts/jquery-2.2.1.min.js"><\/script>')
+     window.jQuery || document.write('<script async src="scripts/jquery-2.2.1.min.js"><\/script>')
     </script>
-    <squarespace:script src="site.js" combo="true" />
-    <squarespace:script src="helpers.js" combo="true" />
-    <squarespace:script src="sticky.js" combo="true" />
-    {.if authenticatedAccount}<squarespace:script src="authenticated.js" combo="false" />{.end}
+    <squarespace:script async src="site.js" combo="true" />
+    <squarespace:script async src="helpers.js" combo="true" />
+    <squarespace:script async src="sticky.js" combo="true" />
+    {.if authenticatedAccount}<squarespace:script async src="authenticated.js" combo="false" />{.end}
     {squarespace-footers}
 
   </body>
