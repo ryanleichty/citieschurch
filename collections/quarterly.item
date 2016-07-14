@@ -13,9 +13,9 @@
     </section>
 
     <section class="volume-image gridBlock-50">
-      {.main-image?}
+      {main-image?}
         <img {@|image-meta} />
-      {.end}
+      {end}
       <div class="volume-pagination">
         <ul>
           <squarespace:query collection="the-quarterly" limit="100">
@@ -54,7 +54,7 @@
 
     {.if customContent.sermonSeries}
     <section class="sermon-series grid-100">
-      <div class="grid-100 sermon-series-title">
+      <div class="sermon-series-title">
         <h1>Sermon Series</h1>
       </div>
       <squarespace:query collection="sermons" limit="100" category="{customContent.sermonSeries}">
