@@ -3,14 +3,14 @@
           {.if productType}
           {.or}
             {.if startDate}
-              {.main-image?}
+              <!--{.main-image?}-->
                 <div class="banner-thumbnail-wrapper" data-content-field="main-image">
                   <div class="color-overlay"></div>
                   <figure id="thumbnail" class="loading content-fill"><img {@|image-meta} /></figure>
                 </div>
-              {.end}
+              <!--{.end}-->
             {.or}
-              {.main-image?}
+              <!--{.main-image?}-->
                 <div class="banner-thumbnail-wrapper" data-content-field="main-image">
                   <div class="color-overlay"></div>
                   <figure id="thumbnail" class="loading content-fill"><img {@|image-meta} /></figure>
@@ -23,7 +23,7 @@
                     </div>
                   </div>
                 </div>
-              {.end}
+              <!--{.end}-->
             {.end}
           {.end}
         {.end}

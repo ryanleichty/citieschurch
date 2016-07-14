@@ -53,7 +53,7 @@
     </section>
 
     {.if customContent.sermonSeries}
-    <section class="sermon-series">
+    <section class="sermon-series grid-100">
       <div class="grid-100 sermon-series-title">
         <h1>Sermon Series</h1>
       </div>

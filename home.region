@@ -149,13 +149,13 @@
         {.repeated section items}
         <article class="entry h-entry {@|item-classes}" id="article-{id}" data-item-id="{id}">
 
-          {.main-image?}
+
           <div class="excerpt-thumb">
             <a href="{fullUrl}" class="excerpt-image content-fill">
               <img {@|image-meta} />
             </a>
           </div>
-          {.end}
+          
 
           <header class="entry-header">
 
