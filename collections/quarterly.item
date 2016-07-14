@@ -13,9 +13,9 @@
     </section>
 
     <section class="volume-image gridBlock-50">
-      {main-image?}
+      {.main-image?}
         <img {@|image-meta} />
-      {end}
+      {.end}
       <div class="volume-pagination">
         <ul>
           <squarespace:query collection="the-quarterly" limit="100">
