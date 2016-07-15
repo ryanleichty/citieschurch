@@ -5,6 +5,10 @@
     {.if template.mobileStylesEnabled}
     <meta name="viewport" content="width=device-width, initial-scale=1">
     {.end}
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/site/citieschurch-home-screen-icon-180.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/assets/site/citieschurch-home-screen-icon-120.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="/assets/site/citieschurch-home-screen-icon-167.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/assets/site/citieschurch-home-screen-icon-152.png">
     {squarespace-headers}
     <script>/* Must be below squarespace-headers */(function(){var e='ontouchstart'in window||navigator.msMaxTouchPoints;var t=document.documentElement;if(!e&&t){t.className=t.className.replace(/touch-styles/,'')}})()
     </script>
