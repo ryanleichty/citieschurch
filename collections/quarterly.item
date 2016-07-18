@@ -38,7 +38,7 @@
           {.if customContent.price}
             <div class="vol-meta">
               <p class="vol-price">${customContent.price}</p>
-              <p class="vol-usa">Printed in the USA</p>
+              <p class="vol-usa"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 20"><rect x="15" y="4.4" width="15" height="2.2"/><rect x="15" y="8.9" width="15" height="2.2"/><rect x="15" width="15" height="2.2"/><rect y="13.3" width="30" height="2.2"/><rect y="17.8" width="30" height="2.2"/><rect width="12.8" height="11.1"/></svg>Printed in the USA</p>
             </div>
           {.end}
         </div>
