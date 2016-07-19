@@ -63,6 +63,7 @@ Y.use('node', function (Y) {
 				});
 			}
 
+			/*
 			// Scrolling stuff
 			var throttleScroll = Y.throttle(Y.bind(function () {
 				this.bindScroll('#preFooter', Y.one('#preFooter').height()*0.6);
@@ -79,6 +80,7 @@ Y.use('node', function (Y) {
 					subnav.addClass('right');
 				}
 			});
+			*/
 
 			// disabled to fix [TMP-3640]
 			// look into fixing when possible -aparks
