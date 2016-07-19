@@ -7,9 +7,7 @@
 
     <section class="volume-info gridBlock-25">
       <h1 class="volume-title">{title}</h1>
-      {.if customContent.description}
-        <p class="volume-description">{customContent.description}</p>
-      {.end}
+      <div class="volume-description">{body}</div>
     </section>
 
     <section class="volume-image gridBlock-50">
