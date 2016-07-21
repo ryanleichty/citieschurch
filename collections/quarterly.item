@@ -41,8 +41,8 @@
           {.end}
         </div>
         <div class="volume-buy-download">
-          
-          <div class="popup js-popup open show-elements" data-id="popup-id-0" style="bottom: 52px;">
+
+          <div class="popup js-popup open show-elements" data-id="popup-id-0">
             <div class="popup__content js-popup-content">
               <div class="popup__content__container">
                 <div class="download-option">
