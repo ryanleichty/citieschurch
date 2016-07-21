@@ -41,19 +41,19 @@
           {.end}
         </div>
         <div class="volume-buy-download">
-
+          <!--
           <div class="popup js-popup open show-elements" data-id="popup-id-0">
             <div class="popup__content js-popup-content">
               <div class="popup__content__container">
                 <div class="download-option">
-                  <a class="document-label" href="/books/50-crucial-questions-about-manhood-and-womanhood.pdf">PDF</a>
-                  <p class="document-description">Most browsers, readers, devices</p>
-                  <span class="document-size">105 KB</span>
+                  <a class="document-label" href="{customContent.amazonURL}" target="_blank">Amazon</a>
+                  <p class="document-description">Purchase through Amazon</p>
+                  <span class="document-size">$10</span>
                 </div>
               </div>
             </div>
           </div>
-
+          -->
           {.if customContent.amazonURL}
             <a href="{customContent.amazonURL}" target="_blank" class="volume-buy">Buy</a>
           {.end}

@@ -2693,16 +2693,6 @@ html.touch {
     margin: 0;
     list-style: none;
 
-    a {
-      color: white;
-      &:hover {
-        color: #555;
-      }
-      &:active {
-        color: #444;
-      }
-    }
-
     .v-container {
       .border-box;
       width: 100%;
@@ -2739,6 +2729,7 @@ html.touch {
   }
 
   .volume-buy-download {
+    position: relative;
     text-align: center;
 
     .volume-buy, .volume-download {
@@ -3336,8 +3327,8 @@ img {
     box-sizing: border-box;
     z-index: -1;
     background: #ffffff;
-    opacity: 0
-    position:absolute;
+    opacity: 0;
+    position: absolute;
     top: auto;
     bottom: 20px;
     left: 50%;
@@ -3373,8 +3364,8 @@ img {
     z-index: 99;
     opacity: 1;
     bottom: 103px;
-    -webkit-transform:translate(-50%, 0) scale(1.05);
-    transform: translate(-50%, 0) scale(1.05);
+    -webkit-transform:translate(-50%, 0) scale(1);
+    transform: translate(-50%, 0) scale(1);
 }
 
 .popup.open .popup__content {
@@ -3421,36 +3412,37 @@ img {
 .popup .download-option:after,.popup .purchase-option:after {
     content: '';
     display: table;
-    clear: both
+    clear: both;
 }
 
 .popup .document-label,.popup .purchase-option a {
     box-sizing: border-box;
     display: block;
-    margin: 5px auto 2px;
-    padding: 9px 15px 7px;
+    margin-bottom: 5px;
+    padding: 20px;
     width: 100%;
     max-width: 300px;
     text-align: center;
-    text-transform: uppercase;
-    border: 1px solid #c6000e;
+    text-transform: none;
+    border: 2px solid blue;
     -webkit-transition: all 0.2s;
-    transition: all 0.2s
+    transition: all 0.2s;
+    color: blue;
+    font: 0.75rem/0.5 "Brown-Regular", Arial, sans-serif;
 }
 
 .popup .document-label:first-child,.popup .purchase-option a:first-child {
-    margin-top: 0
+    margin-top: 0;
 }
 
 .popup .document-label:hover,.popup .purchase-option a:hover {
-    background: #c6000e;
-    color: #ffffff
+    background: blue;
+    color: #fff;
 }
 
 .popup .document-size,.popup .document-description {
     color: #8E8E8E;
-    font-size: 10px;
-    line-height: 16px;
+    font: 10px/1.4 "Brown-Regular", Arial, sans-serif;
     float: left;
     text-align: left;
     text-transform: none
